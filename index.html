@@ -146,20 +146,22 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
 @media(min-width:1900px){.dk-cover>svg{width:2.2rem;height:2.2rem}.dk-hint svg{width:.9rem;height:.9rem}.dk-fan span{max-width:12rem}.dk-card{min-height:30rem;padding:2rem 3rem}.dk-mock svg{max-width:17rem}.dk-opt{max-width:15rem}.dk-card h3{font-size:3.2rem}.dk-cover h3{font-size:4.4rem}.dk-head h2{font-size:1.9rem}
  .dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-arrow{width:3rem;height:3rem}.dk-dot{width:1.6rem;height:2.4rem}.dk-dot i{width:.45rem;height:.45rem}.dk-dot.on i{width:1.2rem}.dk-votes{max-width:30rem}.dk-note{font-size:.9rem}}
 @media(min-width:3000px){.dk-card{border-width:2px}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.62rem}.dk-src{font-size:.7rem}.dk-arrow svg,.dk-q svg,.dk-v svg,.dk-next svg,.dk-cta svg,.dk-hint svg{width:1rem;height:1rem}.dk-tally small{font-size:.5rem}}
+.dk-src a{display:inline-flex;align-items:center;min-height:44px}
 </style></head><body>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
 </div></div>
 <main>
+<a class="mw-hover" id="appsHome" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/" style="display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;margin:0 0 6px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a>
 <section id="deck" aria-roledescription="carousel" aria-label="Research suggestions deck" hidden>
- <div class="dk-head"><h2>Research Suggestions</h2><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
+ <div class="dk-head"><h2 id="dkName">Research Suggestions</h2><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
  <div class="dk-view" id="dkView" tabindex="0" aria-label="Swipe right for Yes, left for No. Arrow keys move between slides.">
   <div class="dk-stamp y" id="dkY">Yes</div><div class="dk-stamp n" id="dkN">No</div>
   <div class="dk-track" id="dkTrack"></div>
  </div>
  <div class="dk-nav"><button class="dk-arrow mw-hover" id="dkPrev" type="button" aria-label="Previous slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button><div class="dk-dots" id="dkDots"></div><button class="dk-arrow mw-hover" id="dkNext" type="button" aria-label="Next slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button></div>
- <div class="dk-copyrow"><button type="button" class="dk-cta mw-hover" id="dkCopy">Copy My Answers</button><span id="dkCopyMsg" role="status" aria-live="polite"></span></div>
+ <div class="dk-copyrow"><button type="button" class="dk-cta mw-hover" id="dkCopy">Copy My Answers</button><a class="dk-cta mw-hover" id="dkPrevDecks" href="decks/">Previous Decks</a><span id="dkCopyMsg" role="status" aria-live="polite"></span></div>
  <div id="mwSubmit"></div>
  <textarea id="dkCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
 </section>
@@ -230,7 +232,7 @@ renderAlerts(d);
 $("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
 $("apps").innerHTML=d.apps.map(a=>'<a class="app mw-hover" href="'+e(a.url)+'">'+e(a.title)+' <span style="text-transform:none;letter-spacing:0;font-weight:400;color:#737373;flex:1;margin-left:10px">'+e(a.desc)+'</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>').join('');
 $("vt").textContent="Max's Votes: "+d.votes.title;
-$("votes").innerHTML=['Love','Yes','No'].map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+I[k]+e(t)+'</span>').join('')+'</div>').join('');
+$("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).length).map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+(I[k]||'')+e(t)+'</span>').join('')+'</div>').join('');
 $("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="date">'+e(x.date)+'</span><span>'+e(x.title)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
 window.mwShareSummary=()=>{const k=window.mwDeckSummary&&window.mwDeckSummary();return (k?k+'\n':'')+'Research dashboard, updated '+d.updated};});
 </script>
@@ -269,8 +271,8 @@ function tally(){const t={yes:0,love:0,maybe:0,no:0};cards.forEach(c=>{const a=(
 function closeCard(){const t=tally(),C=D.close||{};return '<article class="dk-card dk-cover" style="--a:#05668D">'+S.bulb+'<h3>'+e(C.title||'Vote On The Full List')+'</h3><p>'+e(C.text||'All of today\'s ideas, with the full why and sources, are in Daily Ideas.')+'</p>'+
  '<div class="dk-tally" id="dkTally">'+['yes','love','maybe','no'].map(k=>'<div>'+t[k]+'<small>'+LBL[k]+'</small></div>').join('')+'</div>'+
  '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="dk-cta mw-hover" href="'+e(D.ideas_url)+'">'+e(C.cta||'Open Daily Ideas')+S.next+'</a><button type="button" class="dk-cta mw-hover" id="dkShare">'+S.share+'Send Picks To Max</button></div>'+
- '<p class="dk-src">Ideas only. Owners build after Max approves.</p></article>'}
-function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.subtitle)+'</h3><p>'+cards.length+' suggestions. '+e(D.intro)+'</p>'+
+ '<div id="mwSubmitClose"></div><p class="dk-src">Ideas only. Owners build after Max approves.</p></article>'}
+function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.name||D.subtitle)+'</h3><p>'+(D.name?e(D.subtitle)+'. ':'')+cards.length+' suggestions. '+e(D.intro)+'</p>'+
  '<div class="dk-hint"><span>'+S.yes+'Swipe Right = Yes</span><span>'+S.no+'Swipe Left = No</span><span>'+S.love+'Maybe And Love In The Middle</span></div>'+
  '<button type="button" class="dk-cta mw-hover" data-skip>Start'+S.next+'</button></article>'}
 function render(){
@@ -321,12 +323,12 @@ function wire(){
  view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('pointerleave',end);
 }
 window.mwDeckSummary=function(){if(!D)return'';const lines=[];const t=tally();
- lines.push('Research deck '+D.date+': '+t.yes+' Yes, '+t.love+' Love, '+t.maybe+' Maybe, '+t.no+' No');
+ lines.push((D.name||'Research deck')+' '+D.date+': '+t.yes+' Yes, '+t.love+' Love, '+t.maybe+' Maybe, '+t.no+' No');
  cards.forEach(c=>{const v=st[c.id];if(!v||(!v.answer&&!v.note&&!v.choice))return;
   lines.push('- '+c.label+': '+(v.answer?LBL[v.answer]:'No vote')+(v.choice?' (pick '+v.choice+': '+c['option'+v.choice].label+')':'')+(v.note?' | Note: '+v.note.trim():''))});
  return lines.join('\n')};
-fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY='rd-deck-'+d.date;try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
- $('dkTime').textContent=d.edition+' · '+d.time;render();wire();$('deck').hidden=false;
+fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY=d.key||('rd-deck-'+d.date);try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
+ $('dkTime').textContent=d.edition+' · '+d.time;if(d.name)$('dkName').textContent=d.name;render();wire();$('deck').hidden=false;
  window.dispatchEvent(new Event('mw-deck-ready'))}).catch(()=>{});
 })();
 </script>
@@ -342,8 +344,7 @@ fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];
 </style>
 <script>
 (function(){const b=document.getElementById('mwShare'),msg=document.getElementById('mwShareMsg');
-b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'
-':'')+title;
+b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'\n':'')+title;
  if(navigator.share){try{await navigator.share({title,text,url});return}catch(e){if(e&&e.name=='AbortError')return}}
  if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(text+' '+url);return}
  if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
@@ -351,8 +352,11 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
 </script>
 <script src="submit.js"></script>
 <script>(function(){function g(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(_){return {}}}
-try{save()}catch(_){}
-MWSubmit.button(document.getElementById('mwSubmit'),{agent:'research',app:'research-dashboard',deck:'2026-10-13',
-getResults:function(){try{save()}catch(_){}return {'rd-deck-2026-10-13':g('rd-deck-2026-10-13'),'rd-deck-2026-10-13-product-plan':g('rd-deck-2026-10-13-product-plan')}},
-getNotes:function(){return ''}});})();</script>
+var NAME='Dashboard Product Next Steps Deck',NEWKEY='rd-deck-2026-10-13-dashboard-next-steps';
+var opts={agent:'research',app:'research-dashboard',deck:NAME,
+getResults:function(){var r={deckName:NAME,deckDate:'2026-10-13'};r[NEWKEY]=g(NEWKEY);r['rd-deck-2026-10-13']=g('rd-deck-2026-10-13');r['rd-deck-2026-10-13-product-plan']=g('rd-deck-2026-10-13-product-plan');return r},
+getNotes:function(){return (window.mwDeckSummary&&window.mwDeckSummary())||''}};
+MWSubmit.button(document.getElementById('mwSubmit'),opts);
+function closeBtn(){var el=document.getElementById('mwSubmitClose');if(el&&!el.firstChild)MWSubmit.button(el,opts)}
+closeBtn();window.addEventListener('mw-deck-ready',closeBtn);})();</script>
 </body></html>

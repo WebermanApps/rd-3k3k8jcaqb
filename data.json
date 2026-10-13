@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-13 14:59 ICT",
+  "updated": "2026-10-13 17:45 ICT",
   "agent": "Research",
-  "status": "Active. New Dashboard Product Plan deck is live and featured first in today's deck.",
+  "status": "Active. New Dashboard Product Next Steps Deck (9 cards) is live at the top, built from Max's 17:27 votes.",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
   "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
   "apps": [
@@ -14,12 +14,17 @@
       "title": "Product Plan Deck",
       "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/product-plan/",
       "desc": "Plan to package the agent dashboard setup as a product"
+    },
+    {
+      "title": "Previous Decks",
+      "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/decks/",
+      "desc": "Older research decks with their saved answers"
     }
   ],
   "decisions": [
     {
-      "title": "Product Plan Deck",
-      "note": "Vote on 14 cards, pick A or B on first customer, package and buyers"
+      "title": "Dashboard Product Next Steps Deck",
+      "note": "Vote on 9 cards, pick A or B on platform terms and the name"
     },
     {
       "title": "Big-Picture Investor Deck Outline",
@@ -27,28 +32,38 @@
     }
   ],
   "open": [
-    "Hand the Smart Upkeep Love and Yes picks to UpKeep"
+    "Ask the agent platform provider in writing whether a done-for-you client setup is allowed"
   ],
   "votes": {
-    "title": "Smart Upkeep Deep Dive",
+    "title": "Top Picks For Oct 13 Deck",
     "Love": [
-      "Partner Vetting Checklist",
-      "Tap to Verify License"
+      "Plan: Sell Your Agent Dashboard Setup"
     ],
     "Yes": [
-      "3-Day Cancel Notice",
-      "Maintenance Proof Pack",
-      "Background Re-Check",
-      "Failed Card Recovery",
-      "Renewal Tracker",
-      "Home Record Handoff"
+      "QR Stickers (Future Home Guides)",
+      "Missed Words Come Back Sooner",
+      "Address Suggestions",
+      "Install Prompt",
+      "Shutoffs Offline",
+      "Smart Upkeep Handoff"
     ],
-    "No": [
-      "Same Named Tech",
-      "Builder/Closing Channel"
-    ]
+    "Maybe": [
+      "Talk Instead Of Type (Site Walk)"
+    ],
+    "No": []
   },
   "days": [
+    {
+      "date": "2026-10-13",
+      "title": "Dashboard Product Next Steps Deck",
+      "best": "Stay Inside The Agent Platform Terms (A or B)",
+      "items": [
+        "6 next-step cards for the dashboard product (terms, waitlist, name, pilot, demo, intake)",
+        "QR Sheet For The Next Home Guide (Construction, S)",
+        "Keep The Address Lookup Free (Up Keep, S)",
+        "Hear The Word Before You Answer (Thai, S)"
+      ]
+    },
     {
       "date": "2026-10-13",
       "title": "Daily App Improvement Research",
@@ -84,15 +99,15 @@
   ],
   "report": {
     "type": "Morning",
-    "time": "2026-10-13 14:59 ICT",
+    "time": "2026-10-13 17:45 ICT",
     "items": [
       {
         "category": "Decks",
-        "text": "Today's suggestions deck: 8 cards plus a closing card, ready to vote."
+        "text": "New: Dashboard Product Next Steps Deck, 9 cards from your Oct 13 picks. Earlier decks are under Previous Decks."
       },
       {
         "category": "Decks",
-        "text": "New Dashboard Product Plan deck: 14 cards."
+        "text": "Product Plan deck (14 cards) is still open under Previous Decks."
       },
       {
         "category": "Product Plan",

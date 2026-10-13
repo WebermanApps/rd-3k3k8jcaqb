@@ -228,11 +228,11 @@ function wire(){
  view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('pointerleave',end);
 }
 window.mwDeckSummary=function(){if(!D)return'';const lines=[];const t=tally();
- lines.push((D.title||'Research deck')+' '+D.date+': '+t.yes+' Yes, '+t.love+' Love, '+t.maybe+' Maybe, '+t.no+' No');
+ lines.push((D.name||D.title||'Research deck')+' '+D.date+': '+t.yes+' Yes, '+t.love+' Love, '+t.maybe+' Maybe, '+t.no+' No');
  cards.forEach(c=>{const v=st[c.id];if(!v||(!v.answer&&!v.note&&!v.choice))return;
   lines.push('- '+c.label+': '+(v.answer?LBL[v.answer]:'No vote')+(v.choice?' (pick '+v.choice+': '+c['option'+v.choice].label+')':'')+(v.note?' | Note: '+v.note.trim():''))});
  return lines.join('\n')};
-fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY='rd-deck-'+d.date;try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
+fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY=d.key||('rd-deck-'+d.date);try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
  $('dkTime').textContent=d.edition+' · '+d.time;render();wire();$('deck').hidden=false;
  window.dispatchEvent(new Event('mw-deck-ready'))}).catch(()=>{});
 })();
@@ -249,8 +249,7 @@ fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];
 </style>
 <script>
 (function(){const b=document.getElementById('mwShare'),msg=document.getElementById('mwShareMsg');
-b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'
-':'')+title;
+b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'\n':'')+title;
  if(navigator.share){try{await navigator.share({title,text,url});return}catch(e){if(e&&e.name=='AbortError')return}}
  if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(text+' '+url);return}
  if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}

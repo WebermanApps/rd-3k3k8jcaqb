@@ -1,5 +1,5 @@
 """Extra drawn mockups for planning decks (product-plan). Used by build_deck.py.
-Types: lanes, bars, prices, xlist, report, tiers, timeline, landing, persona, lock, offer."""
+Types: lanes, bars, prices, xlist, report, tiers, timeline, landing, persona, lock, offer, record, intake, sheet, speak."""
 from svgkit import t, lbl, rect, ln, btn, tag, ic, INK, MUTE, LINE, SOFT, W, H, JUNGLE, TERRA, LAGOON, SAFFRON
 EXTRA_IC = {
  "hat": '<path d="M3 17 H21 V19 H3 Z" fill="none" stroke="{c}" stroke-width="{sw}" stroke-linejoin="round"/><path d="M5 17 Q5 8 12 8 Q19 8 19 17" fill="none" stroke="{c}" stroke-width="{sw}"/><path d="M10 8 V5 H14 V8" fill="none" stroke="{c}" stroke-width="{sw}" stroke-linejoin="round"/>',
@@ -100,4 +100,40 @@ def offer(m, a):
         y = 122 + i * 34
         b += ln(y + 28) + ic2("check", 16, y + 6, 14, a) + t(38, y + 18, s, 9.5, INK, "hind", 600)
     return b
-EXTRA = {k: v for k, v in globals().items() if k in ("lanes", "bars", "prices", "xlist", "report", "tiers", "timeline", "landing", "persona", "lock", "offer")}
+
+def record(m, a):
+    b = rect(0, 0, W, H, "#F7F4EF") + rect(60, 14, 120, 252, "#FFFFFF", INK, 18, 1.6) + rect(98, 20, 44, 8, INK, "none", 4)
+    b += rect(74, 40, 92, 40, "#F5F5F5", "none", 4) + rect(74, 40, 2, 40, a) + t(82, 54, "Morning Report", 8, INK, "khand") + t(82, 66, "3 jobs today", 6.5, MUTE, "hind") + t(82, 75, "1 quote waiting", 6.5, MUTE, "hind")
+    b += rect(78, 90, 84, 104, "#FFFFFF", INK, 8, 1.1) + rect(78, 90, 84, 3, a) + t(86, 112, m.get("card", "Send Quote Follow-Up"), 7.5, INK, "khand") + rect(86, 120, 68, 34, SOFT, "none", 4)
+    for i, s in enumerate(["No", "Yes"]): b += rect(86 + i * 36, 164, 32, 18, a if s == "Yes" else "#FFFFFF", a if s == "Yes" else INK, 0, 1) + t(102 + i * 36, 176, s.upper(), 6, "#FFFFFF" if s == "Yes" else INK, "hind", 600, "middle")
+    b += f'<path d="M150 228 Q140 210 128 200" fill="none" stroke="{a}" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/><circle cx="152" cy="232" r="6" fill="{a}1F" stroke="{a}" stroke-width="1.5"/>'
+    b += f'<circle cx="172" cy="34" r="5" fill="#DC2626"/>' + t(164, 37, m.get("time", "0:42"), 7, "#DC2626", "hind", 600, "end")
+    for i, s in enumerate(m.get("rows", [])): b += lbl(120, 282 + i * 0, s, MUTE, 7, "middle")
+    return b
+def intake(m, a):
+    b = head(m.get("title", "Setup Questions"), a) + lbl(14, 48, m.get("sub", "About 20 Minutes"))
+    for i, s in enumerate(m["rows"]):
+        y = 58 + i * 42
+        b += t(14, y + 8, f"{i+1}. {s}", 8.6, INK, "hind", 600) + rect(14, y + 14, 212, 20, "#FFFFFF", INK if i == 0 else LINE, 4, 1.2 if i == 0 else 1)
+        if i == 0: b += rect(20, y + 18, 1.5, 12, a)
+    b += btn(272, m.get("cta", "Next"), "fill", a, h=22, size=8)
+    return b
+def sheet(m, a):
+    b = head(m.get("title", "Sticker Sheet"), a) + lbl(14, 48, m.get("sub", "Print On Label Paper"))
+    for i, s in enumerate(m["rows"]):
+        c, r = i % 3, i // 3; x, y = 14 + c * 72, 58 + r * 104
+        b += rect(x, y, 66, 96, "#FFFFFF", "#BDB6AA", 6, 1.2, 'stroke-dasharray="3 2"') + rect(x + 13, y + 10, 40, 40, "#FFFFFF", INK, 2, 1.2)
+        for (dx, dy) in [(3,3),(27,3),(3,27)]: b += rect(x + 13 + dx, y + 10 + dy, 10, 10, INK)
+        for (dx, dy) in [(17,16),(22,24),(16,30),(28,20),(30,32),(22,34)]: b += rect(x + 13 + dx, y + 10 + dy, 4, 4, INK)
+        b += t(x + 33, y + 66, s, 7.4, INK, "khand", anchor="middle") + t(x + 33, y + 80, "Scan For Steps", 5.6, a, "hind", 600, "middle")
+    if m.get("foot"): b += lbl(120, 288, m["foot"], MUTE, 7, "middle")
+    return b
+def speak(m, a):
+    b = head(m.get("title", "Thai Vocab"), a) + lbl(14, 48, m.get("sub", "Missed Word, Back Again"))
+    b += rect(14, 58, 212, 104, SOFT, "none", 10) + t(120, 104, m.get("word", "word"), 26, INK, "khand", anchor="middle") + t(120, 130, m.get("hint", "Tap to hear it"), 8.5, MUTE, "hind", 400, "middle")
+    b += f'<circle cx="120" cy="190" r="22" fill="{a}"/>' + ic("speaker", 108, 178, 24, "#FFFFFF", 2)
+    for i in range(13):
+        hh = [6,10,16,8,20,12,24,12,20,8,16,10,6][i]; b += rect(56 + i * 10, 236 - hh / 2, 5, hh, a if i < 7 else "#D6D0C6", "none", 2)
+    b += lbl(120, 272, m.get("foot", "Voice From The Device"), MUTE, 7, "middle")
+    return b
+EXTRA = {k: v for k, v in globals().items() if k in ("lanes", "bars", "prices", "xlist", "report", "tiers", "timeline", "landing", "persona", "lock", "offer", "record", "intake", "sheet", "speak")}
