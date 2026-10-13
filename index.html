@@ -36,6 +36,17 @@ footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:va
 .alertbody ul.edge{list-style:none;padding:0;display:grid;gap:10px}@media(min-width:768px){.alertbody ul.edge{grid-template-columns:1fr 1fr}}  /* bank-006 A two-up, roomy */
 .alertbody ul.edge li{margin:0;padding:12px 14px;border:1px solid #E5E0D8;border-left:4px solid #C1502E;border-radius:0}  /* bank-001 B color edge, square corners */
 .chip{border-color:#05668D33}  /* bank-096 B pill chips */
+
+/* Apps on top (Max rule 2026-10-13 23:27): compact Lagoon icon tiles, bank-019 B */
+.apps-top{margin:0 0 14px}
+.apps-top .lbl{margin:0 0 8px}
+.apps-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+a.app-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:44px;padding:10px 6px;border:1.5px solid #05668D;border-radius:.5rem;background:#EAF3F7;color:#05668D;text-decoration:none;font:600 12px/1.2 Hind,system-ui,sans-serif;letter-spacing:.04em;text-align:center}
+a.app-tile svg{width:22px;height:22px;flex:none}
+a.app-tile:focus-visible{outline:3px solid #171717;outline-offset:3px}
+@media(max-width:360px){.apps-tiles{grid-template-columns:1fr;gap:6px}a.app-tile{flex-direction:row;justify-content:flex-start;gap:10px;padding:10px 12px;text-align:left}}
+@media(min-width:1600px){a.app-tile{font-size:16px;min-height:56px;padding:14px 8px}a.app-tile svg{width:26px;height:26px}}
+@media(min-width:3000px){a.app-tile{font-size:28px;min-height:88px;padding:20px 12px;border-width:2px}a.app-tile svg{width:40px;height:40px}}
 /* Update / report bar */
 #report-bar{display:none;border-bottom:1px solid var(--bd);background:var(--sec)}
 #report-bar.show{display:block}
@@ -163,6 +174,7 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
   <div class="report-body" id="rbody"></div>
 </div></div>
 <main>
+<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav>
 <a class="mw-hover" id="appsHome" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/" style="display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;margin:0 0 6px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a>
 <section id="deck" aria-roledescription="carousel" aria-label="Research suggestions deck" hidden>
  <div class="dk-head"><h2 id="dkName">Research Suggestions</h2><a class="dk-dbl" href="https://webermanapps.github.io/branding-djqmb410/decks/">Deck Building</a><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
@@ -182,7 +194,6 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
 <div class="grid">
 <section class="card mw-hover"><h2><span class="dot"></span>Status</h2><p id="status" style="margin:0"></p><p class="lbl" style="margin:.6rem 0 0" id="upd"></p></section>
 <section class="card mw-hover"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" style="margin:0"></p></section>
-<section class="card wide fill3"><h2>Apps</h2><div id="apps"></div></section>
 
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
@@ -240,7 +251,14 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 renderReport(d.report);
 renderAlerts(d);
 $("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
-$("apps").innerHTML=d.apps.map(a=>'<a class="app mw-hover" href="'+e(a.url)+'">'+e(a.title)+' <span style="text-transform:none;letter-spacing:0;font-weight:400;color:#737373;flex:1;margin-left:10px">'+e(a.desc)+'</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>').join('');
+const APP_ICONS={
+'Daily Ideas':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/><path d="M12 3v2"/></svg>',
+'Dashboard Product Plan':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+'Product Plan Deck':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
+'Previous Decks':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="5" width="12" height="14" rx="1.5"/><path d="M9 5V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-1"/></svg>'
+};
+const APP_FALLBACK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 12h6M12 9v6"/></svg>';
+$("apps").innerHTML=d.apps.map(a=>'<a class="app-tile mw-hover" href="'+e(a.url)+'">'+(APP_ICONS[a.title]||APP_FALLBACK)+'<span>'+e(a.title)+'</span></a>').join('');
 $("vt").textContent="Max's Votes: "+d.votes.title;
 $("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).length).map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+(I[k]||'')+e(t)+'</span>').join('')+'</div>').join('');
 $("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="date">'+e(x.date)+'</span><span>'+e(x.title)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
