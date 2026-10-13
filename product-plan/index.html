@@ -133,6 +133,7 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
  </div>
  <div class="dk-nav"><button class="dk-arrow mw-hover" id="dkPrev" type="button" aria-label="Previous slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button><div class="dk-dots" id="dkDots"></div><button class="dk-arrow mw-hover" id="dkNext" type="button" aria-label="Next slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button></div>
  <div class="dk-copyrow"><button type="button" class="dk-cta mw-hover" id="dkCopy">Copy My Answers</button><span id="dkCopyMsg" role="status" aria-live="polite"></span></div>
+ <div id="mwSubmit"></div>
  <textarea id="dkCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
 </section>
 <p class="dk-src" style="margin-top:8px">Sources are linked on every card. Prices marked Estimate are proposals to test. Votes and notes stay on this device and go to Max only through Share.</p>
@@ -255,4 +256,10 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
  if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
  msg.style.display='block';setTimeout(()=>msg.style.display='none',1800)}})();
 </script>
+<script src="../submit.js"></script>
+<script>(function(){function g(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(_){return {}}}
+try{save()}catch(_){}
+MWSubmit.button(document.getElementById('mwSubmit'),{agent:'research',app:'research-dashboard',deck:'2026-10-13-product-plan',
+getResults:function(){try{save()}catch(_){}return {'rd-deck-2026-10-13':g('rd-deck-2026-10-13'),'rd-deck-2026-10-13-product-plan':g('rd-deck-2026-10-13-product-plan')}},
+getNotes:function(){return ''}});})();</script>
 </body></html>
