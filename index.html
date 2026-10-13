@@ -2,13 +2,16 @@
 <title>Research Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--fg:#0a0a0a;--pri:#171717;--sec:#f5f5f5;--mut:#737373;--bd:#e5e5e5;--love:#dc2626;--yes:#16a34a;--warn:#d97706;--ease:cubic-bezier(.2,.8,.2,1)}
+:root{--bg:#fff;--fg:#0a0a0a;--pri:#171717;--sec:#f5f5f5;--mut:#737373;--bd:#e5e5e5;--love:#dc2626;--yes:#16a34a;--warn:#d97706;--accent:#0B6E4F;--ease:cubic-bezier(.2,.8,.2,1)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Hind,system-ui,sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0}
 h1{font-size:2.6rem}h2{font-size:1.5rem;margin-bottom:.6rem;display:flex;gap:8px;align-items:center}
 main{max-width:1100px;margin:0 auto;padding:24px 16px 120px}
+@media(min-width:1440px){main{max-width:1280px}}
+@media(min-width:2000px){main{max-width:1680px}}
 .lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
 .grid{display:grid;gap:16px;margin-top:20px}@media(min-width:768px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+@media(min-width:1440px){.grid{grid-template-columns:1fr 1fr 1fr}.wide{grid-column:1/-1}}
 .card{border:1px solid var(--bd);border-radius:.75rem;padding:18px;background:#fff}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--yes);display:inline-block}
 a.app{display:flex;justify-content:space-between;align-items:center;min-height:44px;border:2px solid var(--pri);padding:10px 14px;color:var(--fg);text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
@@ -21,8 +24,29 @@ ul.plain{margin:0;padding-left:18px}
 .mw-hover{transition:transform 180ms var(--ease),box-shadow 180ms var(--ease),background-color 180ms var(--ease)}
 .mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.02);box-shadow:0 6px 18px rgba(10,10,10,.12)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
-footer{text-align:center;padding:24px 16px 96px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block}
-</style></head><body><main>
+footer{text-align:center;padding:24px 16px 96px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block;min-height:44px;line-height:44px;padding:0 8px}
+
+/* Update / report bar */
+#report-bar{display:none;border-bottom:1px solid var(--bd);background:var(--sec)}
+#report-bar.show{display:block}
+.report-inner{max-width:1100px;margin:0 auto;padding:14px 16px 16px;border-left:3px solid var(--accent)}
+@media(min-width:1440px){.report-inner{max-width:1280px}}
+@media(min-width:2000px){.report-inner{max-width:1680px}}
+.report-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:6px}
+.report-type{font-family:Khand,sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;color:var(--fg)}
+.report-time{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.report-body{font-size:15px;line-height:1.45;color:#262626}
+.report-body p{margin:0 0 4px}.report-body p:last-child{margin-bottom:0}
+.report-group{margin-top:8px}.report-group:first-child{margin-top:0}
+.report-cat{font-family:Khand,sans-serif;font-weight:700;font-size:.95rem;color:var(--accent);margin:0 0 2px}
+.report-group ul{margin:0;padding-left:18px}.report-group li{margin:2px 0}
+@media(max-width:400px){h1{font-size:2.1rem}.report-type{font-size:1.05rem}}
+</style></head><body>
+<div id="report-bar" aria-live="polite"><div class="report-inner">
+  <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
+  <div class="report-body" id="rbody"></div>
+</div></div>
+<main>
 <div class="lbl">Agent Dashboard · Formerly Vision</div>
 <h1>Research Command Center</h1>
 <p id="role" style="max-width:720px"></p>
@@ -40,7 +64,29 @@ footer{text-align:center;padding:24px 16px 96px;font-size:13px}footer a{color:va
 const I={Love:'<svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',Yes:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg>',No:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="3"><path d="M6 6l12 12M18 6L6 18"/></svg>'};
 const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const $=id=>document.getElementById(id);
+function renderReport(r){
+  if(!r||!Array.isArray(r.items)||!r.items.length)return;
+  const type=(r.type==='Evening'?'Evening':'Morning')+' Report';
+  $('rtype').textContent=type;
+  $('rtime').textContent=r.time||'';
+  const items=r.items;
+  const hasCat=items.some(i=>i&&i.category);
+  const group=hasCat&&items.length>2;
+  if(!group){
+    $('rbody').innerHTML=items.map(i=>'<p>'+e(i.text||'')+'</p>').join('');
+  }else{
+    const order=[],map={};
+    items.forEach(i=>{
+      const c=(i.category&&String(i.category).trim())||'Other';
+      if(!map[c]){map[c]=[];order.push(c)}
+      map[c].push(i.text||'');
+    });
+    $('rbody').innerHTML=order.map(c=>'<div class="report-group"><div class="report-cat">'+e(c)+'</div><ul>'+map[c].map(t=>'<li>'+e(t)+'</li>').join('')+'</ul></div>').join('');
+  }
+  $('report-bar').classList.add('show');
+}
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
+renderReport(d.report);
 $("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
 $("apps").innerHTML=d.apps.map(a=>'<a class="app mw-hover" href="'+e(a.url)+'">'+e(a.title)+' <span style="text-transform:none;letter-spacing:0;font-weight:400;color:#737373;flex:1;margin-left:10px">'+e(a.desc)+'</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>').join('');
 $("dec").innerHTML=d.decisions.map(x=>'<li><b>'+e(x.title)+'</b> <span style="color:#737373">'+e(x.note)+'</span></li>').join('');

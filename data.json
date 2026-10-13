@@ -1,25 +1,90 @@
 {
-  "updated": "2026-10-13 12:40 ICT",
+  "updated": "2026-10-13 13:15 ICT",
   "agent": "Research",
   "formerly": "Vision",
   "status": "Active. Oct 13 daily research done; Smart Upkeep deep dive voted by Max.",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
   "routine": "Weekdays at 6:40 AM ICT. Sends the best pick to Grok Bot.",
-  "apps": [{"title": "Daily Ideas", "url": "https://webermanapps.github.io/daily-ideas/", "desc": "Swipe and vote on each day's research ideas"}],
-  "decisions": [{"title": "Big-Picture Investor Deck Outline", "note": "Parked, waiting on Max"}],
-  "open": ["Hand the Smart Upkeep Love and Yes picks to Up Keep", "GoatCounter refresh returned HTTP 404 on Oct 13; key or site setting needs a check"],
+  "apps": [
+    {
+      "title": "Daily Ideas",
+      "url": "https://webermanapps.github.io/daily-ideas/",
+      "desc": "Swipe and vote on each day's research ideas"
+    }
+  ],
+  "decisions": [
+    {
+      "title": "Big-Picture Investor Deck Outline",
+      "note": "Parked, waiting on Max"
+    }
+  ],
+  "open": [
+    "Hand the Smart Upkeep Love and Yes picks to Up Keep",
+    "GoatCounter refresh returned HTTP 404 on Oct 13; key or site setting needs a check"
+  ],
   "votes": {
     "title": "Smart Upkeep Deep Dive",
-    "Love": ["Partner Vetting Checklist", "Tap to Verify License"],
-    "Yes": ["3-Day Cancel Notice", "Maintenance Proof Pack", "Background Re-Check", "Failed Card Recovery", "Renewal Tracker", "Home Record Handoff"],
-    "No": ["Same Named Tech", "Builder/Closing Channel"]
+    "Love": [
+      "Partner Vetting Checklist",
+      "Tap to Verify License"
+    ],
+    "Yes": [
+      "3-Day Cancel Notice",
+      "Maintenance Proof Pack",
+      "Background Re-Check",
+      "Failed Card Recovery",
+      "Renewal Tracker",
+      "Home Record Handoff"
+    ],
+    "No": [
+      "Same Named Tech",
+      "Builder/Closing Channel"
+    ]
   },
   "days": [
-    {"date": "2026-10-13", "title": "Daily App Improvement Research", "best": "QR stickers that open the right page of the Home Guide",
-     "items": ["QR Stickers for the Home Guide (Construction, S)", "Talk Instead of Type at Each Stop, Site Walk (Construction, M)", "Missed Words Come Back Sooner, Thai Vocab Quiz (Thai, M)", "Address Suggestions on the First Step, Smart Upkeep (Up Keep, M)"]},
-    {"date": "2026-10-12", "title": "Smart Upkeep Deep Dive", "best": "Partner Vetting Checklist (Max: Love)",
-     "items": ["10 service and app ideas for Smart Upkeep", "Max voted: 2 Love, 6 Yes, 2 No", "Owner: Up Keep, build after approval"]},
-    {"date": "2026-10-12", "title": "Daily App Improvement Ideas", "best": "Install prompt right after sign-in (Home Guide)",
-     "items": ["Install Prompt Right After Sign-In (Construction, S)", "Shutoffs and Emergency Info Offline", "Label Scan for Model and Serial (Up Keep, L)", "Send Maintenance Tasks to My Calendar (Up Keep, S)"]}
-  ]
+    {
+      "date": "2026-10-13",
+      "title": "Daily App Improvement Research",
+      "best": "QR stickers that open the right page of the Home Guide",
+      "items": [
+        "QR Stickers for the Home Guide (Construction, S)",
+        "Talk Instead of Type at Each Stop, Site Walk (Construction, M)",
+        "Missed Words Come Back Sooner, Thai Vocab Quiz (Thai, M)",
+        "Address Suggestions on the First Step, Smart Upkeep (Up Keep, M)"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Smart Upkeep Deep Dive",
+      "best": "Partner Vetting Checklist (Max: Love)",
+      "items": [
+        "10 service and app ideas for Smart Upkeep",
+        "Max voted: 2 Love, 6 Yes, 2 No",
+        "Owner: Up Keep, build after approval"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Daily App Improvement Ideas",
+      "best": "Install prompt right after sign-in (Home Guide)",
+      "items": [
+        "Install Prompt Right After Sign-In (Construction, S)",
+        "Shutoffs and Emergency Info Offline",
+        "Label Scan for Model and Serial (Up Keep, L)",
+        "Send Maintenance Tasks to My Calendar (Up Keep, S)"
+      ]
+    }
+  ],
+  "report": {
+    "type": "Morning",
+    "time": "2026-10-13 07:00 ICT",
+    "items": [
+      {
+        "text": "Daily research done: 4 ideas in Daily Ideas (Niko QR equipment stickers, Site Walk voice notes, Thai Vocab spaced review, Smart Upkeep address suggestions)."
+      },
+      {
+        "text": "Research dashboard launched."
+      }
+    ]
+  }
 }
