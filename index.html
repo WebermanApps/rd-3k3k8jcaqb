@@ -19,6 +19,7 @@ a.app svg{transition:transform .18s var(--ease)}a.app:hover svg{transform:transl
 .chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);border-radius:999px;padding:4px 10px;margin:3px;font-size:14px}
 .row{border-top:1px solid var(--bd)}.row summary{list-style:none;cursor:pointer;min-height:44px;display:flex;gap:10px;align-items:center;padding:8px 4px}
 .row summary::-webkit-details-marker{display:none}.row summary .chev{margin-left:auto;transition:transform .18s}.row[open] .chev{transform:rotate(90deg)}
+.row:not([open])>:not(summary){display:none}
 .row ul{margin:0 0 12px;padding-left:22px;color:#262626}.date{font-family:Khand;font-weight:700;min-width:92px}
 ul.plain{margin:0;padding-left:18px}
 .mw-hover{transition:transform 180ms var(--ease),box-shadow 180ms var(--ease),background-color 180ms var(--ease)}
