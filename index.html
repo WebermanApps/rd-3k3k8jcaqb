@@ -185,7 +185,7 @@ const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"
 const $=id=>document.getElementById(id);
 function renderReport(r){
   if(!r||!Array.isArray(r.items)||!r.items.length)return;
-  const type=(r.type==='Evening'?'Evening':'Morning')+' Report';
+  const type=r.type==='Fresh Start'?'Fresh Start':(r.type==='Evening'?'Evening':'Morning')+' Report';
   $('rtype').textContent=type;
   $('rtime').textContent=r.time||'';
   const items=r.items;

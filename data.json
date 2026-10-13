@@ -1,126 +1,122 @@
 {
-  "updated": "2026-10-13 18:05 ICT",
-  "agent": "Research",
-  "status": "Evening Recap live. Dashboard Product Next Steps Deck still open for your votes.",
-  "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
-  "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
-  "apps": [
-    {
-      "title": "Daily Ideas",
-      "url": "https://webermanapps.github.io/daily-ideas/",
-      "desc": "Swipe and vote on each day's research ideas"
-    },
-    {
-      "title": "Product Plan Deck",
-      "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/product-plan/",
-      "desc": "Plan to package the agent dashboard setup as a product"
-    },
-    {
-      "title": "Previous Decks",
-      "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/decks/",
-      "desc": "Older research decks with their saved answers"
-    }
-  ],
-  "decisions": [
-    {
-      "title": "Dashboard Product Next Steps Deck",
-      "note": "Vote on 9 cards, pick A or B on platform terms and the name"
-    },
-    {
-      "title": "Big-Picture Investor Deck Outline",
-      "note": "Parked, waiting on Max"
-    }
-  ],
-  "open": [
-    "Ask the agent platform provider in writing whether a done-for-you client setup is allowed"
-  ],
-  "votes": {
-    "title": "Top Picks For Oct 13 Deck",
-    "Love": [
-      "Plan: Sell Your Agent Dashboard Setup"
-    ],
-    "Yes": [
-      "QR Stickers (Future Home Guides)",
-      "Missed Words Come Back Sooner",
-      "Address Suggestions",
-      "Install Prompt",
-      "Shutoffs Offline",
-      "Smart Upkeep Handoff"
-    ],
-    "Maybe": [
-      "Talk Instead Of Type (Site Walk)"
-    ],
-    "No": []
+ "updated": "2026-10-13 19:22 ICT",
+ "agent": "Research",
+ "status": "Fresh Start live. Next Steps Deck open for your votes.",
+ "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
+ "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
+ "apps": [
+  {
+   "title": "Daily Ideas",
+   "url": "https://webermanapps.github.io/daily-ideas/",
+   "desc": "Swipe and vote on each day's research ideas"
   },
-  "days": [
-    {
-      "date": "2026-10-13",
-      "title": "Dashboard Product Next Steps Deck",
-      "best": "Stay Inside The Agent Platform Terms (A or B)",
-      "items": [
-        "6 next-step cards for the dashboard product (terms, waitlist, name, pilot, demo, intake)",
-        "QR Sheet For The Next Home Guide (Construction, S)",
-        "Keep The Address Lookup Free (Up Keep, S)",
-        "Hear The Word Before You Answer (Thai, S)"
-      ]
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Daily App Improvement Research",
-      "best": "QR stickers that open the right page of the Home Guide",
-      "items": [
-        "QR Stickers for the Home Guide (Construction, S)",
-        "Talk Instead of Type at Each Stop, Site Walk (Construction, M)",
-        "Missed Words Come Back Sooner, Thai Vocab Quiz (Thai, M)",
-        "Address Suggestions on the First Step, Smart Upkeep (Up Keep, M)"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Smart Upkeep Deep Dive",
-      "best": "Partner Vetting Checklist (Max: Love)",
-      "items": [
-        "10 service and app ideas for Smart Upkeep",
-        "Max voted: 2 Love, 6 Yes, 2 No",
-        "Owner: Up Keep, build after approval"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Daily App Improvement Ideas",
-      "best": "Install prompt right after sign-in (Home Guide)",
-      "items": [
-        "Install Prompt Right After Sign-In (Construction, S)",
-        "Shutoffs and Emergency Info Offline",
-        "Label Scan for Model and Serial (Up Keep, L)",
-        "Send Maintenance Tasks to My Calendar (Up Keep, S)"
-      ]
-    }
-  ],
-  "report": {
-    "type": "Evening",
-    "time": "2026-10-13 18:05 ICT",
-    "items": [
-      {
-        "category": "Today",
-        "text": "Morning research: QR stickers, Site Walk voice notes, Thai missed words, Smart Upkeep address suggestions. Best morning pick was QR stickers for future home guides."
-      },
-      {
-        "category": "Today",
-        "text": "You Loved the agent-dashboard product plan. Published Dashboard Product Next Steps Deck (9 cards: platform terms A/B, waitlist tools, name A/B, pilot offer, demo recording, intake, plus QR sheet, free address lookup, Thai word audio)."
-      },
-      {
-        "category": "Today",
-        "text": "Share button moved into page flow; pull-to-refresh on Research and Daily Ideas; Apps Home link added."
-      },
-      {
-        "category": "Open",
-        "text": "Next Steps deck is still open for your votes. Ask the agent platform provider in writing whether a done-for-you client setup is allowed before any money changes hands."
-      },
-      {
-        "category": "Tomorrow",
-        "text": "Weekday Morning Deck by 5:00 AM with fresh suggestions that build on tonight's votes if you submit any. Product-plan next steps stay parked until you vote."
-      }
-    ]
+  {
+   "title": "Product Plan Deck",
+   "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/product-plan/",
+   "desc": "Plan to package the agent dashboard setup as a product"
+  },
+  {
+   "title": "Previous Decks",
+   "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/decks/",
+   "desc": "Older research decks with their saved answers"
   }
+ ],
+ "decisions": [
+  {
+   "title": "Dashboard Product Next Steps Deck",
+   "note": "Vote on 9 cards, pick A or B on platform terms and the name"
+  },
+  {
+   "title": "Big-Picture Investor Deck Outline",
+   "note": "Parked, waiting on Max"
+  }
+ ],
+ "open": [
+  "Get a written answer from the platform provider on reselling before any paid pilot"
+ ],
+ "votes": {
+  "title": "Top Picks For Oct 13 Deck",
+  "Love": [
+   "Plan: Sell Your Agent Dashboard Setup"
+  ],
+  "Yes": [
+   "QR Stickers (Future Home Guides)",
+   "Missed Words Come Back Sooner",
+   "Address Suggestions",
+   "Install Prompt",
+   "Shutoffs Offline",
+   "Smart Upkeep Handoff"
+  ],
+  "Maybe": [
+   "Talk Instead Of Type (Site Walk)"
+  ],
+  "No": []
+ },
+ "days": [
+  {
+   "date": "2026-10-13",
+   "title": "Dashboard Product Next Steps Deck",
+   "best": "Stay Inside The Agent Platform Terms (A or B)",
+   "items": [
+    "6 next-step cards for the dashboard product (terms, waitlist, name, pilot, demo, intake)",
+    "QR Sheet For The Next Home Guide (Construction, S)",
+    "Keep The Address Lookup Free (Up Keep, S)",
+    "Hear The Word Before You Answer (Thai, S)"
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "title": "Daily App Improvement Research",
+   "best": "QR stickers that open the right page of the Home Guide",
+   "items": [
+    "QR Stickers for the Home Guide (Construction, S)",
+    "Talk Instead of Type at Each Stop, Site Walk (Construction, M)",
+    "Missed Words Come Back Sooner, Thai Vocab Quiz (Thai, M)",
+    "Address Suggestions on the First Step, Smart Upkeep (Up Keep, M)"
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "title": "Smart Upkeep Deep Dive",
+   "best": "Partner Vetting Checklist (Max: Love)",
+   "items": [
+    "10 service and app ideas for Smart Upkeep",
+    "Max voted: 2 Love, 6 Yes, 2 No",
+    "Owner: Up Keep, build after approval"
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "title": "Daily App Improvement Ideas",
+   "best": "Install prompt right after sign-in (Home Guide)",
+   "items": [
+    "Install Prompt Right After Sign-In (Construction, S)",
+    "Shutoffs and Emergency Info Offline",
+    "Label Scan for Model and Serial (Up Keep, L)",
+    "Send Maintenance Tasks to My Calendar (Up Keep, S)"
+   ]
+  }
+ ],
+ "report": {
+  "type": "Fresh Start",
+  "time": "2026-10-13 19:22 ICT",
+  "items": [
+   {
+    "category": "Ready For You",
+    "text": "Dashboard Product Next Steps Deck: 9 cards open for votes, Submit working."
+   },
+   {
+    "category": "Ready For You",
+    "text": "Product Plan deck: you Loved it."
+   },
+   {
+    "category": "Ready For You",
+    "text": "Today's picks routed: Construction is preparing the Home Guide install prompt and offline shutoffs for your approval; Thai's missed-words change is live; UpKeep has its picks."
+   },
+   {
+    "category": "Key Flag",
+    "text": "Get a written answer from the platform provider on reselling before any paid pilot."
+   }
+  ]
+ }
 }
