@@ -3,7 +3,7 @@
   "agent": "Research",
   "status": "Active. New Dashboard Product Plan deck is live and featured first in today's deck.",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
-  "routine": "Weekdays at 6:40 AM ICT. Sends the best pick to Grok Bot.",
+  "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
   "apps": [
     {
       "title": "Daily Ideas",
@@ -27,7 +27,7 @@
     }
   ],
   "open": [
-    "Hand the Smart Upkeep Love and Yes picks to Up Keep"
+    "Hand the Smart Upkeep Love and Yes picks to UpKeep"
   ],
   "votes": {
     "title": "Smart Upkeep Deep Dive",
