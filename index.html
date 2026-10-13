@@ -168,14 +168,41 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
 @media(min-width:3000px){.dk-card{border-width:2px}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.62rem}.dk-src{font-size:.7rem}.dk-arrow svg,.dk-q svg,.dk-v svg,.dk-next svg,.dk-cta svg,.dk-hint svg{width:1rem;height:1rem}.dk-tally small{font-size:.5rem}}
 .dk-src a{display:inline-flex;align-items:center;min-height:44px}
 .dk-dbl{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#05668D;text-decoration:underline;text-underline-offset:3px}
-</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"></head><body>
+
+/* Layout Deck round 1 (Max, 2026-10-13) */
+.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--bd)}
+.tb-in{max-width:1100px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:48px}
+.tb-home{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.tb-name{font:700 1.2rem/1 Khand,sans-serif}.tb-upd{margin-left:auto;font-size:12px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;font-weight:600;text-align:right}
+.titleblk{max-width:1100px;margin:0 auto;padding:14px 16px 10px}.titleblk p{margin:.3rem 0 0;max-width:62ch}
+main{padding-top:14px}
+.report-drop summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px}
+.report-drop summary::-webkit-details-marker{display:none}
+.report-drop .rline{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.report-drop[open] .rline{white-space:normal}
+.report-drop[open] .chev{transform:rotate(180deg)}
+#report-bar .report-head{display:none}.report-inner{padding:6px 16px}
+#alerts .alert{margin:0 0 12px}
+.grid{gap:12px;margin-top:12px}.card{padding:14px}.apps-top{margin:0 0 10px}
+.statstrip{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat h2{font-size:1.2rem;margin-bottom:.3rem}
+.clamp2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}.clamp2.open{display:block}
+.row summary .rtitle{flex:1;min-width:0}.row summary .date{min-width:0;margin-left:auto;text-align:right;white-space:nowrap}.row summary .chev{margin-left:0}
+.seeall{min-height:44px;margin-top:6px;padding:0 14px;border:1.5px solid #05668D;border-radius:.5rem;background:#EAF3F7;color:#05668D;font:600 13px Hind,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+@media(min-width:1440px){.tb-in,.titleblk{max-width:1280px}}
+@media(min-width:1600px){.tb-in,.titleblk{max-width:1480px}.tb-home,.tb-upd,.seeall{font-size:20px}.tb-name{font-size:1.5rem}.tb-in{min-height:64px}.stat h2{font-size:1.6rem}}
+@media(min-width:3000px){.tb-home,.tb-upd,.seeall{font-size:28px}}
+@media(max-width:400px){.tb-upd{font-size:11px;max-width:40%}}
+</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style></head><body>
+<header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span></div></header>
+<div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
 </div></div>
 <main>
 <nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav>
-<a class="mw-hover" id="appsHome" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/" style="display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;margin:0 0 6px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a>
+<div id="alerts"></div>
+
 <section id="deck" aria-roledescription="carousel" aria-label="Research suggestions deck" hidden>
  <div class="dk-head"><h2 id="dkName">Research Suggestions</h2><a class="dk-dbl" href="https://webermanapps.github.io/branding-djqmb410/decks/">Deck Building</a><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
  <div class="dk-view" id="dkView" tabindex="0" aria-label="Swipe right for Yes, left for No. Arrow keys move between slides.">
@@ -187,13 +214,9 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
  <div id="mwSubmit"></div>
  <textarea id="dkCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
 </section>
-<div class="lbl">Agent Dashboard · Research</div>
-<h1>Research Command Center</h1>
-<p id="role" style="max-width:62ch"></p>
-<div id="alerts"></div>
 <div class="grid">
-<section class="card mw-hover"><h2><span class="dot"></span>Status</h2><p id="status" style="margin:0"></p><p class="lbl" style="margin:.6rem 0 0" id="upd"></p></section>
-<section class="card mw-hover"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" style="margin:0"></p></section>
+<div class="statstrip wide"><section class="card stat"><h2><span class="dot"></span>Status</h2><p id="status" class="clamp2" tabindex="0" style="margin:0"></p><p class="lbl" style="margin:.4rem 0 0" id="upd"></p></section>
+<section class="card stat"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" class="clamp2" tabindex="0" style="margin:0"></p></section></div>
 
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
@@ -225,10 +248,13 @@ function renderReport(r){
     body=order.map(c=>'<div class="report-group"><div class="report-cat">'+e(c)+'</div><ul>'+map[c].map(t=>'<li>'+e(t)+'</li>').join('')+'</ul></div>').join('');
   }
   const n=items.length;
-  const label=n===1?'1 Update':(n+' Updates');
-  $('rbody').outerHTML='<details class="report-drop"><summary>'+e(label)+'<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><div class="report-body" id="rbody">'+body+'</div></details>';
+  const label=type+(r.time?' · '+r.time:'')+': '+(items[0].text||'')+(n>1?' (+'+(n-1)+' more)':'');
+  $('rbody').outerHTML='<details class="report-drop"><summary><span class="rline">'+e(label)+'</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><div class="report-body" id="rbody">'+body+'</div></details>';
   $('report-bar').classList.add('show');
 }
+function seeAll(host,sel){if(!host)return;const groups=new Map();host.querySelectorAll(sel).forEach(el=>{const p=el.parentElement;if(!groups.has(p))groups.set(p,[]);groups.get(p).push(el)});groups.forEach((els,p)=>{if(els.length<=5)return;els.slice(5).forEach(x=>x.hidden=true);const b=document.createElement('button');b.type='button';b.className='seeall mw-hover';b.textContent='See All ('+els.length+')';b.onclick=()=>{const hid=els[5].hidden;els.slice(5).forEach(x=>x.hidden=!hid);b.textContent=hid?'Show Fewer':'See All ('+els.length+')'};p.after(b)})}
+document.addEventListener('click',ev=>{const c=ev.target.closest('.clamp2');if(c)c.classList.toggle('open')});
+document.addEventListener('keydown',ev=>{if(ev.key==='Enter'&&ev.target.classList&&ev.target.classList.contains('clamp2'))ev.target.classList.toggle('open')});
 function renderAlerts(d){
   const host=$('alerts'); if(!host)return;
   const dec=Array.isArray(d.decisions)?d.decisions:[];
@@ -250,7 +276,7 @@ function renderAlerts(d){
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 renderReport(d.report);
 renderAlerts(d);
-$("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
+$("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("tbUpd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
 const APP_ICONS={
 'Daily Ideas':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/><path d="M12 3v2"/></svg>',
 'Dashboard Product Plan':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>',
@@ -261,7 +287,8 @@ const APP_FALLBACK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 $("apps").innerHTML=d.apps.map(a=>'<a class="app-tile mw-hover" href="'+e(a.url)+'">'+(APP_ICONS[a.title]||APP_FALLBACK)+'<span>'+e(a.title)+'</span></a>').join('');
 $("vt").textContent="Max's Votes: "+d.votes.title;
 $("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).length).map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+(I[k]||'')+e(t)+'</span>').join('')+'</div>').join('');
-$("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="date">'+e(x.date)+'</span><span>'+e(x.title)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
+$("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="rtitle">'+e(x.title)+'</span><span class="date">'+e(x.date)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
+seeAll($('days'),'details.row');seeAll($('alerts'),'ul.edge>li');
 window.mwShareSummary=()=>{const k=window.mwDeckSummary&&window.mwDeckSummary();return (k?k+'\n':'')+'Research dashboard, updated '+d.updated};});
 </script>
 <script>
