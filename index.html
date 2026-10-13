@@ -6,7 +6,7 @@
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Hind,system-ui,sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0}
 h1{font-size:2.6rem}h2{font-size:1.5rem;margin-bottom:.6rem;display:flex;gap:8px;align-items:center}
-main{max-width:1100px;margin:0 auto;padding:24px 16px 120px}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
 @media(min-width:1440px){main{max-width:1280px}}
 @media(min-width:2000px){main{max-width:1680px}}
 .lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
@@ -24,7 +24,7 @@ ul.plain{margin:0;padding-left:18px}
 .mw-hover{transition:transform 180ms var(--ease),box-shadow 180ms var(--ease),background-color 180ms var(--ease)}
 .mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.02);box-shadow:0 6px 18px rgba(10,10,10,.12)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
-footer{text-align:center;padding:24px 16px 96px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block;min-height:44px;line-height:44px;padding:0 8px}
+footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block;min-height:44px;line-height:44px;padding:0 8px}
 
 /* Update / report bar */
 #report-bar{display:none;border-bottom:1px solid var(--bd);background:var(--sec)}
@@ -46,10 +46,10 @@ footer{text-align:center;padding:24px 16px 96px;font-size:13px}footer a{color:va
 /* Focus rings, large monitors, TVs */
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3px}
 .card,.app,.chip{overflow-wrap:anywhere}
-@media(min-width:1900px){html{font-size:20px}body{font-size:20px}main{max-width:none;padding:3vh 5vw 140px}.report-inner{max-width:none;padding:18px 5vw}
+@media(min-width:1900px){html{font-size:20px}body{font-size:20px}main{max-width:none;padding:3vh 5vw 48px}.report-inner{max-width:none;padding:18px 5vw}
  h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}
  .grid{grid-template-columns:repeat(3,1fr);gap:24px}.card{padding:28px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
-@media(min-width:3000px){html,body{font-size:36px}h1{font-size:3.6rem}.lbl,.report-time{font-size:26px}a.app{font-size:30px;min-height:96px}.chip{font-size:32px}.report-body{font-size:38px}.card{padding:48px;border-width:2px}.grid{gap:40px}footer{font-size:30px}footer a{min-height:80px;line-height:80px}#mwShare{font-size:28px!important;min-height:96px!important;padding:0 32px!important;right:5vw!important;bottom:5vh!important}h2 svg{width:32px;height:32px}}
+@media(min-width:3000px){html,body{font-size:36px}h1{font-size:3.6rem}.lbl,.report-time{font-size:26px}a.app{font-size:30px;min-height:96px}.chip{font-size:32px}.report-body{font-size:38px}.card{padding:48px;border-width:2px}.grid{gap:40px}footer{font-size:30px}footer a{min-height:80px;line-height:80px}#mwShare{font-size:28px!important;min-height:96px!important;padding:0 32px!important;min-width:280px!important}h2 svg{width:32px;height:32px}}
 /* Research suggestions swipe deck (deck.json) */
 #deck{margin:4px 0 28px}
 .dk-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:10px}
@@ -137,6 +137,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
 </div></main>
+<div class="mw-sharerow"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></div>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>
 const I={Love:'<svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',Yes:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg>',No:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="3"><path d="M6 6l12 12M18 6L6 18"/></svg>'};
@@ -268,13 +269,14 @@ fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];
 .mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.03);box-shadow:0 6px 18px rgba(10,10,10,.12)}
 .mw-hover:active{transform:scale(.98)}
 @media (prefers-reduced-motion:reduce){.mw-hover,.mw-hover:hover{transition:none;transform:none}}
-#mwShare{position:fixed;right:12px;bottom:calc(12px + var(--mw-share-offset,0px) + env(safe-area-inset-bottom));z-index:50;min-height:44px;padding:0 16px;background:#fff;color:#171717;border:1px solid #171717;border-radius:0;font-family:Hind,system-ui,sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px}
-#mwShareMsg{position:fixed;right:12px;bottom:calc(64px + var(--mw-share-offset,0px));z-index:51;background:#fff;border:1px solid #e5e5e5;color:#0a0a0a;padding:6px 10px;font:13px Hind,system-ui,sans-serif;display:none}
+.mw-sharerow{display:flex;justify-content:center;align-items:center;position:relative;margin:32px 16px 0;padding:0}
+#mwShare{position:static;z-index:auto;min-height:44px;min-width:160px;padding:0 20px;background:#fff;color:#171717;border:1px solid #171717;border-radius:0;font-family:Hind,system-ui,sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+#mwShareMsg{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);z-index:2;background:#fff;border:1px solid #e5e5e5;color:#0a0a0a;padding:6px 10px;font:13px Hind,system-ui,sans-serif;display:none;white-space:nowrap}
 </style>
-<button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div>
 <script>
 (function(){const b=document.getElementById('mwShare'),msg=document.getElementById('mwShareMsg');
-b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'\n':'')+title;
+b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'
+':'')+title;
  if(navigator.share){try{await navigator.share({title,text,url});return}catch(e){if(e&&e.name=='AbortError')return}}
  if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(text+' '+url);return}
  try{await navigator.clipboard.writeText(text+' '+url)}catch(e){const t=document.createElement('textarea');t.value=text+' '+url;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
