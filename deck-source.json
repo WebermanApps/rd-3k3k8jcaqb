@@ -1,56 +1,212 @@
 {
  "date": "2026-10-13",
  "edition": "Morning",
- "time": "2026-10-13 14:30 ICT",
+ "time": "2026-10-13 15:30 ICT",
  "title": "Research Suggestions",
  "subtitle": "Top Picks For Oct 13, 2026",
  "intro": "Ideas only. Owners build after Max approves.",
  "ideas_url": "https://webermanapps.github.io/daily-ideas/",
  "cards": [
-  {"id": "2026-10-13-1", "label": "QR Stickers For The Home Guide",
+  {
+   "id": "2026-10-13-product-plan",
+   "label": "Plan: Sell Your Agent Dashboard Setup",
+   "line": "14-card researched plan: first customer, package, price, what to build, and a cheap first test.",
+   "project": "Product Plan",
+   "owner": "Research",
+   "effort": "M",
+   "accent": "terracotta",
+   "source": {
+    "title": "Product plan deck, sources on every card",
+    "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/product-plan/"
+   },
+   "next": "Open the plan deck and vote on each card.",
+   "link": {
+    "label": "Open The Plan Deck",
+    "url": "product-plan/"
+   },
+   "mock": {
+    "type": "report",
+    "r1": "3 jobs today, 1 quote waiting",
+    "r2": "Supplier price check done",
+    "card": "Send Quote Follow-Up"
+   }
+  },
+  {
+   "id": "2026-10-13-1",
+   "label": "QR Stickers For The Home Guide",
    "line": "Home Guide is the most-used app (20 sign-ins in the last pull). A sticker puts the answer on the equipment.",
-   "project": "Home Guide", "owner": "Construction", "effort": "S", "accent": "jungle",
-   "source": {"title": "Equipment Tracker, JustTaggit, Essentify", "url": "https://equipment-tracker.com/homeowners"},
+   "project": "Home Guide",
+   "owner": "Construction",
+   "effort": "S",
+   "accent": "jungle",
+   "source": {
+    "title": "Equipment Tracker, JustTaggit, Essentify",
+    "url": "https://equipment-tracker.com/homeowners"
+   },
    "next": "Give each section its own link, then print 5 to 8 stickers.",
-   "mock": {"type": "qr", "unit": "Water Heater", "rows": ["Model And Manual", "Warranty End Date", "Flush Steps", "Who To Call"]}},
-  {"id": "2026-10-13-2", "label": "Talk Instead Of Type At Each Stop", "pair": true,
+   "mock": {
+    "type": "qr",
+    "unit": "Water Heater",
+    "rows": [
+     "Model And Manual",
+     "Warranty End Date",
+     "Flush Steps",
+     "Who To Call"
+    ]
+   }
+  },
+  {
+   "id": "2026-10-13-2",
+   "label": "Talk Instead Of Type At Each Stop",
+   "pair": true,
    "line": "Stop 1 started 8 times, 1 walk finished. Typing may be part of the drop-off (unconfirmed).",
-   "project": "Site Walk", "owner": "Construction", "effort": "M", "accent": "terracotta",
-   "source": {"title": "CompanyCam AI User Guide", "url": "https://companycam.com/resources/user-guides/ai"},
+   "project": "Site Walk",
+   "owner": "Construction",
+   "effort": "M",
+   "accent": "terracotta",
+   "source": {
+    "title": "CompanyCam AI User Guide",
+    "url": "https://companycam.com/resources/user-guides/ai"
+   },
    "next": "Pick a pattern. A uses built-in browser dictation, no AI cost.",
-   "optionA": {"label": "Mic On Each Note", "desc": "Quick Caption style: tap, speak, edit.",
-     "mock": {"type": "mic", "title": "Stop 3 Of 7", "text": "Water shutoff behind the furnace"}},
-   "optionB": {"label": "One Spoken Walkthrough", "desc": "Walkthrough Note style: voice plus photos, one document.",
-     "mock": {"type": "walk", "title": "Walkthrough Note", "rows": ["Stop 1 · 3 photos", "Stop 2 · 2 photos", "Stop 3 · 4 photos"]}}},
-  {"id": "2026-10-13-3", "label": "Missed Words Come Back Sooner",
+   "optionA": {
+    "label": "Mic On Each Note",
+    "desc": "Quick Caption style: tap, speak, edit.",
+    "mock": {
+     "type": "mic",
+     "title": "Stop 3 Of 7",
+     "text": "Water shutoff behind the furnace"
+    }
+   },
+   "optionB": {
+    "label": "One Spoken Walkthrough",
+    "desc": "Walkthrough Note style: voice plus photos, one document.",
+    "mock": {
+     "type": "walk",
+     "title": "Walkthrough Note",
+     "rows": [
+      "Stop 1 · 3 photos",
+      "Stop 2 · 2 photos",
+      "Stop 3 · 4 photos"
+     ]
+    }
+   }
+  },
+  {
+   "id": "2026-10-13-3",
+   "label": "Missed Words Come Back Sooner",
    "line": "94 active words all get the same turn. FSRS moves each word's next review by how you answered.",
-   "project": "Thai Vocab Quiz", "owner": "Thai", "effort": "M", "accent": "lagoon",
-   "source": {"title": "ts-fsrs, MIT-licensed JavaScript", "url": "https://github.com/open-spaced-repetition/ts-fsrs"},
+   "project": "Thai Vocab Quiz",
+   "owner": "Thai",
+   "effort": "M",
+   "accent": "lagoon",
+   "source": {
+    "title": "ts-fsrs, MIT-licensed JavaScript",
+    "url": "https://github.com/open-spaced-repetition/ts-fsrs"
+   },
    "next": "Run ts-fsrs in the page, progress saved in the browser.",
-   "mock": {"type": "review", "title": "Due Today", "count": "12 Words", "buttons": ["Again", "Hard", "Good", "Easy"]}},
-  {"id": "2026-10-13-4", "label": "Address Suggestions On The First Step",
+   "mock": {
+    "type": "review",
+    "title": "Due Today",
+    "count": "12 Words",
+    "buttons": [
+     "Again",
+     "Hard",
+     "Good",
+     "Easy"
+    ]
+   }
+  },
+  {
+   "id": "2026-10-13-4",
+   "label": "Address Suggestions On The First Step",
    "line": "Baymard found live address suggestions performed best, and 55% of sites lack them.",
-   "project": "Smart Upkeep", "owner": "Up Keep", "effort": "M", "accent": "saffron",
-   "source": {"title": "Baymard: Automatic Address Lookup", "url": "https://baymard.com/research-articles/automatic-address-lookup"},
+   "project": "Smart Upkeep",
+   "owner": "Up Keep",
+   "effort": "M",
+   "accent": "saffron",
+   "source": {
+    "title": "Baymard: Automatic Address Lookup",
+    "url": "https://baymard.com/research-articles/automatic-address-lookup"
+   },
    "next": "Price a paid lookup service (for example Google Places) first.",
-   "mock": {"type": "search", "title": "Step 1 Of 4", "typed": "123 Ma", "rows": ["123 Main St", "123 Maple Ave", "123 Marsh Rd"], "ok": "In Our Service Area"}},
-  {"id": "2026-10-12-1", "label": "Install Prompt Right After Sign-In",
+   "mock": {
+    "type": "search",
+    "title": "Step 1 Of 4",
+    "typed": "123 Ma",
+    "rows": [
+     "123 Main St",
+     "123 Maple Ave",
+     "123 Marsh Rd"
+    ],
+    "ok": "In Our Service Area"
+   }
+  },
+  {
+   "id": "2026-10-12-1",
+   "label": "Install Prompt Right After Sign-In",
    "line": "13 Home Guide sign-ins, but only 1 open of the add-to-home-screen option.",
-   "project": "Home Guide", "owner": "Construction", "effort": "S", "accent": "jungle",
-   "source": {"title": "web.dev: Promoting PWA Installation", "url": "https://web.dev/articles/promote-install"},
+   "project": "Home Guide",
+   "owner": "Construction",
+   "effort": "S",
+   "accent": "jungle",
+   "source": {
+    "title": "web.dev: Promoting PWA Installation",
+    "url": "https://web.dev/articles/promote-install"
+   },
    "next": "Dismissible card in preview.html first; live after Max approves.",
-   "mock": {"type": "prompt", "title": "Welcome Back", "card": "Keep This Guide On Your Phone", "yes": "Add", "no": "Not Now"}},
-  {"id": "2026-10-12-2", "label": "Shutoffs That Work Offline",
+   "mock": {
+    "type": "prompt",
+    "title": "Welcome Back",
+    "card": "Keep This Guide On Your Phone",
+    "yes": "Add",
+    "no": "Not Now"
+   }
+  },
+  {
+   "id": "2026-10-12-2",
+   "label": "Shutoffs That Work Offline",
    "line": "Shutoffs and Emergency pages matter most when power or internet is out. No service worker yet.",
-   "project": "Home Guide", "owner": "Construction", "effort": "M", "accent": "lagoon",
-   "source": {"title": "web.dev: Offline Cookbook", "url": "https://web.dev/articles/offline-cookbook"},
+   "project": "Home Guide",
+   "owner": "Construction",
+   "effort": "M",
+   "accent": "lagoon",
+   "source": {
+    "title": "web.dev: Offline Cookbook",
+    "url": "https://web.dev/articles/offline-cookbook"
+   },
    "next": "Cache Shutoffs, Emergency and Call pages; test in airplane mode.",
-   "mock": {"type": "offline", "title": "Shutoffs", "rows": ["Main Water", "Gas", "Electrical Panel"]}},
-  {"id": "2026-10-12-upkeep-handoff", "label": "Hand Off The Smart Upkeep Picks",
+   "mock": {
+    "type": "offline",
+    "title": "Shutoffs",
+    "rows": [
+     "Main Water",
+     "Gas",
+     "Electrical Panel"
+    ]
+   }
+  },
+  {
+   "id": "2026-10-12-upkeep-handoff",
+   "label": "Hand Off The Smart Upkeep Picks",
    "line": "Deep dive votes are in: 2 Love, 6 Yes, 2 No. The Love picks are ready for Up Keep.",
-   "project": "Smart Upkeep", "owner": "Up Keep", "effort": "S", "accent": "terracotta",
-   "source": {"title": "Smart Upkeep Deep Dive, Oct 12", "url": "https://webermanapps.github.io/daily-ideas/"},
+   "project": "Smart Upkeep",
+   "owner": "Up Keep",
+   "effort": "S",
+   "accent": "terracotta",
+   "source": {
+    "title": "Smart Upkeep Deep Dive, Oct 12",
+    "url": "https://webermanapps.github.io/daily-ideas/"
+   },
    "next": "Send Love and Yes picks to Up Keep to plan.",
-   "mock": {"type": "handoff", "rows": ["Partner Vetting Checklist", "Tap To Verify License"], "to": "Up Keep"}}
+   "mock": {
+    "type": "handoff",
+    "rows": [
+     "Partner Vetting Checklist",
+     "Tap To Verify License"
+    ],
+    "to": "Up Keep"
+   }
+  }
  ]
 }

@@ -102,7 +102,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 .dk-dot.on i{width:22px;border-radius:4px;background:#171717}.dk-dot.voted i{background:#737373}.dk-dot.on.voted i{background:#171717}
 @media(min-width:760px){
  .dk-card{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:10px 32px;padding:28px 32px 24px;align-items:center}
- .dk-card .dk-mock{grid-row:1/span 7}.dk-mock svg{max-width:280px}.dk-dot{width:28px}
+ .dk-card .dk-mock{grid-row:1/span 8}.dk-mock svg{max-width:280px}.dk-dot{width:28px}
  .dk-cover{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:40px}.dk-cover .dk-fan{grid-column:2;grid-row:1/span 6}.dk-fan span{max-width:210px}.dk-opt{max-width:260px}
  .dk-card h3{font-size:2.6rem}.dk-cover{grid-template-columns:1fr;min-height:480px;padding:40px 48px}.dk-cover h3{font-size:3.8rem}
  .dk-votes{max-width:520px}
@@ -196,18 +196,19 @@ function voteCard(c){
  const v=st[c.id]||{};
  const pair=c.pair?'<div class="dk-mock">'+['A','B'].map(k=>{const o=c['option'+k];return '<button type="button" class="dk-opt mw-hover'+(v.choice===k?' on':'')+'" data-pick="'+k+'" aria-pressed="'+(v.choice===k)+'">'+o.svg+'<b><i>'+k+'</i>'+e(o.label)+'</b><small>'+e(o.desc)+'</small></button>'}).join('')+'</div>':'<div class="dk-mock">'+c.svg+'</div>';
  return '<article class="dk-card" style="--a:'+e(c.accent)+'" data-id="'+e(c.id)+'">'+pair+
- '<div class="dk-meta"><span class="dk-chip acc">'+e(c.project)+'</span><span class="dk-chip">Owner: '+e(c.owner)+'</span><span class="dk-chip">Effort '+e(c.effort)+'</span>'+(c.pair?'<span class="dk-chip">A Or B</span>':'')+'</div>'+
+ '<div class="dk-meta"><span class="dk-chip acc">'+e(c.project)+'</span><span class="dk-chip">Owner: '+e(c.owner)+'</span>'+(c.effort?'<span class="dk-chip">Effort '+e(c.effort)+'</span>':'')+(c.pair?'<span class="dk-chip">A Or B</span>':'')+'</div>'+
  '<h3>'+e(c.label)+'</h3><p class="dk-line">'+e(c.line)+'</p>'+
  '<p class="dk-next"><span style="color:'+e(c.accent)+'">'+S.next+'</span><span><b>Next Step:</b> '+e(c.next)+'</span></p>'+
- '<p class="dk-src">'+S.src+'<a href="'+e(c.source.url)+'" target="_blank" rel="noopener">'+e(c.source.title)+'</a></p>'+
+ (c.link?'<p style="margin:0"><a class="dk-cta mw-hover" href="'+e(c.link.url)+'">'+e(c.link.label)+S.next+'</a></p>':'')+
+ '<p class="dk-src">'+S.src+'<a href="'+e(c.source.url)+'" target="_blank" rel="noopener">'+e(c.source.title)+'</a>'+(c.source2?'<br>'+S.src+'<a href="'+e(c.source2.url)+'" target="_blank" rel="noopener">'+e(c.source2.title)+'</a>':'')+'</p>'+
  '<div><div class="dk-votes" role="group" aria-label="Vote">'+['no','maybe','love','yes'].map(k=>'<button type="button" class="dk-v mw-hover '+k+(v.answer===k?' on':'')+'" data-vote="'+k+'">'+S[k]+LBL[k]+'</button>').join('')+'</div>'+
  '<div class="dk-sub"><button type="button" class="dk-q" data-note>'+S.note+'Add Note<span class="dk-noted'+(v.note?' show':'')+'" title="Has a note">'+S.note+'</span></button><button type="button" class="dk-q" data-skip>Skip'+S.skip+'</button></div>'+
  '<textarea class="dk-note" maxlength="500" placeholder="Private note for Max (saved on this device, sent only with Share)">'+e(v.note||'')+'</textarea></div></article>';
 }
 function tally(){const t={yes:0,love:0,maybe:0,no:0};cards.forEach(c=>{const a=(st[c.id]||{}).answer;if(a)t[a]++});return t}
-function closeCard(){const t=tally();return '<article class="dk-card dk-cover" style="--a:#05668D">'+S.bulb+'<h3>Vote On The Full List</h3><p>All of today\'s ideas, with the full why and sources, are in Daily Ideas.</p>'+
+function closeCard(){const t=tally(),C=D.close||{};return '<article class="dk-card dk-cover" style="--a:#05668D">'+S.bulb+'<h3>'+e(C.title||'Vote On The Full List')+'</h3><p>'+e(C.text||'All of today\'s ideas, with the full why and sources, are in Daily Ideas.')+'</p>'+
  '<div class="dk-tally" id="dkTally">'+['yes','love','maybe','no'].map(k=>'<div>'+t[k]+'<small>'+LBL[k]+'</small></div>').join('')+'</div>'+
- '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="dk-cta mw-hover" href="'+e(D.ideas_url)+'">Open Daily Ideas'+S.next+'</a><button type="button" class="dk-cta mw-hover" id="dkShare">'+S.share+'Send Picks To Max</button></div>'+
+ '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="dk-cta mw-hover" href="'+e(D.ideas_url)+'">'+e(C.cta||'Open Daily Ideas')+S.next+'</a><button type="button" class="dk-cta mw-hover" id="dkShare">'+S.share+'Send Picks To Max</button></div>'+
  '<p class="dk-src">Ideas only. Owners build after Max approves.</p></article>'}
 function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.subtitle)+'</h3><p>'+cards.length+' suggestions. '+e(D.intro)+'</p>'+
  '<div class="dk-hint"><span>'+S.yes+'Swipe Right = Yes</span><span>'+S.no+'Swipe Left = No</span><span>'+S.love+'Maybe And Love In The Middle</span></div>'+

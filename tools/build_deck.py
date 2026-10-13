@@ -1,10 +1,12 @@
 """Build deck.json (Research suggestions swipe deck) from deck-source.json.
-Usage: python3 tools/build_deck.py   (run from the repo root)
+Usage: python3 tools/build_deck.py [source.json] [out.json]   (run from the repo root; defaults deck-source.json -> deck.json)
+Planning decks (product-plan/) also use the types in tools/plan_mocks.py.
 Mockup types: qr, mic, walk, review, search, prompt, offline, handoff, list.
 """
 import json, os, sys, re
 sys.path.insert(0, os.path.dirname(__file__))
 from svgkit import t, h1, lbl, rect, ln, dot, btn, tag, ic, esc, INK, MUTE, LINE, SOFT, W, H, TERRA, LAGOON, JUNGLE, SAFFRON
+from plan_mocks import EXTRA
 ACC = {"terracotta": TERRA, "lagoon": LAGOON, "jungle": JUNGLE, "saffron": SAFFRON}
 _n = [0]
 def screen(body, bg="#FFFFFF"):
@@ -85,13 +87,16 @@ def mock(m, a):
         b += f'<path d="M120 152 V182" stroke="{a}" stroke-width="2.5" stroke-linecap="round"/><path d="M112 175 L120 184 L128 175" fill="none" stroke="{a}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'
         b += rect(50, 196, 140, 56, "#FFFFFF", INK, 10, 1.5) + f'<circle cx="74" cy="224" r="14" fill="{a}"/>' + t(74, 229, m["to"][0], 13, "#FFFFFF", "khand", anchor="middle") + t(96, 229, m["to"], 13, INK, "khand")
         b += lbl(120, 276, "Owner plans after approval", MUTE, 7, "middle")
+    elif k in EXTRA:
+        b += EXTRA[k](m, a)
     else:
         b += bar(m.get("title", ""), a)
         for i, s in enumerate(m.get("rows", [])): b += row(48 + i * 40, s, a)
     return screen(b, "#FFFFFF")
 def main():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    src = json.load(open(os.path.join(root, "deck-source.json")))
+    sp = sys.argv[1] if len(sys.argv) > 1 else "deck-source.json"; op = sys.argv[2] if len(sys.argv) > 2 else "deck.json"
+    src = json.load(open(os.path.join(root, sp)))
     out = {k: v for k, v in src.items() if k != "cards"}; out["cards"] = []
     for c in src["cards"]:
         a = ACC.get(c.get("accent"), JUNGLE); d = dict(c); d["accent"] = a
@@ -102,6 +107,6 @@ def main():
             d["svg"] = mock(d.pop("mock"), a)
         assert not re.search("[\U0001F300-\U0001FAFF\u2600-\u27BF]", json.dumps(d, ensure_ascii=False)), "emoji found in " + c["id"]
         out["cards"].append(d)
-    json.dump(out, open(os.path.join(root, "deck.json"), "w"), indent=1, ensure_ascii=False)
-    print("deck.json:", len(out["cards"]), "suggestion cards")
+    json.dump(out, open(os.path.join(root, op), "w"), indent=1, ensure_ascii=False)
+    print(op + ":", len(out["cards"]), "suggestion cards")
 if __name__ == "__main__": main()

@@ -22,3 +22,11 @@ Research suggestions are published as a swipe deck at the top of the page (right
 5. Before publish, screenshot at iPhone 15 393x852, MacBook Air 1470x956, 2560x1440, 1920x1080 TV, and 3840x2160 4K TV into shots/final (python3 python3 shots/shot.py http://localhost:8765/ shots/final; headless check: no sideways scroll, big TV text).
 6. Publish: git add -A && git commit -m "Update dashboard YYYY-MM-DD" && git push  (GitHub Pages redeploys in about 1 minute)
 7. Post a line to /workspace/ops/team-feed.md as Research if the change matters.
+
+## Planning Decks (separate pages, e.g. /product-plan/)
+- Folder per deck with its own index.html (deck-only copy of the main page script), deck-source.json and deck.json.
+- Build: python3 tools/build_deck.py product-plan/deck-source.json product-plan/deck.json
+- Extra mock types live in tools/plan_mocks.py: lanes, bars, prices, xlist, report, tiers, timeline, landing, persona, lock, offer.
+- Optional card fields (both pages): "source2" {title,url}, "link" {label,url} (renders an Open button), empty "effort" hides the chip; deck-level "close" {title,text,cta} sets the closing card.
+- Link each planning deck from a card at the top of deck-source.json (with "link").
+- Shots: python3 shots/plan_shot.py http://127.0.0.1:<port>/product-plan/ shots/product-plan http://127.0.0.1:<port>/
