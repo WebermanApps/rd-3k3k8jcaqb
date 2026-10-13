@@ -30,3 +30,8 @@ Research suggestions are published as a swipe deck at the top of the page (right
 - Optional card fields (both pages): "source2" {title,url}, "link" {label,url} (renders an Open button), empty "effort" hides the chip; deck-level "close" {title,text,cta} sets the closing card.
 - Link each planning deck from a card at the top of deck-source.json (with "link").
 - Shots: python3 shots/plan_shot.py http://127.0.0.1:<port>/product-plan/ shots/product-plan http://127.0.0.1:<port>/
+
+## Submit Rules (2026-10-13)
+- Submit is shown under every deck at all times, not only on the closing card. It sends the answers so far; the payload lists `answered` and `unanswered` card ids (`partial:true` when some are left).
+- After pulling a submission (`/workspace/ops/submit/pull.sh research`), carry every `unanswered` id into the next deck's deck-source.json.
+- After a send, the confirmation shows a big "Back to Deck Building" button (https://webermanapps.github.io/branding-djqmb410/decks/). Each deck header has a small "Deck Building" link.

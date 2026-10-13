@@ -27,6 +27,15 @@ ul.plain{margin:0;padding-left:18px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
 footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block;min-height:44px;line-height:44px;padding:0 8px}
 
+/* Style picks 2026-10-13 (Agent Dashboards mixed deck) */
+.report-type{font-size:1.6rem;line-height:1}  /* bank-012 B big title, no picture, compact */
+.report-body ol.rows{list-style:none;margin:0;padding:0;counter-reset:r}
+.report-body ol.rows li{counter-increment:r;display:flex;gap:12px;align-items:flex-start;margin:0 0 10px}  /* bank-015 A roomy fold-out */
+.report-body ol.rows li::before{content:counter(r);flex:0 0 28px;height:28px;display:flex;align-items:center;justify-content:center;background:#FBF3DC;border:1.5px solid #D4A017;color:#7A5C00;font:700 15px Khand,sans-serif}  /* bank-028 B numbered, bank-029 B picture rows, saffron */
+.alertbody .sec-lbl.band{background:#EAF3F7;border-left:4px solid #05668D;color:#0A0A0A;padding:8px 10px;margin:12px 0 8px}  /* bank-037/038/039 side rule + spaced caps + tinted box, color band */
+.alertbody ul.edge{list-style:none;padding:0;display:grid;gap:10px}@media(min-width:768px){.alertbody ul.edge{grid-template-columns:1fr 1fr}}  /* bank-006 A two-up, roomy */
+.alertbody ul.edge li{margin:0;padding:12px 14px;border:1px solid #E5E0D8;border-left:4px solid #C1502E;border-radius:0}  /* bank-001 B color edge, square corners */
+.chip{border-color:#05668D33}  /* bank-096 B pill chips */
 /* Update / report bar */
 #report-bar{display:none;border-bottom:1px solid var(--bd);background:var(--sec)}
 #report-bar.show{display:block}
@@ -147,6 +156,7 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
  .dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-arrow{width:3rem;height:3rem}.dk-dot{width:1.6rem;height:2.4rem}.dk-dot i{width:.45rem;height:.45rem}.dk-dot.on i{width:1.2rem}.dk-votes{max-width:30rem}.dk-note{font-size:.9rem}}
 @media(min-width:3000px){.dk-card{border-width:2px}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.62rem}.dk-src{font-size:.7rem}.dk-arrow svg,.dk-q svg,.dk-v svg,.dk-next svg,.dk-cta svg,.dk-hint svg{width:1rem;height:1rem}.dk-tally small{font-size:.5rem}}
 .dk-src a{display:inline-flex;align-items:center;min-height:44px}
+.dk-dbl{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#05668D;text-decoration:underline;text-underline-offset:3px}
 </style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"></head><body>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
@@ -155,7 +165,7 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
 <main>
 <a class="mw-hover" id="appsHome" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/" style="display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;margin:0 0 6px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a>
 <section id="deck" aria-roledescription="carousel" aria-label="Research suggestions deck" hidden>
- <div class="dk-head"><h2 id="dkName">Research Suggestions</h2><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
+ <div class="dk-head"><h2 id="dkName">Research Suggestions</h2><a class="dk-dbl" href="https://webermanapps.github.io/branding-djqmb410/decks/">Deck Building</a><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
  <div class="dk-view" id="dkView" tabindex="0" aria-label="Swipe right for Yes, left for No. Arrow keys move between slides.">
   <div class="dk-stamp y" id="dkY">Yes</div><div class="dk-stamp n" id="dkN">No</div>
   <div class="dk-track" id="dkTrack"></div>
@@ -193,7 +203,7 @@ function renderReport(r){
   const group=hasCat&&items.length>2;
   let body='';
   if(!group){
-    body=items.map(i=>'<p>'+e(i.text||'')+'</p>').join('');
+    body='<ol class="rows">'+items.map(i=>'<li><span>'+e(i.text||'')+'</span></li>').join('')+'</ol>';
   }else{
     const order=[],map={};
     items.forEach(i=>{
@@ -219,10 +229,10 @@ function renderAlerts(d){
   const chev='<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
   let body='';
   if(dec.length){
-    body+='<div class="sec-lbl">Decisions Max Owes</div><ul>'+dec.map(x=>'<li><b>'+e(x.title)+'</b> <span style="color:#737373">'+e(x.note||'')+'</span></li>').join('')+'</ul>';
+    body+='<div class="sec-lbl band">Waiting On Max</div><ul class="edge">'+dec.map(x=>'<li><b>'+e(x.title)+'</b> <span style="color:#737373">'+e(x.note||'')+'</span></li>').join('')+'</ul>';
   }
   if(open.length){
-    body+='<div class="sec-lbl">Open Items</div><ul>'+open.map(x=>'<li>'+e(x)+'</li>').join('')+'</ul>';
+    body+='<div class="sec-lbl">Latest Open Items</div><ul class="edge">'+open.map(x=>'<li>'+e(x)+'</li>').join('')+'</ul>';
   }
   host.innerHTML='<details class="alert"><summary>'+warnSvg+e(label)+chev+'</summary><div class="alertbody">'+body+'</div></details>';
 }
