@@ -1,8 +1,7 @@
 {
-  "updated": "2026-10-13 14:40 ICT",
+  "updated": "2026-10-13 14:59 ICT",
   "agent": "Research",
-  "formerly": "Vision",
-  "status": "Active. Product plan deck (sell the agent dashboard setup) published at /product-plan/ and linked from the top card of the deck.",
+  "status": "Active. New Dashboard Product Plan deck is live and featured first in today's deck.",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
   "routine": "Weekdays at 6:40 AM ICT. Sends the best pick to Grok Bot.",
   "apps": [
@@ -28,8 +27,7 @@
     }
   ],
   "open": [
-    "Hand the Smart Upkeep Love and Yes picks to Up Keep",
-    "GoatCounter refresh returned HTTP 404 on Oct 13; key or site setting needs a check"
+    "Hand the Smart Upkeep Love and Yes picks to Up Keep"
   ],
   "votes": {
     "title": "Smart Upkeep Deep Dive",
@@ -86,13 +84,35 @@
   ],
   "report": {
     "type": "Morning",
-    "time": "2026-10-13 07:00 ICT",
+    "time": "2026-10-13 14:59 ICT",
     "items": [
       {
-        "text": "Daily research done: 4 ideas in Daily Ideas (QR equipment stickers, Site Walk voice notes, Thai Vocab spaced review, Smart Upkeep address suggestions)."
+        "category": "Decks",
+        "text": "Today's suggestions deck: 8 cards plus a closing card, ready to vote."
       },
       {
-        "text": "Research dashboard launched."
+        "category": "Decks",
+        "text": "New Dashboard Product Plan deck: 14 cards."
+      },
+      {
+        "category": "Product Plan",
+        "text": "Recommends small contractors as first buyers, with done-for-you setup."
+      },
+      {
+        "category": "Product Plan",
+        "text": "Founding pilot estimate: $750 setup + $250/mo."
+      },
+      {
+        "category": "Product Plan",
+        "text": "Test: a landing page plus 10 warm talks."
+      },
+      {
+        "category": "Shipped",
+        "text": "Share button fix is live; it no longer covers content."
+      },
+      {
+        "category": "Routine",
+        "text": "New deck every weekday by 5 AM; evening recap at 18:00."
       }
     ]
   }
