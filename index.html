@@ -41,6 +41,30 @@ footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:va
 .report-group{margin-top:8px}.report-group:first-child{margin-top:0}
 .report-cat{font-family:Khand,sans-serif;font-weight:700;font-size:.95rem;color:var(--accent);margin:0 0 2px}
 .report-group ul{margin:0;padding-left:18px}.report-group li{margin:2px 0}
+/* Collapsed urgent / open-item dropdown (Max rule 2026-10-13) */
+.alert{margin:16px 0 0;border:1.5px solid var(--warn);border-radius:12px;background:#fff;max-width:720px}
+.alert summary{list-style:none;cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;padding:10px 14px;font:600 14px/1.2 Hind,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--fg)}
+.alert summary::-webkit-details-marker{display:none}
+.alert summary svg.warn{flex:0 0 auto;color:var(--warn)}
+.alert .chev{margin-left:auto;transition:transform .18s var(--ease);color:var(--mut)}
+.alert[open] .chev{transform:rotate(180deg)}
+.alert summary:hover{background:var(--sec)}
+.alert summary:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.alert:not([open])>.alertbody{display:none}
+.alertbody{padding:0 14px 14px}
+.alertbody .sec-lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600;margin:10px 0 4px}
+.alertbody .sec-lbl:first-child{margin-top:0}
+.alertbody ul{margin:0;padding-left:18px}
+.alertbody li{margin:4px 0;font-size:15px;line-height:1.4}
+/* Short Morning Report: body lives in collapsed details */
+.report-drop{margin-top:4px;border:0;background:transparent}
+.report-drop>summary{list-style:none;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:6px 0;font:600 13px/1.2 Hind,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.report-drop>summary::-webkit-details-marker{display:none}
+.report-drop .chev{transition:transform .18s var(--ease);color:var(--mut)}
+.report-drop[open] .chev{transform:rotate(180deg)}
+.report-drop>summary:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.report-drop:not([open])>.report-body{display:none}
+.report-drop .report-body{margin-top:4px}
 @media(max-width:400px){h1{font-size:2.1rem}.report-type{font-size:1.05rem}}
 
 @media(min-width:1440px){.grid .fill3{grid-column:auto}}
@@ -48,7 +72,7 @@ footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:va
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3px}
 .card,.app,.chip{overflow-wrap:anywhere}
 /* big-screen pass: 20px+ text from 1600px */
-@media(min-width:1600px){html{font-size:20px}body{font-size:20px}main,.report-inner{max-width:1480px}h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}.card{padding:24px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
+@media(min-width:1600px){html{font-size:20px}body{font-size:20px}main,.report-inner{max-width:1480px}h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}.card{padding:24px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}.alert summary{font-size:17px;min-height:56px}.alertbody li{font-size:18px}.report-drop>summary{font-size:16px;min-height:48px}}
 @media(min-width:1900px){html{font-size:20px}body{font-size:20px}main{max-width:none;padding:3vh 5vw 48px}.report-inner{max-width:none;padding:18px 5vw}
  h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}
  .grid{grid-template-columns:repeat(3,1fr);gap:24px}.card{padding:28px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
@@ -141,12 +165,12 @@ button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-heigh
 <div class="lbl">Agent Dashboard · Research</div>
 <h1>Research Command Center</h1>
 <p id="role" style="max-width:62ch"></p>
+<div id="alerts"></div>
 <div class="grid">
 <section class="card mw-hover"><h2><span class="dot"></span>Status</h2><p id="status" style="margin:0"></p><p class="lbl" style="margin:.6rem 0 0" id="upd"></p></section>
 <section class="card mw-hover"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" style="margin:0"></p></section>
 <section class="card wide fill3"><h2>Apps</h2><div id="apps"></div></section>
-<section class="card mw-hover"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg>Decisions Max Owes</h2><ul class="plain" id="dec"></ul></section>
-<section class="card mw-hover"><h2>Open Items</h2><ul class="plain" id="open"></ul></section>
+
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
 </div></main>
@@ -164,8 +188,9 @@ function renderReport(r){
   const items=r.items;
   const hasCat=items.some(i=>i&&i.category);
   const group=hasCat&&items.length>2;
+  let body='';
   if(!group){
-    $('rbody').innerHTML=items.map(i=>'<p>'+e(i.text||'')+'</p>').join('');
+    body=items.map(i=>'<p>'+e(i.text||'')+'</p>').join('');
   }else{
     const order=[],map={};
     items.forEach(i=>{
@@ -173,16 +198,36 @@ function renderReport(r){
       if(!map[c]){map[c]=[];order.push(c)}
       map[c].push(i.text||'');
     });
-    $('rbody').innerHTML=order.map(c=>'<div class="report-group"><div class="report-cat">'+e(c)+'</div><ul>'+map[c].map(t=>'<li>'+e(t)+'</li>').join('')+'</ul></div>').join('');
+    body=order.map(c=>'<div class="report-group"><div class="report-cat">'+e(c)+'</div><ul>'+map[c].map(t=>'<li>'+e(t)+'</li>').join('')+'</ul></div>').join('');
   }
+  const n=items.length;
+  const label=n===1?'1 Update':(n+' Updates');
+  $('rbody').outerHTML='<details class="report-drop"><summary>'+e(label)+'<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><div class="report-body" id="rbody">'+body+'</div></details>';
   $('report-bar').classList.add('show');
+}
+function renderAlerts(d){
+  const host=$('alerts'); if(!host)return;
+  const dec=Array.isArray(d.decisions)?d.decisions:[];
+  const open=Array.isArray(d.open)?d.open:[];
+  const n=dec.length+open.length;
+  if(!n){host.innerHTML='';return}
+  const label=n===1?'1 Open Item':(n+' Open Items');
+  const warnSvg='<svg class="warn" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg>';
+  const chev='<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  let body='';
+  if(dec.length){
+    body+='<div class="sec-lbl">Decisions Max Owes</div><ul>'+dec.map(x=>'<li><b>'+e(x.title)+'</b> <span style="color:#737373">'+e(x.note||'')+'</span></li>').join('')+'</ul>';
+  }
+  if(open.length){
+    body+='<div class="sec-lbl">Open Items</div><ul>'+open.map(x=>'<li>'+e(x)+'</li>').join('')+'</ul>';
+  }
+  host.innerHTML='<details class="alert"><summary>'+warnSvg+e(label)+chev+'</summary><div class="alertbody">'+body+'</div></details>';
 }
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
 renderReport(d.report);
+renderAlerts(d);
 $("role").textContent=d.role;$("status").textContent=d.status;$("upd").textContent='Updated '+d.updated;$("routine").textContent=d.routine;
 $("apps").innerHTML=d.apps.map(a=>'<a class="app mw-hover" href="'+e(a.url)+'">'+e(a.title)+' <span style="text-transform:none;letter-spacing:0;font-weight:400;color:#737373;flex:1;margin-left:10px">'+e(a.desc)+'</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>').join('');
-$("dec").innerHTML=d.decisions.map(x=>'<li><b>'+e(x.title)+'</b> <span style="color:#737373">'+e(x.note)+'</span></li>').join('');
-$("open").innerHTML=d.open.map(x=>'<li>'+e(x)+'</li>').join('');
 $("vt").textContent="Max's Votes: "+d.votes.title;
 $("votes").innerHTML=['Love','Yes','No'].map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+I[k]+e(t)+'</span>').join('')+'</div>').join('');
 $("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="date">'+e(x.date)+'</span><span>'+e(x.title)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
