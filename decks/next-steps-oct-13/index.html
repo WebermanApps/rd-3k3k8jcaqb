@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow">
+<title>Previous Deck: Dashboard Product Next Steps Deck, Oct 13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#0a0a0a;--pri:#171717;--sec:#f5f5f5;--mut:#737373;--bd:#e5e5e5;--love:#dc2626;--yes:#16a34a;--warn:#d97706;--accent:#0B6E4F;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Hind,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0}
+h1{font-size:2.6rem}h2{font-size:1.5rem;margin-bottom:.6rem;display:flex;gap:8px;align-items:center}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
+@media(min-width:1440px){main{max-width:1280px}}
+@media(min-width:2000px){main{max-width:1680px}}
+.lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.grid{display:grid;gap:16px;margin-top:20px}@media(min-width:768px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+@media(min-width:1440px){.grid{grid-template-columns:1fr 1fr 1fr}.wide{grid-column:1/-1}}
+.card{border:1px solid var(--bd);border-radius:.75rem;padding:18px;background:#fff}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--yes);display:inline-block}
+a.app{display:flex;justify-content:space-between;align-items:center;min-height:44px;border:2px solid var(--pri);padding:10px 14px;color:var(--fg);text-decoration:none;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+a.app svg{transition:transform .18s var(--ease)}a.app:hover svg{transform:translateX(3px)}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--bd);border-radius:999px;padding:4px 10px;margin:3px;font-size:14px}
+.row{border-top:1px solid var(--bd)}.row summary{list-style:none;cursor:pointer;min-height:44px;display:flex;gap:10px;align-items:center;padding:8px 4px}
+.row summary::-webkit-details-marker{display:none}.row summary .chev{margin-left:auto;transition:transform .18s}.row[open] .chev{transform:rotate(90deg)}
+.row ul{margin:0 0 12px;padding-left:22px;color:#262626}.date{font-family:Khand;font-weight:700;min-width:92px}
+ul.plain{margin:0;padding-left:18px}
+.mw-hover{transition:transform 180ms var(--ease),box-shadow 180ms var(--ease),background-color 180ms var(--ease)}
+.mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.02);box-shadow:0 6px 18px rgba(10,10,10,.12)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
+footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:var(--mut);text-decoration:none;display:inline-block;min-height:44px;line-height:44px;padding:0 8px}
+
+/* Update / report bar */
+#report-bar{display:none;border-bottom:1px solid var(--bd);background:var(--sec)}
+#report-bar.show{display:block}
+.report-inner{max-width:1100px;margin:0 auto;padding:14px 16px 16px;border-left:3px solid var(--accent)}
+@media(min-width:1440px){.report-inner{max-width:1280px}}
+@media(min-width:2000px){.report-inner{max-width:1680px}}
+.report-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;margin-bottom:6px}
+.report-type{font-family:Khand,sans-serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;color:var(--fg)}
+.report-time{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.report-body{font-size:15px;line-height:1.45;color:#262626}
+.report-body p{margin:0 0 4px}.report-body p:last-child{margin-bottom:0}
+.report-group{margin-top:8px}.report-group:first-child{margin-top:0}
+.report-cat{font-family:Khand,sans-serif;font-weight:700;font-size:.95rem;color:var(--accent);margin:0 0 2px}
+.report-group ul{margin:0;padding-left:18px}.report-group li{margin:2px 0}
+@media(max-width:400px){h1{font-size:2.1rem}.report-type{font-size:1.05rem}}
+
+@media(min-width:1440px){.grid .fill3{grid-column:auto}}
+/* Focus rings, large monitors, TVs */
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.card,.app,.chip{overflow-wrap:anywhere}
+/* big-screen pass: 20px+ text from 1600px */
+@media(min-width:1600px){html{font-size:20px}body{font-size:20px}main,.report-inner{max-width:1480px}h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}.card{padding:24px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
+@media(min-width:1900px){html{font-size:20px}body{font-size:20px}main{max-width:none;padding:3vh 5vw 48px}.report-inner{max-width:none;padding:18px 5vw}
+ h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}
+ .grid{grid-template-columns:repeat(3,1fr);gap:24px}.card{padding:28px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
+@media(min-width:3000px){html,body{font-size:36px}h1{font-size:3.6rem}.lbl,.report-time{font-size:26px}a.app{font-size:30px;min-height:96px}.chip{font-size:32px}.report-body{font-size:38px}.card{padding:48px;border-width:2px}.grid{gap:40px}footer{font-size:30px}footer a{min-height:80px;line-height:80px}#mwShare{font-size:28px!important;min-height:96px!important;padding:0 32px!important;min-width:280px!important}h2 svg{width:32px;height:32px}}
+/* Research suggestions swipe deck (deck.json) */
+#deck{margin:4px 0 28px}
+.dk-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:10px}
+.dk-head h2{font-size:1.5rem;margin:0}.dk-count{margin-left:auto;font-family:Khand,sans-serif;font-weight:700;font-size:1.1rem;color:var(--mut)}
+.dk-view{position:relative;overflow:hidden;border-radius:14px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.dk-track{display:flex;align-items:stretch;transition:transform 320ms var(--ease);will-change:transform}
+.dk-track.drag{transition:none}
+.dk-slide{flex:0 0 100%;min-width:0;padding:2px}
+.dk-card{position:relative;height:100%;background:#fff;border:1px solid #E5E0D8;border-radius:14px;padding:18px 16px 16px;display:grid;gap:14px;overflow:hidden}
+.dk-card:before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--a,#0B6E4F)}
+.dk-mock{display:flex;justify-content:center;gap:10px}
+.dk-mock svg{display:block;width:100%;max-width:180px;height:auto}
+.dk-fan{display:flex;justify-content:center;width:100%;padding:6px 0 4px}.dk-fan span{width:30%;max-width:150px;display:block;box-shadow:0 8px 22px rgba(10,10,10,.10);border-radius:14px;background:#fff}.dk-fan span svg{display:block;width:100%;height:auto}
+.dk-fan span:nth-child(1){transform:rotate(-7deg) translate(14%,6%)}.dk-fan span:nth-child(2){position:relative;z-index:1}.dk-fan span:nth-child(3){transform:rotate(7deg) translate(-14%,6%)}
+.dk-opt{flex:1 1 0;min-width:0;max-width:230px;border:1px solid #E5E0D8;border-radius:12px;padding:6px;background:#fff;cursor:pointer;font:inherit;color:inherit;text-align:left;display:flex;flex-direction:column;gap:6px;min-height:44px}
+.dk-opt.on{border:2px solid var(--a);padding:5px}
+.dk-opt b{font-family:Khand,sans-serif;font-size:1.05rem;line-height:1.05;display:flex;gap:6px;align-items:baseline}
+.dk-opt b i{font-style:normal;color:var(--a)}.dk-opt small{color:var(--mut);font-size:.8rem;line-height:1.3}
+.dk-meta{display:flex;flex-wrap:wrap;gap:6px}
+.dk-chip{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border:1px solid #E5E0D8;border-radius:999px;padding:3px 9px;color:#525252}
+.dk-chip.acc{border-color:var(--a);color:var(--a)}
+.dk-card h3{font-size:1.85rem;line-height:1.02;margin:0}
+.dk-line{font-size:1.08rem;line-height:1.4;margin:0;color:#262626}
+.dk-next{display:flex;gap:10px;align-items:flex-start;font-size:1rem;line-height:1.35;margin:0}
+.dk-next svg{flex:0 0 auto;margin-top:2px}
+.dk-src{font-size:.85rem;color:var(--mut);margin:0}.dk-src a{color:var(--mut);text-decoration:underline;text-decoration-color:rgba(10,10,10,.25);text-underline-offset:3px}
+.dk-src a:hover{color:var(--fg);text-decoration-color:var(--fg)}
+.dk-votes{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px}
+.dk-v{min-height:48px;border:1.5px solid #171717;background:#fff;color:#171717;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;border-radius:0;padding:0 6px}
+.dk-v.no{border-color:#A3A3A3;color:#525252}.dk-v.yes{border-color:#0B6E4F;color:#0B6E4F}
+.dk-v.on{background:#171717;color:#fff;border-color:#171717}.dk-v.yes.on{background:#0B6E4F;border-color:#0B6E4F}.dk-v.love.on{background:#fff;border-color:#DC2626;color:#DC2626;box-shadow:inset 0 0 0 1px #DC2626}
+.dk-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.dk-q{background:none;border:0;color:var(--mut);font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;min-height:44px;padding:0 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.dk-q:hover{color:var(--fg)}
+.dk-note{-webkit-user-select:text;user-select:text;touch-action:auto;display:none;width:100%;min-height:72px;border:1px solid #E5E0D8;border-radius:8px;padding:8px 10px;font:15px/1.4 Hind,system-ui,sans-serif;resize:vertical}
+.dk-note.show{display:block}.dk-noted{display:none;color:var(--a)}.dk-noted.show{display:inline-flex}
+.dk-stamp{position:absolute;top:18px;padding:4px 12px;border:2px solid;font:700 1.4rem Khand,sans-serif;text-transform:uppercase;letter-spacing:.06em;opacity:0;pointer-events:none;background:#fff;z-index:3}
+.dk-stamp.y{left:18px;color:#0B6E4F;transform:rotate(-8deg)}.dk-stamp.n{right:18px;color:#525252;transform:rotate(8deg)}
+.dk-cover{align-content:center;justify-items:start;padding:24px 22px}
+.dk-cover h3{font-size:2.6rem}.dk-cover p{margin:0;max-width:34ch;font-size:1.1rem;color:#262626}
+.dk-hint{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9rem;color:#525252}.dk-hint span{display:inline-flex;gap:6px;align-items:center}
+.dk-cta{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border:2px solid #171717;color:#171717;background:#fff;text-decoration:none;font:600 13px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.dk-tally{display:flex;gap:16px;flex-wrap:wrap}.dk-tally div{font-family:Khand,sans-serif;font-weight:700;font-size:2.2rem;line-height:1}.dk-tally small{display:block;font:600 11px Hind,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.dk-nav{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px}
+.dk-arrow{width:48px;height:48px;border:1.5px solid #171717;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:0;color:#171717}
+.dk-arrow:disabled{opacity:.45;cursor:default}
+button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-height:44px;min-width:44px}
+.dk-copyrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;margin:12px 0 0}
+#dkCopy{min-height:48px;min-width:44px}#dkCopyMsg{font-size:13px;color:var(--mut)}#dkCopyMsg:empty{display:none}
+#dkCopyBox{display:block;width:100%;min-height:160px;margin-top:10px;font:14px/1.4 Hind,system-ui,sans-serif;border:1px solid #171717;padding:10px;-webkit-user-select:text;user-select:text}#dkCopyBox[hidden]{display:none}
+@media(hover:none){.mw-hover:hover{transform:none;box-shadow:none}}
+#deck{max-width:100%;min-width:0}.dk-view{overflow:hidden;contain:paint;max-width:100%}.dk-view:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.dk-nav .dk-arrow{opacity:1;visibility:visible;flex:0 0 auto}.dk-nav .dk-arrow:disabled{opacity:.45}.dk-arrow:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.dk-dots{display:flex;gap:2px;flex-wrap:wrap;justify-content:center}
+.dk-dot{width:44px;height:44px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.dk-dot i{width:8px;height:8px;border-radius:50%;background:#D6D0C6;transition:all 180ms var(--ease)}
+.dk-dot.on i{width:22px;border-radius:4px;background:#171717}.dk-dot.voted i{background:#737373}.dk-dot.on.voted i{background:#171717}
+@media(min-width:760px){
+ .dk-card{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:10px 32px;padding:28px 32px 24px;align-items:center}
+ .dk-card .dk-mock{grid-row:1/span 8}.dk-mock svg{max-width:280px}.dk-dot{width:28px}
+ .dk-cover{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;column-gap:40px}.dk-cover .dk-fan{grid-column:2;grid-row:1/span 6}.dk-fan span{max-width:210px}.dk-opt{max-width:260px}
+ .dk-card h3{font-size:2.6rem}.dk-cover{grid-template-columns:1fr;min-height:480px;padding:40px 48px}.dk-cover h3{font-size:3.8rem}
+ .dk-votes{max-width:520px}
+}
+@media(min-width:1440px){.dk-card{min-height:560px}.dk-mock svg{max-width:320px}.dk-opt{max-width:290px}.dk-card h3{font-size:3rem}.dk-line{font-size:1.2rem}}
+@media(min-width:1600px){.dk-head h2{font-size:1.9rem}.dk-card h3{font-size:3.1rem}.dk-cover h3{font-size:4.2rem}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-card{min-height:30rem}.dk-arrow{width:3rem;height:3rem}.dk-arrow svg{width:1.4rem;height:1.4rem}}
+@media(min-width:1900px){.dk-cover>svg{width:2.2rem;height:2.2rem}.dk-hint svg{width:.9rem;height:.9rem}.dk-fan span{max-width:12rem}.dk-card{min-height:30rem;padding:2rem 3rem}.dk-mock svg{max-width:17rem}.dk-opt{max-width:15rem}.dk-card h3{font-size:3.2rem}.dk-cover h3{font-size:4.4rem}.dk-head h2{font-size:1.9rem}
+ .dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-arrow{width:3rem;height:3rem}.dk-dot{width:1.6rem;height:2.4rem}.dk-dot i{width:.45rem;height:.45rem}.dk-dot.on i{width:1.2rem}.dk-votes{max-width:30rem}.dk-note{font-size:.9rem}}
+@media(min-width:3000px){.dk-card{border-width:2px}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.62rem}.dk-src{font-size:.7rem}.dk-arrow svg,.dk-q svg,.dk-v svg,.dk-next svg,.dk-cta svg,.dk-hint svg{width:1rem;height:1rem}.dk-tally small{font-size:.5rem}}
+.dk-dbl{display:inline-flex;align-items:center;min-height:44px;padding:0 4px;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#05668D;text-decoration:underline;text-underline-offset:3px}
+</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1">.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e5e5}.tb-in{max-width:1100px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:12px;min-height:48px}.tb-home{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase}.tb-name{font:700 1.2rem/1 Khand,sans-serif}.tb-upd{margin-left:auto;font:600 12px Hind,system-ui,sans-serif;color:#737373;letter-spacing:.06em;text-transform:uppercase;text-align:right}@media(max-width:400px){.tb-upd{font-size:11px;max-width:40%}}@media(min-width:1440px){.tb-in{max-width:1280px}}@media(min-width:1600px){.tb-in{max-width:1480px;min-height:64px}.tb-home,.tb-upd{font-size:20px}.tb-name{font-size:1.5rem}}@media(min-width:3000px){.tb-home,.tb-upd{font-size:28px}}</style><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style></head><body>
+<header class="topbar"><div class="tb-in"><a class="mw-hover tb-home" href="https://webermanapps.github.io/a-2sipntzsp385oxy3/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span></div></header><script>fetch("../../data.json?"+Date.now()).then(r=>r.json()).then(d=>{document.getElementById("tbUpd").textContent="Updated "+d.updated}).catch(()=>{})</script>
+
+<main>
+<p style="margin:0 0 10px"><a href="../../" class="mw-hover" style="display:inline-flex;align-items:center;min-height:44px;color:#525252;text-decoration:none;font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px"><path d="M15 5l-7 7 7 7"/></svg>Research Dashboard</a></p>
+<section id="deck" aria-roledescription="carousel" aria-label="Previous research deck" hidden>
+ <div class="dk-head"><h2>Dashboard Product Next Steps Deck, Oct 13</h2><a class="dk-dbl" href="https://webermanapps.github.io/branding-djqmb410/decks/">Deck Building</a><span class="report-time" id="dkTime"></span><span class="dk-count" id="dkCount"></span></div>
+ <div class="dk-view" id="dkView" tabindex="0" aria-label="Swipe right for Yes, left for No. Arrow keys move between slides.">
+  <div class="dk-stamp y" id="dkY">Yes</div><div class="dk-stamp n" id="dkN">No</div>
+  <div class="dk-track" id="dkTrack"></div>
+ </div>
+ <div class="dk-nav"><button class="dk-arrow mw-hover" id="dkPrev" type="button" aria-label="Previous slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button><div class="dk-dots" id="dkDots"></div><button class="dk-arrow mw-hover" id="dkNext" type="button" aria-label="Next slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button></div>
+ <div class="dk-copyrow"><button type="button" class="dk-cta mw-hover" id="dkCopy">Copy My Answers</button><span id="dkCopyMsg" role="status" aria-live="polite"></span></div>
+ <div id="mwSubmit"></div>
+ <textarea id="dkCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
+</section>
+<p class="dk-src" style="margin-top:8px">Sources are linked on every card. Prices marked Estimate are proposals to test. Votes and notes stay on this device and go to Max only through Share.</p>
+</main>
+<div class="mw-sharerow"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></div>
+<footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
+<script>window.mwShareSummary=()=>(window.mwDeckSummary&&window.mwDeckSummary())||"";</script>
+<script>
+/* Research deck: renders deck.json. Votes and notes stay in this browser (localStorage) and go to Max only through Share. */
+(function(){
+const e=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+const S={no:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+ maybe:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9.5 9a2.6 2.6 0 1 1 3.6 2.4c-.8.4-1.1 1-1.1 1.8v.6"/><circle cx="12" cy="17.6" r=".6" fill="currentColor"/></svg>',
+ love:'<svg width="15" height="15" viewBox="0 0 24 24" fill="#DC2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',
+ yes:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>',
+ note:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg>',
+ skip:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 6l7 6-7 6M13 6l7 6-7 6"/></svg>',
+ next:'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+ src:'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>',
+ bulb:'<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/><path d="M12 3v2" stroke="#D4A017"/></svg>',
+ share:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>'};
+const LBL={no:'No',maybe:'Maybe',love:'Love',yes:'Yes'};
+let D,cards=[],slides=[],i=0,KEY,st={};
+const save=()=>{try{if(KEY)localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};addEventListener('pagehide',()=>save());document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
+function voteCard(c){
+ const v=st[c.id]||{};
+ const pair=c.pair?'<div class="dk-mock">'+['A','B'].map(k=>{const o=c['option'+k];return '<button type="button" class="dk-opt mw-hover'+(v.choice===k?' on':'')+'" data-pick="'+k+'" aria-pressed="'+(v.choice===k)+'">'+o.svg+'<b><i>'+k+'</i>'+e(o.label)+'</b><small>'+e(o.desc)+'</small></button>'}).join('')+'</div>':'<div class="dk-mock">'+c.svg+'</div>';
+ return '<article class="dk-card" style="--a:'+e(c.accent)+'" data-id="'+e(c.id)+'">'+pair+
+ '<div class="dk-meta"><span class="dk-chip acc">'+e(c.project)+'</span><span class="dk-chip">Owner: '+e(c.owner)+'</span>'+(c.effort?'<span class="dk-chip">Effort '+e(c.effort)+'</span>':'')+(c.pair?'<span class="dk-chip">A Or B</span>':'')+'</div>'+
+ '<h3>'+e(c.label)+'</h3><p class="dk-line">'+e(c.line)+'</p>'+
+ '<p class="dk-next"><span style="color:'+e(c.accent)+'">'+S.next+'</span><span><b>Next Step:</b> '+e(c.next)+'</span></p>'+
+ (c.link?'<p style="margin:0"><a class="dk-cta mw-hover" href="'+e(c.link.url)+'">'+e(c.link.label)+S.next+'</a></p>':'')+
+ '<p class="dk-src">'+S.src+'<a href="'+e(c.source.url)+'" target="_blank" rel="noopener">'+e(c.source.title)+'</a>'+(c.source2?'<br>'+S.src+'<a href="'+e(c.source2.url)+'" target="_blank" rel="noopener">'+e(c.source2.title)+'</a>':'')+'</p>'+
+ '<div><div class="dk-votes" role="group" aria-label="Vote">'+['no','maybe','love','yes'].map(k=>'<button type="button" class="dk-v mw-hover '+k+(v.answer===k?' on':'')+'" data-vote="'+k+'">'+S[k]+LBL[k]+'</button>').join('')+'</div>'+
+ '<div class="dk-sub"><button type="button" class="dk-q" data-note>'+S.note+'Add Note<span class="dk-noted'+(v.note?' show':'')+'" title="Has a note">'+S.note+'</span></button><button type="button" class="dk-q" data-skip>Skip'+S.skip+'</button></div>'+
+ '<textarea class="dk-note" maxlength="500" placeholder="Private note for Max (saved on this device, sent only with Share)">'+e(v.note||'')+'</textarea></div></article>';
+}
+function tally(){const t={yes:0,love:0,maybe:0,no:0};cards.forEach(c=>{const a=(st[c.id]||{}).answer;if(a)t[a]++});return t}
+function closeCard(){const t=tally(),C=D.close||{};return '<article class="dk-card dk-cover" style="--a:#05668D">'+S.bulb+'<h3>'+e(C.title||'Vote On The Full List')+'</h3><p>'+e(C.text||'All of today\'s ideas, with the full why and sources, are in Daily Ideas.')+'</p>'+
+ '<div class="dk-tally" id="dkTally">'+['yes','love','maybe','no'].map(k=>'<div>'+t[k]+'<small>'+LBL[k]+'</small></div>').join('')+'</div>'+
+ '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="dk-cta mw-hover" href="'+e(D.ideas_url)+'">'+e(C.cta||'Open Daily Ideas')+S.next+'</a><button type="button" class="dk-cta mw-hover" id="dkShare">'+S.share+'Send Picks To Max</button></div>'+
+ '<p class="dk-src">Ideas only. Owners build after Max approves.</p></article>'}
+function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.subtitle)+'</h3><p>'+cards.length+' suggestions. '+e(D.intro)+'</p>'+
+ '<div class="dk-hint"><span>'+S.yes+'Swipe Right = Yes</span><span>'+S.no+'Swipe Left = No</span><span>'+S.love+'Maybe And Love In The Middle</span></div>'+
+ '<button type="button" class="dk-cta mw-hover" data-skip>Start'+S.next+'</button></article>'}
+function render(){
+ slides=[{k:'title'}].concat(cards.map(c=>({k:'vote',c})),[{k:'close'}]);
+ $('dkTrack').innerHTML=slides.map(s=>'<div class="dk-slide" role="group" aria-roledescription="slide">'+(s.k=='title'?titleCard():s.k=='close'?closeCard():voteCard(s.c))+'</div>').join('');
+ $('dkDots').innerHTML=slides.map((s,n)=>'<button type="button" class="dk-dot" aria-label="Slide '+(n+1)+'" data-go="'+n+'"><i></i></button>').join('');
+ go(i,true);
+}
+function go(n,quiet){i=Math.max(0,Math.min(slides.length-1,n));$('dkTrack').style.transform='translateX('+(-i*100)+'%)';
+ $('dkCount').textContent=(i+1)+' / '+slides.length;$('dkPrev').disabled=i==0;$('dkNext').disabled=i==slides.length-1;
+ [...$('dkDots').children].forEach((d,n)=>{d.classList.toggle('on',n==i);const s=slides[n];d.classList.toggle('voted',!!(s.c&&st[s.c.id]&&st[s.c.id].answer));d.setAttribute('aria-current',n==i)});
+ [...$('dkTrack').children].forEach((el,n)=>el.setAttribute('aria-hidden',n!=i));
+ if(slides[i].k=='close'){const t=tally(),el=$('dkTally');if(el)el.innerHTML=['yes','love','maybe','no'].map(k=>'<div>'+t[k]+'<small>'+LBL[k]+'</small></div>').join('')}}
+function vote(id,ans,adv){st[id]=Object.assign(st[id]||{},{answer:ans,time:new Date().toISOString()});save();
+ const card=$('dkTrack').querySelector('[data-id="'+CSS.escape(id)+'"]');card.querySelectorAll('.dk-v').forEach(b=>b.classList.toggle('on',b.dataset.vote==ans));
+ if(adv)setTimeout(()=>go(i+1),220);else go(i)}
+window.mwCopyText=async function(text){
+ try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return 'clipboard'}}catch(_){}
+ try{const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;top:0;left:0;opacity:0;font-size:16px';document.body.appendChild(t);t.focus();t.select();t.setSelectionRange(0,text.length);const ok=document.execCommand('copy');t.remove();if(ok)return 'exec'}catch(_){}
+ return 'manual'};
+function copyAnswers(){const txt=(window.mwDeckSummary&&window.mwDeckSummary())||'No answers yet.';const box=$('dkCopyBox'),msg=$('dkCopyMsg');
+ window.mwCopyText(txt+'\n'+location.href.split('#')[0]).then(how=>{if(how=='manual'){box.value=txt;box.hidden=false;box.focus();box.select();msg.textContent='Select the text below and copy it.'}else{box.hidden=true;msg.textContent='Copied.';setTimeout(()=>{msg.textContent=''},2200)}})}
+function wire(){
+ $('dkCopy').onclick=copyAnswers;
+ $('dkPrev').onclick=()=>go(i-1);$('dkNext').onclick=()=>go(i+1);
+ $('dkDots').onclick=ev=>{const b=ev.target.closest('[data-go]');if(b)go(+b.dataset.go)};
+ $('dkView').addEventListener('keydown',ev=>{if(ev.target.tagName=='TEXTAREA')return;if(ev.key=='ArrowRight'){go(i+1);ev.preventDefault()}if(ev.key=='ArrowLeft'){go(i-1);ev.preventDefault()}});
+ document.addEventListener('keydown',ev=>{if(document.activeElement===document.body&&(ev.key=='ArrowRight'||ev.key=='ArrowLeft')){go(i+(ev.key=='ArrowRight'?1:-1))}});
+ $('dkTrack').addEventListener('click',ev=>{const t=ev.target;const card=t.closest('[data-id]');
+  if(t.closest('[data-skip]')){go(i+1);return}
+  if(t.closest('#dkShare')){document.getElementById('mwShare').click();return}
+  if(!card)return;const id=card.dataset.id;
+  const v=t.closest('[data-vote]');if(v){vote(id,v.dataset.vote,true);return}
+  const p=t.closest('[data-pick]');if(p){st[id]=Object.assign(st[id]||{},{choice:p.dataset.pick,time:new Date().toISOString()});save();card.querySelectorAll('.dk-opt').forEach(b=>{const on=b===p;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});return}
+  if(t.closest('[data-note]')){const ta=card.querySelector('.dk-note');ta.classList.toggle('show');if(ta.classList.contains('show'))ta.focus()}});
+ $('dkTrack').addEventListener('input',ev=>{const ta=ev.target;if(!ta.classList.contains('dk-note'))return;const id=ta.closest('[data-id]').dataset.id;
+  st[id]=Object.assign(st[id]||{},{note:ta.value,time:new Date().toISOString()});save();ta.closest('[data-id]').querySelector('.dk-noted').classList.toggle('show',!!ta.value.trim())});
+ // swipe: on a suggestion, right = Yes, left = No; on the title and closing slides it just moves
+ const view=$('dkView'),tr=$('dkTrack');let x0=null,y0=0,dx=0,lock=null;
+ const NOSWIPE='button,a,input,textarea,select,label,[contenteditable],[data-vote],[data-pick],[data-note]';
+ view.addEventListener('pointerdown',ev=>{if(ev.pointerType=='mouse'&&ev.button!==0)return;if(ev.target.closest(NOSWIPE))return;x0=ev.clientX;y0=ev.clientY;dx=0;lock=null});
+ view.addEventListener('pointermove',ev=>{if(x0==null)return;dx=ev.clientX-x0;const dy=ev.clientY-y0;
+  if(lock==null&&(Math.abs(dx)>8||Math.abs(dy)>8))lock=Math.abs(dx)>Math.abs(dy)?'x':'y';if(lock!='x')return;
+  tr.classList.add('drag');tr.style.transform='translateX(calc('+(-i*100)+'% + '+dx+'px))';
+  if(slides[i].k=='vote'){const o=Math.min(1,Math.abs(dx)/90);$('dkY').style.opacity=dx>0?o:0;$('dkN').style.opacity=dx<0?o:0}});
+ const end=()=>{if(x0==null)return;if(lock!='x'){x0=null;return}tr.classList.remove('drag');$('dkY').style.opacity=0;$('dkN').style.opacity=0;const d=dx;x0=null;
+  if(lock=='x'&&Math.abs(d)>60){const s=slides[i];if(s.k=='vote'){vote(s.c.id,d>0?'yes':'no',false);go(i+1)}else go(i+(d<0?1:-1))}else go(i)};
+ view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('pointerleave',end);
+}
+window.mwDeckSummary=function(){if(!D)return'';const lines=[];const t=tally();
+ lines.push((D.name||D.title||'Research deck')+' '+D.date+': '+t.yes+' Yes, '+t.love+' Love, '+t.maybe+' Maybe, '+t.no+' No');
+ cards.forEach(c=>{const v=st[c.id];if(!v||(!v.answer&&!v.note&&!v.choice))return;
+  lines.push('- '+c.label+': '+(v.answer?LBL[v.answer]:'No vote')+(v.choice?' (pick '+v.choice+': '+c['option'+v.choice].label+')':'')+(v.note?' | Note: '+v.note.trim():''))});
+ return lines.join('\n')};
+fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY=d.key||('rd-deck-'+d.date);try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
+ $('dkTime').textContent=d.edition+' · '+d.time;render();wire();$('deck').hidden=false;
+ window.dispatchEvent(new Event('mw-deck-ready'))}).catch(()=>{});
+})();
+</script>
+<style id="mw-share-css">
+:root{--mw-ease:cubic-bezier(.2,.8,.2,1);--mw-dur:180ms}
+.mw-hover{transition:transform var(--mw-dur) var(--mw-ease),box-shadow var(--mw-dur) var(--mw-ease),background-color var(--mw-dur) var(--mw-ease)}
+.mw-hover:hover,.mw-hover:focus-visible{transform:translateY(-1px) scale(1.03);box-shadow:0 6px 18px rgba(10,10,10,.12)}
+.mw-hover:active{transform:scale(.98)}
+@media (prefers-reduced-motion:reduce){.mw-hover,.mw-hover:hover{transition:none;transform:none}}
+.mw-sharerow{display:flex;justify-content:center;align-items:center;position:relative;margin:32px 16px 0;padding:0}
+#mwShare{position:static;z-index:auto;min-height:44px;min-width:160px;padding:0 20px;background:#fff;color:#171717;border:1px solid #171717;border-radius:0;font-family:Hind,system-ui,sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+#mwShareMsg{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);z-index:2;background:#fff;border:1px solid #e5e5e5;color:#0a0a0a;padding:6px 10px;font:13px Hind,system-ui,sans-serif;display:none;white-space:nowrap}
+</style>
+<script>
+(function(){const b=document.getElementById('mwShare'),msg=document.getElementById('mwShareMsg');
+b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.title;const sum=(window.mwShareSummary&&window.mwShareSummary())||'';const text=(sum?sum+'\n':'')+title;
+ if(navigator.share){try{await navigator.share({title,text,url});return}catch(e){if(e&&e.name=='AbortError')return}}
+ if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(text+' '+url);return}
+ if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
+ msg.style.display='block';setTimeout(()=>msg.style.display='none',1800)}})();
+</script>
+<script src="../../submit.js?v=pw1"></script>
+<script>(function(){function g(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(_){return {}}}
+try{save()}catch(_){}
+MWSubmit.button(document.getElementById('mwSubmit'),{agent:'research',app:'research-dashboard',deck:'2026-10-13',
+getResults:function(){try{save()}catch(_){}return {'rd-deck-2026-10-13':g('rd-deck-2026-10-13'),'rd-deck-2026-10-13-product-plan':g('rd-deck-2026-10-13-product-plan')}},
+getNotes:function(){return ''}});})();</script>
+<script src="../../ptr.js" defer></script>
+</body></html>

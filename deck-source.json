@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-13",
-  "key": "rd-deck-2026-10-13-dashboard-next-steps",
-  "name": "Dashboard Product Next Steps Deck",
-  "edition": "Evening",
-  "time": "2026-10-13 18:05 ICT",
+  "date": "2026-10-14",
+  "key": "rd-deck-2026-10-14-checkout-next-steps",
+  "name": "Checkout And Next Steps Deck",
+  "edition": "Morning",
+  "time": "2026-10-14 04:55 ICT",
   "title": "Research Suggestions",
-  "subtitle": "Evening Recap, Oct 13",
-  "intro": "Today you Loved the dashboard product plan. These 9 next steps are still open for your votes. Ideas only; owners build after Max approves.",
+  "subtitle": "Top Picks For Oct 14, 2026",
+  "intro": "One new pick on where to sell the dashboard setup, plus the 9 next steps still waiting on your vote. Ideas only; owners build after Max approves.",
   "ideas_url": "decks/",
   "close": {
     "title": "Send Your Picks",
@@ -14,6 +14,81 @@
     "cta": "Previous Decks"
   },
   "cards": [
+    {
+      "id": "2026-10-14-r1-checkout",
+      "label": "Where To Sell The Setup",
+      "line": "Gumroad takes 10% + 50 cents per direct sale. Lemon Squeezy takes 5% + 50 cents. Both act as merchant of record and handle sales tax for you.",
+      "project": "Dashboard Product",
+      "owner": "Research",
+      "effort": "S",
+      "accent": "saffron",
+      "source": {
+        "title": "Gumroad pricing",
+        "url": "https://gumroad.com/pricing"
+      },
+      "source2": {
+        "title": "Lemon Squeezy pricing",
+        "url": "https://www.lemonsqueezy.com/pricing"
+      },
+      "next": "Pick one checkout for the first paid test, after the platform terms answer comes back.",
+      "pair": true,
+      "optionA": {
+        "label": "Gumroad",
+        "desc": "10% + 50 cents direct, 30% via its Discover marketplace. No monthly fee.",
+        "mock": {
+          "type": "prices",
+          "title": "Gumroad",
+          "sub": "Published Prices, Oct 14",
+          "hl": 0,
+          "rows": [
+            [
+              "Direct sale fee",
+              "10% + $0.50"
+            ],
+            [
+              "Discover marketplace",
+              "30%"
+            ],
+            [
+              "Monthly fee",
+              "None"
+            ],
+            [
+              "Sales tax",
+              "Handled"
+            ]
+          ]
+        }
+      },
+      "optionB": {
+        "label": "Lemon Squeezy",
+        "desc": "5% + 50 cents per sale, subscriptions and license keys built in. No monthly fee.",
+        "mock": {
+          "type": "prices",
+          "title": "Lemon Squeezy",
+          "sub": "Published Prices, Oct 14",
+          "hl": 0,
+          "rows": [
+            [
+              "Sale fee",
+              "5% + $0.50"
+            ],
+            [
+              "Subscriptions",
+              "Included"
+            ],
+            [
+              "Monthly fee",
+              "None"
+            ],
+            [
+              "Sales tax",
+              "Handled"
+            ]
+          ]
+        }
+      }
+    },
     {
       "id": "2026-10-13-n1-terms",
       "label": "Stay Inside The Agent Platform Terms",
