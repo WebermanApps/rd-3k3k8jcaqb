@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-13 17:45 ICT",
+  "updated": "2026-10-13 18:05 ICT",
   "agent": "Research",
-  "status": "Active. New Dashboard Product Next Steps Deck (9 cards) is live at the top, built from Max's 17:27 votes.",
+  "status": "Evening Recap live. Dashboard Product Next Steps Deck still open for your votes.",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
   "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
   "apps": [
@@ -98,36 +98,28 @@
     }
   ],
   "report": {
-    "type": "Morning",
-    "time": "2026-10-13 17:45 ICT",
+    "type": "Evening",
+    "time": "2026-10-13 18:05 ICT",
     "items": [
       {
-        "category": "Decks",
-        "text": "New: Dashboard Product Next Steps Deck, 9 cards from your Oct 13 picks. Earlier decks are under Previous Decks."
+        "category": "Today",
+        "text": "Morning research: QR stickers, Site Walk voice notes, Thai missed words, Smart Upkeep address suggestions. Best morning pick was QR stickers for future home guides."
       },
       {
-        "category": "Decks",
-        "text": "Product Plan deck (14 cards) is still open under Previous Decks."
+        "category": "Today",
+        "text": "You Loved the agent-dashboard product plan. Published Dashboard Product Next Steps Deck (9 cards: platform terms A/B, waitlist tools, name A/B, pilot offer, demo recording, intake, plus QR sheet, free address lookup, Thai word audio)."
       },
       {
-        "category": "Product Plan",
-        "text": "Recommends small contractors as first buyers, with done-for-you setup."
+        "category": "Today",
+        "text": "Share button moved into page flow; pull-to-refresh on Research and Daily Ideas; Apps Home link added."
       },
       {
-        "category": "Product Plan",
-        "text": "Founding pilot estimate: $750 setup + $250/mo."
+        "category": "Open",
+        "text": "Next Steps deck is still open for your votes. Ask the agent platform provider in writing whether a done-for-you client setup is allowed before any money changes hands."
       },
       {
-        "category": "Product Plan",
-        "text": "Test: a landing page plus 10 warm talks."
-      },
-      {
-        "category": "Shipped",
-        "text": "Share button fix is live; it no longer covers content."
-      },
-      {
-        "category": "Routine",
-        "text": "New deck every weekday by 5 AM; evening recap at 18:00."
+        "category": "Tomorrow",
+        "text": "Weekday Morning Deck by 5:00 AM with fresh suggestions that build on tonight's votes if you submit any. Product-plan next steps stay parked until you vote."
       }
     ]
   }
