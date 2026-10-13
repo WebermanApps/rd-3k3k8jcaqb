@@ -33,4 +33,5 @@ footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:va
 <div class="sharerow"><button id="mwShare" class="mw-hover" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button></div>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>document.getElementById('mwShare').onclick=async function(){var u=location.href.split('#')[0],t=document.title;if(navigator.share){try{await navigator.share({title:t,url:u});return}catch(e){if(e&&e.name=='AbortError')return}}try{await navigator.clipboard.writeText(t+' '+u);this.lastChild.textContent='Copied'}catch(_){}};</script>
+<script src="../ptr.js" defer></script>
 </body></html>
