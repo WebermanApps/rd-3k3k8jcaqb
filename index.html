@@ -47,6 +47,8 @@ footer{text-align:center;padding:24px 16px 40px;font-size:13px}footer a{color:va
 /* Focus rings, large monitors, TVs */
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #171717;outline-offset:3px}
 .card,.app,.chip{overflow-wrap:anywhere}
+/* big-screen pass: 20px+ text from 1600px */
+@media(min-width:1600px){html{font-size:20px}body{font-size:20px}main,.report-inner{max-width:1480px}h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}.card{padding:24px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
 @media(min-width:1900px){html{font-size:20px}body{font-size:20px}main{max-width:none;padding:3vh 5vw 48px}.report-inner{max-width:none;padding:18px 5vw}
  h1{font-size:3.4rem}h2{font-size:1.9rem}.lbl,.report-time{font-size:15px}a.app{font-size:17px;min-height:60px}.chip{font-size:18px}.report-body{font-size:21px}.report-type{font-size:1.6rem}
  .grid{grid-template-columns:repeat(3,1fr);gap:24px}.card{padding:28px}footer{font-size:17px}#mwShare{font-size:16px!important;min-height:56px!important}}
@@ -85,7 +87,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 .dk-sub{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .dk-q{background:none;border:0;color:var(--mut);font:600 12px Hind,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;min-height:44px;padding:0 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
 .dk-q:hover{color:var(--fg)}
-.dk-note{display:none;width:100%;min-height:72px;border:1px solid #E5E0D8;border-radius:8px;padding:8px 10px;font:15px/1.4 Hind,system-ui,sans-serif;resize:vertical}
+.dk-note{-webkit-user-select:text;user-select:text;touch-action:auto;display:none;width:100%;min-height:72px;border:1px solid #E5E0D8;border-radius:8px;padding:8px 10px;font:15px/1.4 Hind,system-ui,sans-serif;resize:vertical}
 .dk-note.show{display:block}.dk-noted{display:none;color:var(--a)}.dk-noted.show{display:inline-flex}
 .dk-stamp{position:absolute;top:18px;padding:4px 12px;border:2px solid;font:700 1.4rem Khand,sans-serif;text-transform:uppercase;letter-spacing:.06em;opacity:0;pointer-events:none;background:#fff;z-index:3}
 .dk-stamp.y{left:18px;color:#0B6E4F;transform:rotate(-8deg)}.dk-stamp.n{right:18px;color:#525252;transform:rotate(8deg)}
@@ -96,9 +98,16 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 .dk-tally{display:flex;gap:16px;flex-wrap:wrap}.dk-tally div{font-family:Khand,sans-serif;font-weight:700;font-size:2.2rem;line-height:1}.dk-tally small{display:block;font:600 11px Hind,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
 .dk-nav{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px}
 .dk-arrow{width:48px;height:48px;border:1.5px solid #171717;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:0;color:#171717}
-.dk-arrow:disabled{opacity:.3;cursor:default}
+.dk-arrow:disabled{opacity:.45;cursor:default}
+button,a.dk-cta{touch-action:manipulation}.dk-q{min-width:44px}.dk-opt{min-height:44px;min-width:44px}
+.dk-copyrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;margin:12px 0 0}
+#dkCopy{min-height:48px;min-width:44px}#dkCopyMsg{font-size:13px;color:var(--mut)}#dkCopyMsg:empty{display:none}
+#dkCopyBox{display:block;width:100%;min-height:160px;margin-top:10px;font:14px/1.4 Hind,system-ui,sans-serif;border:1px solid #171717;padding:10px;-webkit-user-select:text;user-select:text}#dkCopyBox[hidden]{display:none}
+@media(hover:none){.mw-hover:hover{transform:none;box-shadow:none}}
+#deck{max-width:100%;min-width:0}.dk-view{overflow:hidden;contain:paint;max-width:100%}.dk-view:focus-visible{outline:3px solid #171717;outline-offset:3px}
+.dk-nav .dk-arrow{opacity:1;visibility:visible;flex:0 0 auto}.dk-nav .dk-arrow:disabled{opacity:.45}.dk-arrow:focus-visible{outline:3px solid #171717;outline-offset:3px}
 .dk-dots{display:flex;gap:2px;flex-wrap:wrap;justify-content:center}
-.dk-dot{width:24px;height:44px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.dk-dot{width:44px;height:44px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
 .dk-dot i{width:8px;height:8px;border-radius:50%;background:#D6D0C6;transition:all 180ms var(--ease)}
 .dk-dot.on i{width:22px;border-radius:4px;background:#171717}.dk-dot.voted i{background:#737373}.dk-dot.on.voted i{background:#171717}
 @media(min-width:760px){
@@ -109,6 +118,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
  .dk-votes{max-width:520px}
 }
 @media(min-width:1440px){.dk-card{min-height:560px}.dk-mock svg{max-width:320px}.dk-opt{max-width:290px}.dk-card h3{font-size:3rem}.dk-line{font-size:1.2rem}}
+@media(min-width:1600px){.dk-head h2{font-size:1.9rem}.dk-card h3{font-size:3.1rem}.dk-cover h3{font-size:4.2rem}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-card{min-height:30rem}.dk-arrow{width:3rem;height:3rem}.dk-arrow svg{width:1.4rem;height:1.4rem}}
 @media(min-width:1900px){.dk-cover>svg{width:2.2rem;height:2.2rem}.dk-hint svg{width:.9rem;height:.9rem}.dk-fan span{max-width:12rem}.dk-card{min-height:30rem;padding:2rem 3rem}.dk-mock svg{max-width:17rem}.dk-opt{max-width:15rem}.dk-card h3{font-size:3.2rem}.dk-cover h3{font-size:4.4rem}.dk-head h2{font-size:1.9rem}
  .dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.8rem}.dk-v,.dk-cta{min-height:3rem}.dk-arrow{width:3rem;height:3rem}.dk-dot{width:1.6rem;height:2.4rem}.dk-dot i{width:.45rem;height:.45rem}.dk-dot.on i{width:1.2rem}.dk-votes{max-width:30rem}.dk-note{font-size:.9rem}}
 @media(min-width:3000px){.dk-card{border-width:2px}.dk-chip,.dk-v,.dk-q,.dk-cta{font-size:.62rem}.dk-src{font-size:.7rem}.dk-arrow svg,.dk-q svg,.dk-v svg,.dk-next svg,.dk-cta svg,.dk-hint svg{width:1rem;height:1rem}.dk-tally small{font-size:.5rem}}
@@ -125,6 +135,8 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
   <div class="dk-track" id="dkTrack"></div>
  </div>
  <div class="dk-nav"><button class="dk-arrow mw-hover" id="dkPrev" type="button" aria-label="Previous slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button><div class="dk-dots" id="dkDots"></div><button class="dk-arrow mw-hover" id="dkNext" type="button" aria-label="Next slide"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button></div>
+ <div class="dk-copyrow"><button type="button" class="dk-cta mw-hover" id="dkCopy">Copy My Answers</button><span id="dkCopyMsg" role="status" aria-live="polite"></span></div>
+ <textarea id="dkCopyBox" readonly hidden aria-label="Your answers, select and copy"></textarea>
 </section>
 <div class="lbl">Agent Dashboard · Research</div>
 <h1>Research Command Center</h1>
@@ -193,7 +205,7 @@ const S={no:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke=
  share:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>'};
 const LBL={no:'No',maybe:'Maybe',love:'Love',yes:'Yes'};
 let D,cards=[],slides=[],i=0,KEY,st={};
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};
+const save=()=>{try{if(KEY)localStorage.setItem(KEY,JSON.stringify(st))}catch(_){}};addEventListener('pagehide',()=>save());document.addEventListener('visibilitychange',()=>{if(document.hidden)save()});
 function voteCard(c){
  const v=st[c.id]||{};
  const pair=c.pair?'<div class="dk-mock">'+['A','B'].map(k=>{const o=c['option'+k];return '<button type="button" class="dk-opt mw-hover'+(v.choice===k?' on':'')+'" data-pick="'+k+'" aria-pressed="'+(v.choice===k)+'">'+o.svg+'<b><i>'+k+'</i>'+e(o.label)+'</b><small>'+e(o.desc)+'</small></button>'}).join('')+'</div>':'<div class="dk-mock">'+c.svg+'</div>';
@@ -229,7 +241,14 @@ function go(n,quiet){i=Math.max(0,Math.min(slides.length-1,n));$('dkTrack').styl
 function vote(id,ans,adv){st[id]=Object.assign(st[id]||{},{answer:ans,time:new Date().toISOString()});save();
  const card=$('dkTrack').querySelector('[data-id="'+CSS.escape(id)+'"]');card.querySelectorAll('.dk-v').forEach(b=>b.classList.toggle('on',b.dataset.vote==ans));
  if(adv)setTimeout(()=>go(i+1),220);else go(i)}
+window.mwCopyText=async function(text){
+ try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return 'clipboard'}}catch(_){}
+ try{const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.cssText='position:fixed;top:0;left:0;opacity:0;font-size:16px';document.body.appendChild(t);t.focus();t.select();t.setSelectionRange(0,text.length);const ok=document.execCommand('copy');t.remove();if(ok)return 'exec'}catch(_){}
+ return 'manual'};
+function copyAnswers(){const txt=(window.mwDeckSummary&&window.mwDeckSummary())||'No answers yet.';const box=$('dkCopyBox'),msg=$('dkCopyMsg');
+ window.mwCopyText(txt+'\n'+location.href.split('#')[0]).then(how=>{if(how=='manual'){box.value=txt;box.hidden=false;box.focus();box.select();msg.textContent='Select the text below and copy it.'}else{box.hidden=true;msg.textContent='Copied.';setTimeout(()=>{msg.textContent=''},2200)}})}
 function wire(){
+ $('dkCopy').onclick=copyAnswers;
  $('dkPrev').onclick=()=>go(i-1);$('dkNext').onclick=()=>go(i+1);
  $('dkDots').onclick=ev=>{const b=ev.target.closest('[data-go]');if(b)go(+b.dataset.go)};
  $('dkView').addEventListener('keydown',ev=>{if(ev.target.tagName=='TEXTAREA')return;if(ev.key=='ArrowRight'){go(i+1);ev.preventDefault()}if(ev.key=='ArrowLeft'){go(i-1);ev.preventDefault()}});
@@ -245,12 +264,13 @@ function wire(){
   st[id]=Object.assign(st[id]||{},{note:ta.value,time:new Date().toISOString()});save();ta.closest('[data-id]').querySelector('.dk-noted').classList.toggle('show',!!ta.value.trim())});
  // swipe: on a suggestion, right = Yes, left = No; on the title and closing slides it just moves
  const view=$('dkView'),tr=$('dkTrack');let x0=null,y0=0,dx=0,lock=null;
- view.addEventListener('pointerdown',ev=>{if(ev.target.closest('button,a,textarea'))return;x0=ev.clientX;y0=ev.clientY;dx=0;lock=null});
+ const NOSWIPE='button,a,input,textarea,select,label,[contenteditable],[data-vote],[data-pick],[data-note]';
+ view.addEventListener('pointerdown',ev=>{if(ev.pointerType=='mouse'&&ev.button!==0)return;if(ev.target.closest(NOSWIPE))return;x0=ev.clientX;y0=ev.clientY;dx=0;lock=null});
  view.addEventListener('pointermove',ev=>{if(x0==null)return;dx=ev.clientX-x0;const dy=ev.clientY-y0;
   if(lock==null&&(Math.abs(dx)>8||Math.abs(dy)>8))lock=Math.abs(dx)>Math.abs(dy)?'x':'y';if(lock!='x')return;
   tr.classList.add('drag');tr.style.transform='translateX(calc('+(-i*100)+'% + '+dx+'px))';
   if(slides[i].k=='vote'){const o=Math.min(1,Math.abs(dx)/90);$('dkY').style.opacity=dx>0?o:0;$('dkN').style.opacity=dx<0?o:0}});
- const end=()=>{if(x0==null)return;tr.classList.remove('drag');$('dkY').style.opacity=0;$('dkN').style.opacity=0;const d=dx;x0=null;
+ const end=()=>{if(x0==null)return;if(lock!='x'){x0=null;return}tr.classList.remove('drag');$('dkY').style.opacity=0;$('dkN').style.opacity=0;const d=dx;x0=null;
   if(lock=='x'&&Math.abs(d)>60){const s=slides[i];if(s.k=='vote'){vote(s.c.id,d>0?'yes':'no',false);go(i+1)}else go(i+(d<0?1:-1))}else go(i)};
  view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('pointerleave',end);
 }
@@ -280,7 +300,7 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
 ':'')+title;
  if(navigator.share){try{await navigator.share({title,text,url});return}catch(e){if(e&&e.name=='AbortError')return}}
  if(/iPhone|iPad|Android/i.test(navigator.userAgent)){location.href='sms:?&body='+encodeURIComponent(text+' '+url);return}
- try{await navigator.clipboard.writeText(text+' '+url)}catch(e){const t=document.createElement('textarea');t.value=text+' '+url;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
+ if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
  msg.style.display='block';setTimeout(()=>msg.style.display='none',1800)}})();
 </script>
 </body></html>
