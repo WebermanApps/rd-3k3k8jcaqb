@@ -1,0 +1,26 @@
+{
+  "updated": "2026-10-14 18:05 ICT",
+  "routines": [
+    {
+      "name": "Daily App Improvement Research",
+      "group": "Reports",
+      "schedule_plain": "Weekdays At 4:41 AM ICT (Morning Report Plus A New Deck)",
+      "status": "on",
+      "last_run": "Today 4:52 AM"
+    },
+    {
+      "name": "Research Evening Report",
+      "group": "Reports",
+      "schedule_plain": "Weekdays At 6:00 PM ICT",
+      "status": "on",
+      "last_run": "Today 6:05 PM"
+    },
+    {
+      "name": "Research Picks Watcher",
+      "group": "Event/Listener",
+      "schedule_plain": "Every 15 Minutes (Reads Deck Submissions, Routes Picks, Builds A Fresh Deck)",
+      "status": "on",
+      "last_run": "Not Recorded Yet"
+    }
+  ]
+}

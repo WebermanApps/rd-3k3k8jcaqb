@@ -2,11 +2,11 @@
  "date": "2026-10-14",
  "key": "rd-deck-2026-10-14-checkout-next-steps",
  "name": "Checkout And Next Steps Deck",
- "edition": "Morning",
- "time": "2026-10-14 04:52 ICT",
+ "edition": "Evening",
+ "time": "2026-10-14 18:05 ICT",
  "title": "Research Suggestions",
- "subtitle": "Top Picks For Oct 14, 2026",
- "intro": "One new pick on where to sell the dashboard setup, plus the 9 next steps still waiting on your vote. Ideas only; owners build after Max approves.",
+ "subtitle": "Evening Recap, Oct 14",
+ "intro": "Evening recap: Checkout deck, pricing forecast, and founder security brief landed today. All 10 cards are still waiting on your votes (freeze held; no real picks yet). Plus one new card from the UpKeep pricing work.",
  "ideas_url": "decks/",
  "close": {
   "title": "Send Your Picks",
@@ -221,6 +221,25 @@
    },
    "next": "Check that Max's iPhone lists a Thai voice; show text only when it does not.",
    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" role=\"img\" aria-hidden=\"true\"><clipPath id=\"mk13\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#mk13)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"4\" rx=\"0\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"30\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Thai Vocab</text><text x=\"14\" y=\"48\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">MISSED WORD, BACK AGAIN</text><rect x=\"14\" y=\"58\" width=\"212\" height=\"104\" rx=\"10\" fill=\"#F5F3EF\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"104\" font-size=\"26\" fill=\"#0A0A0A\" text-anchor=\"middle\" font-family=\"Khand\" font-weight=\"700\" >word</text><text x=\"120\" y=\"130\" font-size=\"8.5\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"400\" >Tap to hear it</text><circle cx=\"120\" cy=\"190\" r=\"22\" fill=\"#05668D\"/><g transform=\"translate(108,178) scale(1.0)\"><path d=\"M4 9 H8 L13 5 V19 L8 15 H4 Z\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M16 9 Q18 12 16 15 M18.5 6.5 Q22.5 12 18.5 17.5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2\" stroke-linecap=\"round\"/></g><rect x=\"56\" y=\"233.0\" width=\"5\" height=\"6\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"66\" y=\"231.0\" width=\"5\" height=\"10\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"76\" y=\"228.0\" width=\"5\" height=\"16\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"86\" y=\"232.0\" width=\"5\" height=\"8\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"96\" y=\"226.0\" width=\"5\" height=\"20\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"106\" y=\"230.0\" width=\"5\" height=\"12\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"116\" y=\"224.0\" width=\"5\" height=\"24\" rx=\"2\" fill=\"#05668D\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"126\" y=\"230.0\" width=\"5\" height=\"12\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"136\" y=\"226.0\" width=\"5\" height=\"20\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"146\" y=\"232.0\" width=\"5\" height=\"8\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"156\" y=\"228.0\" width=\"5\" height=\"16\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"166\" y=\"231.0\" width=\"5\" height=\"10\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><rect x=\"176\" y=\"233.0\" width=\"5\" height=\"6\" rx=\"2\" fill=\"#D6D0C6\" stroke=\"none\" stroke-width=\"1\" /><text x=\"120\" y=\"272\" font-size=\"7\" fill=\"#525252\" text-anchor=\"middle\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">VOICE FROM THE DEVICE</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>"
+  },
+  {
+   "id": "2026-10-14-r2-upkeep-spend",
+   "label": "Smart Upkeep Base Spend",
+   "line": "Base-case mix puts average member spend near $228 a month (tier about $167 plus add-ons about $61). Plus is the likely middle pick; lawn attach leads add-ons at Detroit avg $52.90 per cut (LawnStarter).",
+   "project": "Smart Upkeep",
+   "owner": "Up Keep",
+   "effort": "M",
+   "accent": "#0B6E4F",
+   "source": {
+    "title": "LawnStarter: Detroit lawn mowing prices",
+    "url": "https://www.lawnstarter.com/mi"
+   },
+   "source2": {
+    "title": "Compromise effect / middle option share",
+    "url": "https://www.buynomics.com/glossary-blog/middleoption"
+   },
+   "next": "Use $228/mo as the base planning number; confirm Plus as the recommended middle tier before launch pricing locks.",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 300\" role=\"img\" aria-hidden=\"true\"><clipPath id=\"mk14\"><rect width=\"240\" height=\"300\" rx=\"14\"/></clipPath><g clip-path=\"url(#mk14)\"><rect width=\"240\" height=\"300\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"0\" width=\"240\" height=\"4\" rx=\"0\" fill=\"#0B6E4F\" stroke=\"none\" stroke-width=\"1\" /><text x=\"14\" y=\"30\" font-size=\"15\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Khand\" font-weight=\"700\" >Avg Member Spend</text><text x=\"14\" y=\"48\" font-size=\"7\" fill=\"#525252\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" letter-spacing=\"1\">BASE CASE, OCT 14 FORECAST</text><rect x=\"14\" y=\"56\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"74\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Blended tier</text><text x=\"216\" y=\"74\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >$167/mo</text><rect x=\"14\" y=\"90\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"108\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Add-ons attach</text><text x=\"216\" y=\"108\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >$61/mo</text><rect x=\"14\" y=\"124\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#0B6E4F14\" stroke=\"#0B6E4F\" stroke-width=\"1\" /><text x=\"24\" y=\"142\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Total base</text><text x=\"216\" y=\"142\" font-size=\"10.5\" fill=\"#0B6E4F\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >$228/mo</text><rect x=\"14\" y=\"158\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"176\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Conservative</text><text x=\"216\" y=\"176\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >$189/mo</text><rect x=\"14\" y=\"192\" width=\"212\" height=\"28\" rx=\"6\" fill=\"#FFFFFF\" stroke=\"#E5E0D8\" stroke-width=\"1\" /><text x=\"24\" y=\"210\" font-size=\"9.5\" fill=\"#0A0A0A\" text-anchor=\"start\" font-family=\"Hind\" font-weight=\"600\" >Optimistic</text><text x=\"216\" y=\"210\" font-size=\"10.5\" fill=\"#0A0A0A\" text-anchor=\"end\" font-family=\"Khand\" font-weight=\"700\" >$278/mo</text></g><rect x=\".5\" y=\".5\" width=\"239\" height=\"299\" rx=\"14\" fill=\"none\" stroke=\"#D6D0C6\"/></svg>"
   }
  ]
 }

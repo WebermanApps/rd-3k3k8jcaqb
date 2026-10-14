@@ -1,7 +1,7 @@
 {
-  "updated": "Oct 14, 04:52 ICT",
+  "updated": "Oct 14, 18:05 ICT",
   "agent": "Research",
-  "status": "Morning Report live. Checkout And Next Steps Deck open for your votes.",
+  "status": "Evening Report live. Checkout And Next Steps Deck still open (11 cards).",
   "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
   "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
   "apps": [
@@ -59,11 +59,14 @@
   "days": [
     {
       "date": "2026-10-14",
-      "title": "Checkout And Next Steps Deck",
+      "title": "Checkout Plus Pricing And Security Briefs",
       "best": "Where To Sell The Setup (A or B)",
       "items": [
-        "Gumroad 10% + 50 cents vs Lemon Squeezy 5% + 50 cents, both handle sales tax",
-        "9 open next-step cards carried from Oct 13"
+        "Morning Checkout deck live (Gumroad vs Lemon Squeezy + 9 open next steps)",
+        "R63 pin and Rulebook Clash catch-up (cream, Share icon, open report card)",
+        "UpKeep pricing forecast: base avg spend about $228/mo with add-ons",
+        "Founder security brief: 12 ranked actions; public-repo secrets scan clean",
+        "Deck still waiting onvotes (freeze held; no real picks yet)"
       ]
     },
     {
@@ -111,20 +114,20 @@
     }
   ],
   "report": {
-    "type": "Morning",
-    "time": "2026-10-14 04:52 ICT",
+    "type": "Evening",
+    "time": "2026-10-14 18:05 ICT",
     "items": [
       {
-        "category": "Yesterday",
-        "text": "Product plan Loved; 9 next-step cards published; apps moved to the top; layout round 1 and the Submit password applied."
-      },
-      {
         "category": "Today",
-        "text": "Checkout And Next Steps Deck: 1 new pick on where to sell the setup (Gumroad or Lemon Squeezy) plus the 9 cards still open."
+        "text": "Morning Checkout deck live; R63 pin plus cream, Share icon, and open-report catch-up; UpKeep pricing forecast (base about $228/mo with add-ons); founder security brief (12 ranked actions, public-repo secrets scan clean)."
       },
       {
-        "category": "Next",
-        "text": "Once the freeze lifts, read your deck answers, route picks to the owning agents and build the next deck from your votes."
+        "category": "Open",
+        "text": "Checkout And Next Steps Deck still waiting on your votes (all 10 morning cards kept; plus 1 new UpKeep spend card). Platform terms answer still the key flag before any paid pilot."
+      },
+      {
+        "category": "Tomorrow",
+        "text": "Morning Report and a new deck by 5:00 AM ICT. If you submit tonight the picks watcher will route and refresh."
       }
     ]
   }

@@ -195,7 +195,8 @@ main{padding-top:14px}
 @media(min-width:1600px){.tb-in,.titleblk{max-width:1480px}.tb-home,.tb-upd,.seeall{font-size:20px}.tb-name{font-size:1.5rem}.tb-in{min-height:64px}.stat h2{font-size:1.6rem}}
 @media(min-width:3000px){.tb-home,.tb-upd,.seeall{font-size:28px}}
 @media(max-width:400px){.tb-upd{font-size:11px;max-width:40%}}
-</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style></head><body>
+</style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=1">
+</head><body>
 <header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
 <div class="deck-pin" id="deckPin">
@@ -225,7 +226,10 @@ main{padding-top:14px}
 
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
-</div></main>
+</div>
+<!-- agent-dashboards-17 A: Vote Cards (deck at top) kept as the suggestions format -->
+<section data-routines="routines.json" id="routines"></section><script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=1" defer></script>
+</main>
 
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>
@@ -294,7 +298,8 @@ const APP_FALLBACK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" s
 $("apps").innerHTML=d.apps.map(a=>'<a class="app-tile mw-hover" href="'+e(a.url)+'">'+(APP_ICONS[a.title]||APP_FALLBACK)+'<span>'+e(a.title)+'</span></a>').join('');
 $("vt").textContent="Max's Votes: "+d.votes.title;
 $("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).length).map(k=>'<div style="margin:6px 0"><span class="lbl">'+k+'</span><br>'+d.votes[k].map(t=>'<span class="chip">'+(I[k]||'')+e(t)+'</span>').join('')+'</div>').join('');
-$("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="rtitle">'+e(x.title)+'</span><span class="date">'+e(x.date)+'</span><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
+const shortDate=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');return m?['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m[2]-1]+' '+(+m[3]):s};/* agent-dashboards-06 B: Date Rows */
+$("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="rtitle">'+e(x.title)+'</span><time class="date" datetime="'+e(x.date)+'">'+e(shortDate(x.date))+'</time><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
 seeAll($('days'),'details.row');seeAll($('alerts'),'ul.edge>li');
 window.mwShareSummary=()=>{const k=window.mwDeckSummary&&window.mwDeckSummary();return (k?k+'\n':'')+'Research dashboard, updated '+d.updated};});
 </script>

@@ -80,6 +80,9 @@
     state(q().some(function(p){return p.agent===o.agent&&p.deck===o.deck})?'fail':'idle');
     flush().then(function(n){if(n&&!q().some(function(p){return p.agent===o.agent&&p.deck===o.deck}))state('sent')});
     return {el:wrap,state:state};}
-  w.MWSubmit={button:button,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};
+  function send(o){o=o||{};return gate(o.agent).then(function(ok){if(!ok){w.MWSubmit.blocked=true;return false;}w.MWSubmit.blocked=false;var p={agent:o.agent,app:o.app,deck:o.deck,results:o.results||null,notes:o.notes||'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
+    ['partial','answered','total','unanswered','test'].forEach(function(k){if(o[k]!==undefined)p[k]=o[k]});
+    return post(p).then(function(){return true},function(){setQ(q().concat([p]));return false});});}
+  w.MWSubmit={button:button,send:send,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};
   w.addEventListener('online',flush);
 })(window);

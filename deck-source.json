@@ -2,11 +2,11 @@
   "date": "2026-10-14",
   "key": "rd-deck-2026-10-14-checkout-next-steps",
   "name": "Checkout And Next Steps Deck",
-  "edition": "Morning",
-  "time": "2026-10-14 04:52 ICT",
+  "edition": "Evening",
+  "time": "2026-10-14 18:05 ICT",
   "title": "Research Suggestions",
-  "subtitle": "Top Picks For Oct 14, 2026",
-  "intro": "One new pick on where to sell the dashboard setup, plus the 9 next steps still waiting on your vote. Ideas only; owners build after Max approves.",
+  "subtitle": "Evening Recap, Oct 14",
+  "intro": "Evening recap: Checkout deck, pricing forecast, and founder security brief landed today. All 10 cards are still waiting on your votes (freeze held; no real picks yet). Plus one new card from the UpKeep pricing work.",
   "ideas_url": "decks/",
   "close": {
     "title": "Send Your Picks",
@@ -257,7 +257,7 @@
         "title": "Founding Pilot",
         "icon": "hat",
         "price": "$750 + $250/mo",
-        "per": "Estimate · 60 Days · 3 Spots",
+        "per": "Estimate \u00b7 60 Days \u00b7 3 Spots",
         "rows": [
           "3 Lanes In Your Brand",
           "Morning And Evening Reports",
@@ -414,6 +414,52 @@
         "word": "word",
         "hint": "Tap to hear it",
         "foot": "Voice From The Device"
+      }
+    },
+    {
+      "id": "2026-10-14-r2-upkeep-spend",
+      "label": "Smart Upkeep Base Spend",
+      "line": "Base-case mix puts average member spend near $228 a month (tier about $167 plus add-ons about $61). Plus is the likely middle pick; lawn attach leads add-ons at Detroit avg $52.90 per cut (LawnStarter).",
+      "project": "Smart Upkeep",
+      "owner": "Up Keep",
+      "effort": "M",
+      "accent": "jungle",
+      "source": {
+        "title": "LawnStarter: Detroit lawn mowing prices",
+        "url": "https://www.lawnstarter.com/mi"
+      },
+      "source2": {
+        "title": "Compromise effect / middle option share",
+        "url": "https://www.buynomics.com/glossary-blog/middleoption"
+      },
+      "next": "Use $228/mo as the base planning number; confirm Plus as the recommended middle tier before launch pricing locks.",
+      "mock": {
+        "type": "prices",
+        "title": "Avg Member Spend",
+        "sub": "Base Case, Oct 14 Forecast",
+        "hl": 2,
+        "rows": [
+          [
+            "Blended tier",
+            "$167/mo"
+          ],
+          [
+            "Add-ons attach",
+            "$61/mo"
+          ],
+          [
+            "Total base",
+            "$228/mo"
+          ],
+          [
+            "Conservative",
+            "$189/mo"
+          ],
+          [
+            "Optimistic",
+            "$278/mo"
+          ]
+        ]
       }
     }
   ]
