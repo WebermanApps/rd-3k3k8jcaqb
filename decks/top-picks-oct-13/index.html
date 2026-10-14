@@ -257,7 +257,7 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
  if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
  msg.style.display='block';setTimeout(()=>msg.style.display='none',1800)}})();
 </script>
-<script src="../../submit.js?v=pw1"></script>
+<script src="../../submit.js?v=gr1"></script>
 <script>(function(){function g(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(_){return {}}}
 try{save()}catch(_){}
 MWSubmit.button(document.getElementById('mwSubmit'),{agent:'research',app:'research-dashboard',deck:'2026-10-13',
