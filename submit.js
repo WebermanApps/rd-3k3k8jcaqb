@@ -59,7 +59,7 @@
   function post(p){stamp(p);return fetch(URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(p)});}
   function flush(){var all=q(),a=[],hold=[];all.forEach(function(p){(exempt(p.agent)||authed()?a:hold).push(p)});if(!a.length)return Promise.resolve(0);setQ(hold);var left=[];
     return Promise.all(a.map(function(p){return post(p).catch(function(){left.push(p)})})).then(function(){if(left.length)setQ(q().concat(left));return a.length-left.length;});}
-  function scan(){var a=[],u=[];document.querySelectorAll('.dk-card[data-id]').forEach(function(c){(c.querySelector('.dk-v.on,.dk-opt.on')?a:u).push(c.dataset.id)});return {answered:a,unanswered:u};}
+  function scan(){var a=[],u=[];document.querySelectorAll('.dk-card[data-id]').forEach(function(c){(c.querySelector('.dk-v.on,.dk-opt.on,.dk-noted.show')?a:u).push(c.dataset.id)});return {answered:a,unanswered:u};}
   function button(el,o){css();o=o||{};var back=o.backUrl||DB;
     var wrap=document.createElement('div');wrap.className='mws-wrap';
     var b=document.createElement('button');b.type='button';b.className='mws-btn mw-hover';
@@ -76,7 +76,7 @@
     b.addEventListener('click',function(){if(b.disabled)return;b.disabled=true;gate(o.agent).then(function(ok){b.disabled=false;if(!ok){state('idle');m.textContent='Password needed. Nothing was sent.';return;}state('sending');
       var k=scan();try{localStorage.setItem('mw-carry-'+o.agent+'-'+o.deck,JSON.stringify(k.unanswered))}catch(_){}
       var p={answered:k.answered,unanswered:k.unanswered,partial:k.unanswered.length>0,agent:o.agent,app:o.app,deck:o.deck,results:o.getResults?o.getResults():null,notes:o.getNotes?o.getNotes():'',sentAt:new Date().toISOString(),ua:navigator.userAgent};
-      post(p).then(function(){state('sent')},function(){setQ(q().concat([p]));state('fail')});});});
+      post(p).then(function(){state('sent');try{o.onSent&&o.onSent(p)}catch(_){}},function(){setQ(q().concat([p]));state('fail')});});});
     state(q().some(function(p){return p.agent===o.agent&&p.deck===o.deck})?'fail':'idle');
     flush().then(function(n){if(n&&!q().some(function(p){return p.agent===o.agent&&p.deck===o.deck}))state('sent')});
     return {el:wrap,state:state};}

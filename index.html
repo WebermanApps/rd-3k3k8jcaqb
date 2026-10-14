@@ -2,7 +2,7 @@
 <title>Research Command Center</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--fg:#0a0a0a;--pri:#171717;--sec:#f5f5f5;--mut:#737373;--bd:#e5e5e5;--love:#dc2626;--yes:#16a34a;--warn:#d97706;--accent:#0B6E4F;--ease:cubic-bezier(.2,.8,.2,1)}
+:root{--bg:#FDFBF6;--fg:#0a0a0a;--pri:#171717;--sec:#f5f5f5;--mut:#737373;--bd:#e5e5e5;--love:#dc2626;--yes:#16a34a;--warn:#d97706;--accent:#0B6E4F;--ease:cubic-bezier(.2,.8,.2,1)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Hind,system-ui,sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0}
 h1{font-size:2.6rem}h2{font-size:1.5rem;margin-bottom:.6rem;display:flex;gap:8px;align-items:center}
@@ -196,7 +196,7 @@ main{padding-top:14px}
 @media(min-width:3000px){.tb-home,.tb-upd,.seeall{font-size:28px}}
 @media(max-width:400px){.tb-upd{font-size:11px;max-width:40%}}
 </style><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style></head><body>
-<header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span></div></header>
+<header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
 <div class="deck-pin" id="deckPin">
 <section id="deck" aria-roledescription="carousel" aria-label="Research suggestions deck" hidden>
@@ -226,7 +226,7 @@ main{padding-top:14px}
 <section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
 <section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
 </div></main>
-<div class="mw-sharerow"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></div>
+
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>
 const I={Love:'<svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',Yes:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg>',No:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="3"><path d="M6 6l12 12M18 6L6 18"/></svg>'};
@@ -252,9 +252,11 @@ function renderReport(r){
     });
     body=order.map(c=>'<div class="report-group"><div class="report-cat">'+e(c)+'</div><ul>'+map[c].map(t=>'<li>'+e(t)+'</li>').join('')+'</ul></div>').join('');
   }
-  const n=items.length;
-  const label=type+(r.time?' · '+r.time:'')+': '+(items[0].text||'')+(n>1?' (+'+(n-1)+' more)':'');
-  $('rbody').outerHTML='<details class="report-drop"><summary><span class="rline">'+e(label)+'</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><div class="report-body" id="rbody">'+body+'</div></details>';
+  /* R23 (Clash C6): open card with key lines, dropdown for more */
+  const KEYN=2,keyItems=items.slice(0,KEYN),more=items.slice(KEYN);
+  const keyHtml='<ol class="rows rkey">'+keyItems.map(i=>'<li><span>'+e(i.text||'')+'</span></li>').join('')+'</ol>';
+  const moreHtml=more.length?'<details class="report-drop rmore"><summary><span>More ('+more.length+')</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><div class="report-body">'+(group?body:'<ol class="rows" start="'+(KEYN+1)+'" style="counter-reset:r '+KEYN+'">'+more.map(i=>'<li><span>'+e(i.text||'')+'</span></li>').join('')+'</ol>')+'</div></details>':'';
+  $('rbody').outerHTML='<div class="report-body rcard" id="rbody">'+keyHtml+moreHtml+'</div>';
   $('report-bar').classList.add('show');
 }
 function seeAll(host,sel){if(!host)return;const groups=new Map();host.querySelectorAll(sel).forEach(el=>{const p=el.parentElement;if(!groups.has(p))groups.set(p,[]);groups.get(p).push(el)});groups.forEach((els,p)=>{if(els.length<=5)return;els.slice(5).forEach(x=>x.hidden=true);const b=document.createElement('button');b.type='button';b.className='seeall mw-hover';b.textContent='See All ('+els.length+')';b.onclick=()=>{const hid=els[5].hidden;els.slice(5).forEach(x=>x.hidden=!hid);b.textContent=hid?'Show Fewer':'See All ('+els.length+')'};p.after(b)})}
@@ -332,7 +334,7 @@ function closeCard(){const t=tally(),C=D.close||{};return '<article class="dk-ca
  '<div class="dk-tally" id="dkTally">'+['yes','love','maybe','no'].map(k=>'<div>'+t[k]+'<small>'+LBL[k]+'</small></div>').join('')+'</div>'+
  '<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="dk-cta mw-hover" href="'+e(D.ideas_url)+'">'+e(C.cta||'Open Daily Ideas')+S.next+'</a><button type="button" class="dk-cta mw-hover" id="dkShare">'+S.share+'Send Picks To Max</button></div>'+
  '<div id="mwSubmitClose"></div><p class="dk-src">Ideas only. Owners build after Max approves.</p></article>'}
-function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.name||D.subtitle)+'</h3><p>'+(D.name?e(D.subtitle)+'. ':'')+cards.length+' suggestions. '+e(D.intro)+'</p>'+
+function titleCard(){return '<article class="dk-card dk-cover" style="--a:#0B6E4F"><div class="dk-fan" aria-hidden="true">'+cards.slice(0,3).map(c=>'<span>'+(c.svg||c.optionA.svg)+'</span>').join('')+'</div>'+S.bulb+'<span class="lbl">'+e(D.edition)+' Deck · '+e(D.time)+'</span><h3>'+e(D.name||D.subtitle)+'</h3><p>'+(D.name?e(D.subtitle)+'. ':'')+(cards.length?cards.length+' suggestions left. ':'All answered and sent. ')+e(D.intro)+'</p>'+
  '<div class="dk-hint"><span>'+S.yes+'Swipe Right = Yes</span><span>'+S.no+'Swipe Left = No</span><span>'+S.love+'Maybe And Love In The Middle</span></div>'+
  '<button type="button" class="dk-cta mw-hover" data-skip>Start'+S.next+'</button></article>'}
 function render(){
@@ -362,7 +364,7 @@ function wire(){
  $('dkView').addEventListener('keydown',ev=>{if(ev.target.tagName=='TEXTAREA')return;if(ev.key=='ArrowRight'){go(i+1);ev.preventDefault()}if(ev.key=='ArrowLeft'){go(i-1);ev.preventDefault()}});
  document.addEventListener('keydown',ev=>{if(document.activeElement===document.body&&(ev.key=='ArrowRight'||ev.key=='ArrowLeft')){go(i+(ev.key=='ArrowRight'?1:-1))}});
  $('dkTrack').addEventListener('click',ev=>{const t=ev.target;const card=t.closest('[data-id]');
-  if(t.closest('[data-skip]')){go(i+1);return}
+  if(t.closest('[data-skip]')){if(card){const sid=card.dataset.id;st[sid]=Object.assign(st[sid]||{},{skipped:true,time:new Date().toISOString()});save()}go(i+1);return}
   if(t.closest('#dkShare')){document.getElementById('mwShare').click();return}
   if(!card)return;const id=card.dataset.id;
   const v=t.closest('[data-vote]');if(v){vote(id,v.dataset.vote,true);return}
@@ -387,7 +389,14 @@ window.mwDeckSummary=function(){if(!D)return'';const lines=[];const t=tally();
  cards.forEach(c=>{const v=st[c.id];if(!v||(!v.answer&&!v.note&&!v.choice))return;
   lines.push('- '+c.label+': '+(v.answer?LBL[v.answer]:'No vote')+(v.choice?' (pick '+v.choice+': '+c['option'+v.choice].label+')':'')+(v.note?' | Note: '+v.note.trim():''))});
  return lines.join('\n')};
-fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];KEY=d.key||('rd-deck-'+d.date);try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
+/* Catch-up item 4 / R61 / R64: after Submit, answered or noted cards disappear (ids kept in localStorage KEY+'-done'); unanswered and skipped cards stay. */
+const DONE=()=>{try{return JSON.parse(localStorage.getItem(KEY+'-done')||'[]')}catch(_){return[]}};
+const isDone=v=>!!(v&&(v.answer||v.choice||(v.note&&v.note.trim())));
+window.mwDeckMeta=()=>D?{name:D.name||'Research deck',date:D.date,key:KEY}:null;
+window.mwDeckSkipped=()=>cards.filter(c=>(st[c.id]||{}).skipped&&!isDone(st[c.id])).map(c=>c.id);
+window.mwDeckSent=function(){const done=new Set(DONE());cards.forEach(c=>{if(isDone(st[c.id]))done.add(c.id)});try{localStorage.setItem(KEY+'-done',JSON.stringify([...done]))}catch(_){};
+ const left=cards.filter(c=>!done.has(c.id));if(left.length===cards.length)return;cards=left;i=0;render();window.dispatchEvent(new Event('mw-deck-ready'))};
+fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;KEY=d.key||('rd-deck-'+d.date);const dn=(()=>{try{return JSON.parse(localStorage.getItem(KEY+'-done')||'[]')}catch(_){return[]}})();cards=(d.cards||[]).filter(c=>dn.indexOf(c.id)<0);try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){st={}}
  $('dkTime').textContent=d.edition+' · '+d.time;if(d.name)$('dkName').textContent=d.name;render();wire();$('deck').hidden=false;
  window.dispatchEvent(new Event('mw-deck-ready'))}).catch(()=>{});
 })();
@@ -401,6 +410,19 @@ fetch('deck.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;cards=d.cards||[];
 .mw-sharerow{display:flex;justify-content:center;align-items:center;position:relative;margin:32px 16px 0;padding:0}
 #mwShare{position:static;z-index:auto;min-height:44px;min-width:160px;padding:0 20px;background:#fff;color:#171717;border:1px solid #171717;border-radius:0;font-family:Hind,system-ui,sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 #mwShareMsg{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);z-index:2;background:#fff;border:1px solid #e5e5e5;color:#0a0a0a;padding:6px 10px;font:13px Hind,system-ui,sans-serif;display:none;white-space:nowrap}
+
+/* R53 (Clash C1): Share is a small icon in the header corner */
+.tb-share{position:relative;display:inline-flex;margin-left:8px}
+.tb-share #mwShare{position:static;min-width:44px!important;width:44px;min-height:44px!important;height:44px;padding:0!important;border:1px solid #E5E0D8;border-radius:8px;background:#fff;color:#171717;display:inline-flex;align-items:center;justify-content:center;font-size:0!important;letter-spacing:0;cursor:pointer}
+.tb-share #mwShare svg{width:18px;height:18px}
+.tb-share #mwShareMsg{position:absolute;right:0;left:auto;top:calc(100% + 6px);bottom:auto;transform:none;z-index:60;background:#fff;border:1px solid #e5e5e5;padding:6px 10px;font:13px Hind,system-ui,sans-serif;display:none;white-space:nowrap}
+.topbar{background:#FDFBF6}
+
+/* Rulebook Clash pass (Oct 14): R58 cream base, R53 Share icon in header corner, R23 open report card */
+:root{--bg:#FDFBF6}html,body{background:#FDFBF6}
+#report-bar{background:#FDFBF6;border-bottom:0}#report-bar .report-inner{background:#fff;border:1px solid var(--bd);border-left:3px solid var(--accent);margin-top:10px}
+#report-bar .report-head{display:flex!important;gap:10px;align-items:baseline;margin-bottom:6px}#report-bar .report-type{font:700 1.15rem/1.1 Khand,sans-serif}
+.rcard .rkey{margin:0}.rcard .rkey li:last-child{margin-bottom:4px}.rmore>summary{display:inline-flex}
 </style>
 <script>
 (function(){const b=document.getElementById('mwShare'),msg=document.getElementById('mwShareMsg');
@@ -410,12 +432,14 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
  if(window.mwCopyText){const how=await window.mwCopyText(text+' '+url);if(how=='manual'&&document.getElementById('dkCopyBox')){const bx=document.getElementById('dkCopyBox');bx.value=text+' '+url;bx.hidden=false;bx.select();return}}else{try{await navigator.clipboard.writeText(text+' '+url)}catch(e){}}
  msg.style.display='block';setTimeout(()=>msg.style.display='none',1800)}})();
 </script>
-<script src="submit.js?v=gr1"></script>
+<script src="submit.js?v=gr2"></script>
 <script>(function(){function g(k){try{return JSON.parse(localStorage.getItem(k)||'{}')}catch(_){return {}}}
-var NAME='Dashboard Product Next Steps Deck',NEWKEY='rd-deck-2026-10-13-dashboard-next-steps';
-var opts={agent:'research',app:'research-dashboard',deck:NAME,
-getResults:function(){var r={deckName:NAME,deckDate:'2026-10-13'};r[NEWKEY]=g(NEWKEY);r['rd-deck-2026-10-13']=g('rd-deck-2026-10-13');r['rd-deck-2026-10-13-product-plan']=g('rd-deck-2026-10-13-product-plan');return r},
-getNotes:function(){return (window.mwDeckSummary&&window.mwDeckSummary())||''}};
+function meta(){return (window.mwDeckMeta&&window.mwDeckMeta())||{name:'Research deck',date:'',key:''}}
+var opts={agent:'research',app:'research-dashboard',deck:'Checkout And Next Steps Deck',
+getResults:function(){var m=meta(),r={deckName:m.name,deckDate:m.date,skipped:(window.mwDeckSkipped&&window.mwDeckSkipped())||[]};if(m.key)r[m.key]=g(m.key);return r},
+getNotes:function(){return (window.mwDeckSummary&&window.mwDeckSummary())||''},
+onSent:function(){if(window.mwDeckSent)setTimeout(window.mwDeckSent,1200)}};
+window.addEventListener('mw-deck-ready',function(){opts.deck=meta().name});
 MWSubmit.button(document.getElementById('mwSubmit'),opts);
 function closeBtn(){var el=document.getElementById('mwSubmitClose');if(el&&!el.firstChild)MWSubmit.button(el,opts)}
 closeBtn();window.addEventListener('mw-deck-ready',closeBtn);})();</script>
