@@ -258,6 +258,14 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>
 </main>
 
+<style id="fu-1245">
+span[data-n]{font-size:13px!important;width:24px!important;height:24px!important;min-width:24px}
+.dsharerow{display:flex;justify-content:center;margin:32px 16px 0;position:relative}
+#dShare{min-height:48px!important;min-width:180px;border:2px solid #171717!important;background:#fff!important;color:#171717!important;border-radius:0!important;font:700 13px Hind,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+#dShareMsg{position:absolute;bottom:calc(100% + 6px);background:#fff;border:1px solid #e5e5e5;padding:4px 10px;font-size:13px;display:none}
+</style>
+<div class="dsharerow"><span id="dShareMsg">Link copied</span><button id="dShare" type="button">Share</button></div>
+<script>document.getElementById('dShare').onclick=async()=>{const url=location.href.split('#')[0],title=document.title;if(navigator.share){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url)}catch(e){const a=document.createElement('textarea');a.value=url;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}const m=document.getElementById('dShareMsg');m.style.display='block';setTimeout(()=>m.style.display='none',1800)};</script>
 <footer><a class="mw-hover" href="https://maxweberman.com">Built by Max Weberman</a></footer>
 <script>
 const I={Love:'<svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',Yes:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg>',No:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="3"><path d="M6 6l12 12M18 6L6 18"/></svg>'};
