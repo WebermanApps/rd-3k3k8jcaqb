@@ -1,27 +1,7 @@
 {
- "updated": "2026-10-15 08:55 ICT",
+ "updated": "2026-10-15 13:00 ICT",
  "routines": [
-  {
-   "name": "Daily App Improvement Research",
-   "group": "Reports",
-   "schedule_plain": "Weekdays At 4:41 AM ICT (Morning Report Plus Ready Shelf Refill)",
-   "status": "on",
-   "last_run": "2026-10-15 07:25 ICT (late)"
-  },
-  {
-   "name": "Research Evening Report",
-   "group": "Retired Or Paused",
-   "schedule_plain": "Was Weekdays At 6:00 PM ICT — retired Oct 14 (Max: Morning Report only by 5:00 ICT)",
-   "status": "paused",
-   "note": "Evening Report retired. One daily Morning Report only.",
-   "last_run": "2026-10-14 18:05 ICT"
-  },
-  {
-   "name": "Research Picks Watcher",
-   "group": "Event/Listener",
-   "schedule_plain": "Every 15 Minutes (Reads Deck Submissions, Routes Picks, Refills Shelf)",
-   "status": "on",
-   "last_run": "Not Recorded Yet"
-  }
+  {"name": "Daily App Improvement Research","group": "Reports","schedule_plain": "Weekdays At 4:41 AM ICT (Morning Report Plus Ready Shelf Refill)","status": "on","last_run": "2026-10-15 07:25 ICT (late)"},
+  {"name": "Weekly Field Scan","group": "Research","schedule_plain": "Mondays At 6:10 AM ICT (Competitor And Expert Scan, One Fresh 20-Card Deck)","status": "on","last_run": "First Run Oct 19"}
  ]
 }
