@@ -171,16 +171,20 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 @media(max-width:480px){a.dict-tile .go{display:none}}
 #ready-to-swipe span{font-size:max(13px,1em)}
 .grid .fill3{grid-column:1/-1!important}
-</style><style id="no-edges">.rt-group,.rt-group *{border-left:0!important;box-shadow:none!important}.rt-group::before{display:none!important}</style></head><body>
+</style><style id="no-edges">.rt-group,.rt-group *{border-left:0!important;box-shadow:none!important}.rt-group::before{display:none!important}</style><style id="order-1247">#routines h3::before{display:none!important;content:none!important}.topstat{max-width:var(--cw);margin:18px auto 0;padding:0 var(--pad)}.topstat .statstrip{margin:0}#report-bar .report-inner{margin-top:14px!important}</style></head><body>
 <header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
-<section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section><div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
-<script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
+<div class="topstat">
+<div class="statstrip wide"><section class="card mw-hover stat"><h2><span class="dot"></span>Status</h2><p id="status" class="clamp2" tabindex="0" style="margin:0"></p><p class="lbl" style="margin:.4rem 0 0" id="upd"></p></section>
+<section class="card mw-hover stat"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" class="clamp2" tabindex="0" style="margin:0"></p></section></div>
+</div>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
 </div></div>
+<section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section><div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
+<script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
 
 <section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
 <script>
@@ -202,7 +206,7 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
    let h='';if(q.u!==g){g=q.u;h='<h3 class="qg">'+(g==='Open'?'Open':g)+'</h3>'}
    const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
    const btns=opts.map(v=>'<button class="qb mw-hover" type="button" data-v="'+esc(v)+'">'+esc(v)+'</button>').join('');
-   return h+'<div class="qcard" data-id="'+esc(q.id)+'"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span>'+(q.due?'<span class="qdue">'+esc(q.due)+'</span>':'')+'<div class="qt">'+esc(q.q)+'</div><div class="qrow">'+btns+'<button class="qlink qn" type="button">+ Note</button><button class="qlink qd" type="button">Ask for more detail</button><button class="qb qsend mw-hover" type="button">Send</button></div><input class="qtxt" placeholder="Or type your answer"><textarea class="qnote" placeholder="Note" hidden></textarea></div>';
+   return h+'<div class="qcard mw-hover" data-id="'+esc(q.id)+'"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span>'+(q.due?'<span class="qdue">'+esc(q.due)+'</span>':'')+'<div class="qt">'+esc(q.q)+'</div><div class="qrow">'+btns+'<button class="qlink qn" type="button">+ Note</button><button class="qlink qd" type="button">Ask for more detail</button><button class="qb qsend mw-hover" type="button">Send</button></div><input class="qtxt" placeholder="Or type your answer"><textarea class="qnote" placeholder="Note" hidden></textarea></div>';
   }).join('');
   L.querySelectorAll('.qcard').forEach(c=>{
    const id=c.dataset.id,q=Q.find(x=>x.id===id);
@@ -248,11 +252,9 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 <div id="alerts"></div>
 
 <div class="grid">
-<div class="statstrip wide"><section class="card stat"><h2><span class="dot"></span>Status</h2><p id="status" class="clamp2" tabindex="0" style="margin:0"></p><p class="lbl" style="margin:.4rem 0 0" id="upd"></p></section>
-<section class="card stat"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" class="clamp2" tabindex="0" style="margin:0"></p></section></div>
 
-<section class="card wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
-<section class="card wide"><h2>Recent Research Days</h2><div id="days"></div></section>
+<section class="card mw-hover wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
+<section class="card mw-hover wide"><h2>Recent Research Days</h2><div id="days"></div></section>
 </div>
 <section data-routines="routines.json" id="routines" aria-label="Routines"></section>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>
