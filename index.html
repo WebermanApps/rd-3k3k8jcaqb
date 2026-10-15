@@ -194,6 +194,12 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 .mw-slide:hover{border-color:#171717}
 .mw-num{font-size:13px!important}
 .blocks .mw-block .card{border:0!important;padding:0!important}
+.pp{margin:8px 0 32px}.pp-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:600px){.pp-grid{grid-template-columns:repeat(2,1fr)}}@media(min-width:1100px){.pp-grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1900px){.pp-grid{grid-template-columns:repeat(4,1fr)}}
+a.pp-card{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #e5e5e5;border-radius:0;color:#0a0a0a;text-decoration:none;padding:0 0 16px}
+a.pp-card img{width:100%;height:auto;aspect-ratio:16/9;display:block;border-bottom:1px solid #e5e5e5;margin-bottom:8px}
+.pp-t{font:700 1.3rem/1.15 Khand,sans-serif;padding:0 16px}.pp-s{font-size:15px;color:#404040;padding:0 16px}
+.pp-l{margin:6px 16px 0;align-self:flex-start;font:600 13px Hind,sans-serif;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid #171717}
 </style></head><body>
 <header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 18 A7 7 0 0 1 20 12" stroke="#D4A017" stroke-width="3"/><path d="M35 35 L40 40" stroke="#D4A017" stroke-width="5"/><circle cx="20" cy="20" r="12"/><path d="M29 29 L40 40"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Research Command Center</h1><p class="mw-cc-desc">Research on experts, competitors and new ideas behind Max&#x27;s projects</p></div></div><span id="role" hidden></span>
@@ -202,89 +208,15 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 <script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
 
 <details class="mr" id="morning"><summary class="mw-hover"><span class="mrt">Morning Report</span><span class="mrs" id="mrSum">Status and today's report</span><svg class="mrchev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="mrbody">
-<div class="topstat">
-<div class="statstrip wide"><section class="card mw-hover stat"><h2><span class="dot"></span>Status</h2><p id="status" class="clamp2" tabindex="0" style="margin:0"></p><p class="lbl" style="margin:.4rem 0 0" id="upd"></p></section>
-<section class="card mw-hover stat"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" class="clamp2" tabindex="0" style="margin:0"></p></section></div>
-</div>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
 </div></div>
 </div></details>
 <main>
-<section class="rtopics" aria-label="Research Topics"><h2 class="sech">Research Topics</h2><div class="mw-carousel"><div class="mw-track"><article class="mw-slide"><span class="mw-num">01</span><h3><a href="coders-dictionary/">Coder's Dictionary</a></h3><p>60 words developers use with AI coding tools, in 6 categories, each with a prompt to copy.</p></article><article class="mw-slide"><span class="mw-num">02</span><h3><a href="writeups/upkeep-pricing-forecast.html">UpKeep Pricing Forecast</a></h3><p>Plus is the likely pick; about $228/mo average spend per customer (base case); top add-on is grass cutting.</p></article><article class="mw-slide"><span class="mw-num">03</span><h3><a href="writeups/founder-security.html">Founder And App Security</a></h3><p>12 security steps ranked by impact, starting with a password manager and passkeys.</p></article><article class="mw-slide"><span class="mw-num">04</span><h3><a href="product-plan/">Agent Dashboard Product</a></h3><p>Plan to sell the agent dashboard setup: what's in it, pricing and next steps.</p></article><article class="mw-slide"><span class="mw-num">05</span><h3><a href="https://webermanapps.github.io/daily-ideas/">Smart Upkeep Deep Dive</a></h3><p>10 new service and app ideas, like a named tech every visit and partner vetting.</p></article></div><div class="mw-car-nav"><button class="mw-prev" aria-label="Previous">&#8592;</button><button class="mw-next" aria-label="Next">&#8594;</button></div></div></section>
+<section class="rtopics" aria-label="Research Topic Center"><h2 class="sech">Research Topic Center</h2><div class="mw-carousel"><div class="mw-track"><article class="mw-slide"><span class="mw-num">01</span><h3><a href="coders-dictionary/">Coder's Dictionary</a></h3><p>60 words developers use with AI coding tools, in 6 categories, each with a prompt to copy.</p></article><article class="mw-slide"><span class="mw-num">02</span><h3><a href="writeups/upkeep-pricing-forecast.html">UpKeep Pricing Forecast</a></h3><p>Plus is the likely pick; about $228/mo average spend per customer (base case); top add-on is grass cutting.</p></article><article class="mw-slide"><span class="mw-num">03</span><h3><a href="writeups/founder-security.html">Founder And App Security</a></h3><p>12 security steps ranked by impact, starting with a password manager and passkeys.</p></article><article class="mw-slide"><span class="mw-num">04</span><h3><a href="product-plan/">Agent Dashboard Product</a></h3><p>Plan to sell the agent dashboard setup: what's in it, pricing and next steps.</p></article><article class="mw-slide"><span class="mw-num">05</span><h3><a href="https://webermanapps.github.io/daily-ideas/">Smart Upkeep Deep Dive</a></h3><p>10 new service and app ideas, like a named tech every visit and partner vetting.</p></article></div><div class="mw-car-nav"><button class="mw-prev" aria-label="Previous">&#8592;</button><button class="mw-next" aria-label="Next">&#8594;</button></div></div></section>
 <script>document.querySelectorAll('.mw-carousel').forEach(c=>{const t=c.querySelector('.mw-track');c.querySelector('.mw-prev').onclick=()=>t.scrollBy({left:-t.clientWidth*0.85,behavior:'smooth'});c.querySelector('.mw-next').onclick=()=>t.scrollBy({left:t.clientWidth*0.85,behavior:'smooth'})})</script>
-<div class="blocks">
-<section class="mw-block mw-block--accent" aria-label="Questions Center"><h2 class="sech">Questions Center</h2>
-<section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
-<script>
-(function(){
- const H='research-qc-hidden', D=JSON.parse(localStorage.getItem(H)||'[]'), A={};
- function send(ids,extra){
-  const ans=ids.map(i=>A[i]).filter(Boolean);
-  const p={agent:'research',app:'research-questions-center',deck:'Questions Center',results:Object.assign({answers:ans},extra||{})};
-  try{if(window.MWSubmit)return MWSubmit.send(p)}catch(e){}
-  return Promise.resolve(false);
- }
- function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
- fetch('questions.json?'+Date.now()).then(r=>r.json()).then(Q=>{
-  Q=Q.filter(q=>!D.includes(q.id));
-  const o={Urgent:0,Soon:1,Open:2};Q.sort((a,b)=>(o[a.u]??9)-(o[b.u]??9));
-  document.getElementById('qcnt').textContent=Q.length+' open, '+Q.filter(q=>q.u==='Urgent').length+' urgent';
-  const L=document.getElementById('qlist');let g='';
-  L.innerHTML=Q.map(q=>{
-   let h='';if(q.u!==g){g=q.u;h='<h3 class="qg">'+(g==='Open'?'Open':g)+'</h3>'}
-   const opts=(q.opts&&q.opts.length)?q.opts:['Yes','No'];
-   const btns=opts.map(v=>'<button class="qb mw-hover" type="button" data-v="'+esc(v)+'">'+esc(v)+'</button>').join('');
-   return h+'<div class="qcard mw-hover" data-id="'+esc(q.id)+'"><span class="qpill '+esc(q.u)+'">'+esc(q.u)+'</span>'+(q.due?'<span class="qdue">'+esc(q.due)+'</span>':'')+'<div class="qt">'+esc(q.q)+'</div><div class="qrow">'+btns+'<button class="qlink qn" type="button">+ Note</button><button class="qlink qd" type="button">Ask for more detail</button><button class="qb qsend mw-hover" type="button">Send</button></div><input class="qtxt" placeholder="Or type your answer"><textarea class="qnote" placeholder="Note" hidden></textarea></div>';
-  }).join('');
-  L.querySelectorAll('.qcard').forEach(c=>{
-   const id=c.dataset.id,q=Q.find(x=>x.id===id);
-   const up=(v)=>{A[id]={id,question:q.q,choice:v||(A[id]&&A[id].choice)||'',text:c.querySelector('.qtxt').value,note:c.querySelector('.qnote').value};c.classList.add('done')};
-   c.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>{c.querySelectorAll('[data-v]').forEach(x=>x.classList.remove('on'));b.classList.add('on');up(b.dataset.v)});
-   c.querySelector('.qtxt').oninput=()=>up();
-   c.querySelector('.qnote').oninput=()=>up();
-   c.querySelector('.qn').onclick=()=>{c.querySelector('.qnote').hidden=false};
-   c.querySelector('.qd').onclick=async e=>{
-    const btn=e.target;btn.disabled=true;btn.textContent='Sending';
-    A[id]={id,question:q.q,choice:'Ask for more detail'};
-    const ok=await send([id],{type:'detail-request',detail_request:true,question:q.q});
-    btn.textContent=ok?'Asked':(window.MWSubmit&&MWSubmit.blocked?'Ask for more detail':'Queued');
-    btn.disabled=!!ok;
-   };
-   c.querySelector('.qsend').onclick=async()=>{
-    if(!A[id]||!(A[id].choice||A[id].text))return;
-    const ok=await send([id]);
-    if(ok||!(window.MWSubmit&&MWSubmit.blocked)){D.push(id);localStorage.setItem(H,JSON.stringify(D));c.remove();
-     const left=[...L.querySelectorAll('.qcard')].length;
-     document.getElementById('qcnt').textContent=left+' open, '+[...L.querySelectorAll('.qpill.Urgent')].length+' urgent';
-     if(!left){document.getElementById('qsent').hidden=false;document.getElementById('qsent').textContent='Sent'}}
-   };
-  });
-  document.getElementById('qsubmit').onclick=async()=>{
-   const ids=Object.keys(A).filter(i=>A[i]&&(A[i].choice||A[i].text));
-   if(!ids.length)return;
-   const ok=await send(ids);
-   if(ok||!(window.MWSubmit&&MWSubmit.blocked)){
-    ids.forEach(i=>{D.push(i);const c=L.querySelector('[data-id="'+i+'"]');c&&c.remove()});
-    localStorage.setItem(H,JSON.stringify(D));
-    document.getElementById('qsent').hidden=false;
-    document.getElementById('qsent').textContent='Sent';
-    document.getElementById('qcnt').textContent='0 open, 0 urgent';
-   }
-  };
- });
-})();
-</script></section>
-<section class="mw-block" aria-label="Open Items"><h2 class="sech">Open Items</h2>
-<div id="alerts"></div></section>
-<section class="mw-block" aria-label="Research Apps"><h2 class="sech">Research Apps</h2>
-<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav></section>
-<section class="mw-block" aria-label="Max's Votes"><h2 class="sech">Max's Votes</h2>
-<section class="card mw-hover wide fill3"><h2 id="vt"></h2><div id="votes"></div></section></section>
-<section class="mw-block" aria-label="Recent Research Days"><h2 class="sech">Recent Research Days</h2>
-<section class="card mw-hover wide"><h2>Recent Research Days</h2><div id="days"></div></section></section>
-</div>
+<section class="pp" aria-label="Potential Project Center"><h2 class="sech">Potential Project Center</h2><div class="pp-grid"><a class="pp-card mw-hover" href="product-plan/"><img src="projects/dashboard.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Sell Your Agent Dashboard Setup</span><span class="pp-s">A packaged version of this agent dashboard setup to sell to contractors and small teams.</span><span class="pp-l">Open</span></a><a class="pp-card mw-hover" href="writeups/upkeep-pricing-forecast.html"><img src="projects/addons.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Smart Upkeep Membership Add-Ons</span><span class="pp-s">Lawn, snow, pest, leaves, windows and pressure washing could add about $61 per member per month.</span><span class="pp-l">Open</span></a><a class="pp-card mw-hover" href="https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-av88uq/"><img src="projects/qr.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Home Guide QR Stickers</span><span class="pp-s">Stickers on the furnace, water heater and panel that open the right Home Guide page.</span><span class="pp-l">Open</span></a><a class="pp-card mw-hover" href="https://webermanapps.github.io/daily-ideas/"><img src="projects/ideas.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Daily Ideas App</span><span class="pp-s">A daily feed of sourced app and service ideas to swipe through and vote on.</span><span class="pp-l">Open</span></a><a class="pp-card mw-hover" href="https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-lkeebd/"><img src="projects/checkout.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Checkout And Selling</span><span class="pp-s">Ways to take payment and sell online, starting with Lemon Squeezy versus Gumroad.</span><span class="pp-l">Open</span></a><a class="pp-card mw-hover" href="https://webermanapps.github.io/daily-ideas/"><img src="projects/offline.svg" alt="" width="320" height="180" loading="lazy"><span class="pp-t">Offline Shutoffs And Emergency Info</span><span class="pp-s">Home Guide shutoff and emergency pages that still open with no internet.</span><span class="pp-l">Open</span></a></div></section>
 <section data-routines="routines.json" id="routines" aria-label="Routines"></section>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>
 </main>
@@ -301,7 +233,7 @@ span[data-n]{font-size:13px!important;width:24px!important;height:24px!important
 <script>
 const I={Love:'<svg width="14" height="14" viewBox="0 0 24 24" fill="#dc2626"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg>',Yes:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg>',No:'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="3"><path d="M6 6l12 12M18 6L6 18"/></svg>'};
 const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const $=id=>document.getElementById(id);
+const $=id=>document.getElementById(id)||document.createElement("div");
 function renderReport(r){
   if(!r||!Array.isArray(r.items)||!r.items.length)return;
   const type=r.type==='Fresh Start'?'Fresh Start':'Morning Report';
@@ -367,7 +299,7 @@ $("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).leng
 const shortDate=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');return m?['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m[2]-1]+' '+(+m[3]):s};/* agent-dashboards-06 B: Date Rows */
 $("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="rtitle">'+e(x.title)+'</span><time class="date" datetime="'+e(x.date)+'">'+e(shortDate(x.date))+'</time><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
 seeAll($('days'),'details.row');seeAll($('alerts'),'ul.edge>li');
-{const ms=document.getElementById('mrSum');if(ms)ms.textContent=((d.report&&d.report.time)?d.report.time+' · ':'')+'Tap to open';if(!document.getElementById('alerts').innerHTML.trim())document.getElementById('alerts').textContent='Nothing open right now.';}
+{const ms=document.getElementById('mrSum');if(ms)ms.textContent=((d.report&&d.report.time)?d.report.time+' · ':'')+'Tap to open';}
 window.mwShareSummary=()=>'Research dashboard, updated '+d.updated;});
 </script>
 <style id="mw-share-css">
