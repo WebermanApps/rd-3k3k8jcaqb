@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-15 07:25 ICT",
+ "updated": "2026-10-15 08:55 ICT",
  "agent": "Research",
- "status": "Evening Report live. Checkout And Next Steps Deck still open (11 cards).",
+ "status": "Ready To Swipe shelf live (5 decks). Morning Report only. Questions Center open (4). Evening Report retired.",
  "role": "Ongoing research into the fields behind Max's projects: experts, competitors, new ideas, and suggested improvements. Ideas only; owners build after Max approves.",
- "routine": "Weekdays: research and Morning Deck by 5:00 AM ICT, Evening Recap at 18:00 ICT. Sends the best pick to Grok Bot.",
+ "routine": "Weekdays: research and Morning Report by 5:00 AM ICT. Ready To Swipe shelf at the top (max 5). Evening Report retired.",
  "apps": [
   {
    "title": "Daily Ideas",
@@ -14,17 +14,12 @@
    "title": "Dashboard Product Plan",
    "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/product-plan/",
    "desc": "Plan to package the agent dashboard setup as a product"
-  },
-  {
-   "title": "Previous Decks",
-   "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/decks/",
-   "desc": "Older research decks with their saved answers"
   }
  ],
  "decisions": [
   {
-   "title": "Checkout And Next Steps Deck",
-   "note": "Vote on 10 cards, pick A or B on checkout, platform terms and the name"
+   "title": "Questions Center (4 open)",
+   "note": "Lemon/Gumroad, freeze submissions, Walk-Through privacy OK, UpKeep forecast handoff"
   },
   {
    "title": "Platform terms answer",
@@ -119,15 +114,15 @@
   "items": [
    {
     "category": "Today",
-    "text": "Late today because overnight usage ran out. Building the ready deck shelf: 3 to 5 research decks of 20 cards each, pinned at the top."
+    "text": "Ready To Swipe shelf shipped: 5 sourced research decks of 20 cards (Checkout And Selling, Agent Dashboard Product, Smart Upkeep Pricing, Founder And App Security, Home Guide And Construction Ideas)."
    },
    {
     "category": "Open",
-    "text": "Checkout And Next Steps Deck still needs your votes. Lemon Squeezy (5% + $0.50) or Gumroad (10% + $0.50) is the main pick."
+    "text": "Questions Center has 4 items waiting: Lemon Squeezy vs Gumroad, the 8 held freeze submissions, Walk-Through privacy fix OK, and sending the UpKeep pricing forecast."
    },
    {
-    "category": "Waiting On You",
-    "text": "8 held submissions from the Oct 13 freeze, the Walk-Through app privacy fix (Construction needs your OK), and whether to send the UpKeep pricing forecast to UpKeep."
+    "category": "Note",
+    "text": "Morning Report was late (overnight usage outage). Evening Report stays retired. Live customer apps untouched."
    }
   ]
  }

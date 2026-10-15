@@ -45,3 +45,20 @@ Research suggestions are published as a swipe deck pinned at the very top of the
 - The Submit payload lists `answered` (voted, picked or noted), `unanswered`, and `results.skipped` (cards Max tapped Skip on).
 - Next deck: carry every unanswered id. For every skipped id, reword the card more clearly (plainer label and line, clearer A/B options) or drop it; never carry a skipped card unchanged. Give a reworded card a new id suffix like `-r2`.
 - Rulebook Clash pass done Oct 14: cream #FDFBF6 page with white cards, Share is a small icon in the top bar corner, report is an open card. Test 393x852, 1470x956 and 2560x1440 before every publish (R11).
+
+## Also in the next 4:41 run (Max's rules, Oct 14 19:43-20:05 ICT)
+- Decks only in the top shelf, max 5 total. Move or remove the lower deck sections (Checkout And Next Steps Deck etc.). Use kit/deck-shelf.js/.css, <section data-shelf="shelf.json">, agent 'research' (Ready To Swipe look + swipe counts); ready_shelf.py supports --source and --name. Spec: ops/team-sync/handoffs/ready-to-swipe-look-2026-10-14.md.
+- Show swipes completed at the top.
+- Only ONE daily report: Morning by 5:00 ICT. Evening Report retired (routine paused). Remove Evening sections and evening late-flags; report.json type is always Morning.
+- Routines section goes at the very BOTTOM of the page (above the footer). Mark Research Evening Report as paused in routines.json.
+- Questions Center picks: /workspace/ops/team-sync/handoffs/router-to-research.md (apply when a Questions Center ships).
+- Then commit, push, add a team-feed line, and reply to Branding Agent with the commit hash.
+
+## Shipped Oct 15 2026 (shelf retry)
+- Ready To Swipe shelf at top via kit deck-shelf.js?v=3 + shelf.json (agent research, max 5 decks of 20).
+- Old #deckPin / deck.json carousel and lower deck surfaces removed.
+- Morning Report only; Evening Report routine paused in routines.json.
+- Questions Center below Morning Report (questions.json, Ask for more detail on each).
+- Routines at bottom via routines-section.js?v=3.
+- Build: `python3 /workspace/style-swipe/tools/ready_shelf.py build <topic> --shelf shelf.json --agent research --name "Name" --source tools/research-....json`
+- Check: `python3 tools/check.py http://127.0.0.1:<port>/ local` (393 / 1470 / 2560).

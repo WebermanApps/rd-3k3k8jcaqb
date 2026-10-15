@@ -1,0 +1,42 @@
+[
+ {
+  "id": "rq-lemon-gumroad",
+  "q": "Lemon Squeezy or Gumroad (for selling the agent dashboard setup)?",
+  "u": "Urgent",
+  "opts": [
+   "Lemon Squeezy",
+   "Gumroad",
+   "Not yet"
+  ]
+ },
+ {
+  "id": "rq-freeze-8",
+  "q": "The 8 held freeze submissions — what to do?",
+  "u": "Urgent",
+  "opts": [
+   "Release and process",
+   "Keep holding",
+   "Process only Love+Yes"
+  ]
+ },
+ {
+  "id": "rq-walkthrough-privacy",
+  "q": "Walk-Through app privacy fix — Construction needs Max OK",
+  "u": "Soon",
+  "opts": [
+   "Approve fix",
+   "Hold",
+   "Need more detail"
+  ]
+ },
+ {
+  "id": "rq-upkeep-forecast",
+  "q": "Whether to send the UpKeep pricing forecast to UpKeep",
+  "u": "Open",
+  "opts": [
+   "Send to UpKeep",
+   "Hold",
+   "Edit first"
+  ]
+ }
+]
