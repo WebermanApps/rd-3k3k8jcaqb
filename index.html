@@ -171,9 +171,37 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 @media(max-width:480px){a.dict-tile .go{display:none}}
 #ready-to-swipe span{font-size:max(13px,1em)}
 .grid .fill3{grid-column:1/-1!important}
-</style><style id="no-edges">.rt-group,.rt-group *{border-left:0!important;box-shadow:none!important}.rt-group::before{display:none!important}</style><style id="order-1247">#routines h3::before{display:none!important;content:none!important}.topstat{max-width:var(--cw);margin:18px auto 0;padding:0 var(--pad)}.topstat .statstrip{margin:0}#report-bar .report-inner{margin-top:14px!important}</style></head><body>
+</style><style id="no-edges">.rt-group,.rt-group *{border-left:0!important;box-shadow:none!important}.rt-group::before{display:none!important}</style><style id="order-1247">#routines h3::before{display:none!important;content:none!important}.topstat{max-width:var(--cw);margin:18px auto 0;padding:0 var(--pad)}.topstat .statstrip{margin:0}#report-bar .report-inner{margin-top:14px!important}</style><style id="max-1312">
+.mr{max-width:calc(var(--cw) - 2*var(--pad));margin:22px auto 0;border:1px solid #e3ddd2;background:#FAF6EE}
+@media(max-width:1132px){.mr{margin:22px var(--pad) 0}}
+.mr>summary{list-style:none;cursor:pointer;min-height:56px;display:flex;align-items:center;gap:12px;padding:10px 16px}
+.mr>summary::-webkit-details-marker{display:none}
+.mrt{font:700 1.35rem Khand,sans-serif;white-space:nowrap;flex:none}.mrs{font:600 13px Hind,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#737373;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.mrchev{margin-left:auto;flex:none;transition:transform .18s}.mr[open] .mrchev{transform:rotate(180deg)}
+.mr:not([open])>.mrbody{display:none}
+.mrbody{padding:0 16px 16px}.mrbody .topstat{max-width:none;margin:0;padding:0}
+.mrbody #report-bar{background:transparent!important}.mrbody #report-bar .report-inner{margin:14px 0 0!important;max-width:none!important;background:#fff!important}
+.topics{display:flex;flex-direction:column;gap:28px}
+.tsec{margin:4px 0 -12px}
+.topic{border:1px solid #e5e5e5;background:#fff;padding:20px}
+@media(min-width:1600px){.topic{padding:32px}}
+.thead{display:flex;align-items:center;gap:14px;margin:0 0 14px}
+.tnum{flex:none;width:44px;height:44px;display:grid;place-items:center;border:2px solid #171717;font:700 1.5rem Khand,sans-serif;background:#fff}
+.ttl{font-size:1.7rem!important;margin:0!important}
+.topic .qc{max-width:none!important;margin:0!important;padding:0!important}.topic .qc>h2{display:none}
+.topic .apps-top{margin:0}.topic .apps-top>.lbl{display:none}
+.topic .card{border:0!important;padding:0!important;margin:0}.topic .card.mw-hover:hover{transform:none;box-shadow:none}
+.topic .card>h2:not(#vt){display:none}#vt{font-size:13px!important;font-family:Hind,sans-serif!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#737373;margin-bottom:8px}
+.topic .alert{margin:0}.topic .dict-tile-wrap{margin:0!important;padding:0!important}
+#routines{margin-top:28px}
+</style></head><body>
 <header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
+<section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section>
+<script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
+
+<details class="mr" id="morning"><summary class="mw-hover"><span class="mrt">Morning Report</span><span class="mrs" id="mrSum">Status and today's report</span><svg class="mrchev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><div class="mrbody">
 <div class="topstat">
 <div class="statstrip wide"><section class="card mw-hover stat"><h2><span class="dot"></span>Status</h2><p id="status" class="clamp2" tabindex="0" style="margin:0"></p><p class="lbl" style="margin:.4rem 0 0" id="upd"></p></section>
 <section class="card mw-hover stat"><h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Routine</h2><p id="routine" class="clamp2" tabindex="0" style="margin:0"></p></section></div>
@@ -182,10 +210,10 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
 </div></div>
-<section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section><div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
-<script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
-
+</div></details>
+<main>
+<div class="topics"><div class="lbl tsec">Research Topics</div>
+<section class="topic" aria-label="Questions Center"><div class="thead"><span class="tnum">1</span><h2 class="ttl">Questions Center</h2></div>
 <section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
 <script>
 (function(){
@@ -246,15 +274,22 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
  });
 })();
 </script>
-
-<main>
-<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav>
+</section>
+<section class="topic" aria-label="Open Items"><div class="thead"><span class="tnum">2</span><h2 class="ttl">Open Items</h2></div>
 <div id="alerts"></div>
-
-<div class="grid">
-
+</section>
+<section class="topic" aria-label="Coder's Dictionary"><div class="thead"><span class="tnum">3</span><h2 class="ttl">Coder's Dictionary</h2></div>
+<div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
+</section>
+<section class="topic" aria-label="Research Apps"><div class="thead"><span class="tnum">4</span><h2 class="ttl">Research Apps</h2></div>
+<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav>
+</section>
+<section class="topic" aria-label="Max's Votes"><div class="thead"><span class="tnum">5</span><h2 class="ttl">Max's Votes</h2></div>
 <section class="card mw-hover wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
+</section>
+<section class="topic" aria-label="Recent Research Days"><div class="thead"><span class="tnum">6</span><h2 class="ttl">Recent Research Days</h2></div>
 <section class="card mw-hover wide"><h2>Recent Research Days</h2><div id="days"></div></section>
+</section>
 </div>
 <section data-routines="routines.json" id="routines" aria-label="Routines"></section>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>
@@ -338,6 +373,7 @@ $("votes").innerHTML=['Love','Yes','Maybe','No'].filter(k=>(d.votes[k]||[]).leng
 const shortDate=s=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');return m?['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+m[2]-1]+' '+(+m[3]):s};/* agent-dashboards-06 B: Date Rows */
 $("days").innerHTML=d.days.map(x=>'<details class="row"><summary class="mw-hover"><span class="rtitle">'+e(x.title)+'</span><time class="date" datetime="'+e(x.date)+'">'+e(shortDate(x.date))+'</time><svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></summary><p style="margin:0 0 6px 4px"><span class="lbl">Best Pick</span> '+e(x.best)+'</p><ul>'+x.items.map(i=>'<li>'+e(i)+'</li>').join('')+'</ul></details>').join('');
 seeAll($('days'),'details.row');seeAll($('alerts'),'ul.edge>li');
+{const ms=document.getElementById('mrSum');if(ms)ms.textContent=((d.report&&d.report.time)?d.report.time+' · ':'')+'Tap to open';if(!document.getElementById('alerts').innerHTML.trim())document.getElementById('alerts').textContent='Nothing open right now.';}
 window.mwShareSummary=()=>'Research dashboard, updated '+d.updated;});
 </script>
 <style id="mw-share-css">
