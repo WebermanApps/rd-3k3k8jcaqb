@@ -2,7 +2,7 @@
 <title>Coder's Dictionary for AI Tools</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FDFBF6;--card:#fff;--beige:#FAF6EE;--bb:#e3ddd2;--fg:#0a0a0a;--mut:#5c5c5c;--pri:#171717;--acc:#8a6a2f}
+:root{--bg:#FFFFFF;--card:#fff;--beige:#FAF6EE;--bb:#e3ddd2;--fg:#0a0a0a;--mut:#5c5c5c;--pri:#171717;--acc:#8a6a2f}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Hind,system-ui,sans-serif;overflow-x:hidden}
 h1,h2,h3{font-family:Khand,sans-serif;font-weight:700;line-height:1.05;margin:0}
 .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 8px}
@@ -79,4 +79,17 @@ async function copyText(s){try{await navigator.clipboard.writeText(s);return tru
 $('track').onclick=async e=>{const b=e.target.closest('.copy');if(!b)return;await copyText(list[+b.dataset.i].p);b.textContent='Copied';b.classList.add('ok');setTimeout(()=>{b.textContent='Copy';b.classList.remove('ok')},1500)};
 $('share').onclick=async()=>{const url=location.href.split('#')[0],title=document.title;if(navigator.share){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}await copyText(url);$('smsg').style.display='block';setTimeout(()=>$('smsg').style.display='none',1800)};
 render();
-</script></body></html>
+</script><style id="branding-spec">
+/* Branding style spec (ops/apps-home/gen.py): square, white, beige bands only, uppercase small labels */
+html,body{background:#fff!important}
+*:not(.dot):not(.dots i):not(input[type=radio]){border-radius:0!important}
+.lbl,.sec,.sec-lbl,.report-time,.qc h3.qg,.count,.ctag,.tb-upd{font-size:13px!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:#737373!important}
+button,.copy,.qb,#share,.back,.tb-home,.go{border:2px solid #171717!important;background:#fff!important;color:#171717!important;min-height:44px!important}
+.qb.on,.cat.on,.copy.ok{background:#171717!important;color:#fafafa!important}
+.card,.qcard,.alert,.row,.src,.chip,a.app-tile,.cat,.nav button,#q,.ds-card{border:1px solid #e5e5e5!important;box-shadow:none!important}
+.ex,a.dict-tile,#report-bar .report-inner{background:#FAF6EE!important;border:1px solid #e3ddd2!important}
+.alertbody ul.edge li,.sec-lbl.band{border-left-width:1px!important;border-left-color:#e5e5e5!important;background:#fff!important}
+.ctag{background:transparent!important;border:0!important;padding:0!important}
+.qlink{border:0!important;min-height:44px!important;background:none!important;color:#1d5f8a!important}
+a.app-tile{background:#fff!important}
+</style></body></html>

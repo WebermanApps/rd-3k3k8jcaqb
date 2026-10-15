@@ -99,7 +99,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 @media(min-width:3000px){html,body{font-size:36px}h1{font-size:3.6rem}.lbl,.report-time{font-size:26px}a.app{font-size:30px;min-height:96px}.chip{font-size:32px}.report-body{font-size:38px}.card{padding:48px;border-width:2px}.grid{gap:40px}footer{font-size:30px}footer a{min-height:80px;line-height:80px}#mwShare{font-size:28px!important;min-height:96px!important;padding:0 32px!important;min-width:280px!important}h2 svg{width:32px;height:32px}}
 /* old deck.json carousel removed; Ready To Swipe shelf is at the top */
 
-</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=4"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=3">
+</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/deck-shelf.css?v=5"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230B6E4F%22/%3E%3C/svg%3E"><style id="lr1-big">@media(min-width:1600px) and (max-width:2999px){.report-drop,.report-drop summary,.rline,a.app-tile,.alert summary,.dk-dbl,.report-time,.lbl,.dk-hint,.dk-cta,.dk-chip,.dk-src,.dk-v,.dk-q,.chip,.mw-hover,#mwShare,.mws-back,.tb-home,.tb-upd,.seeall,footer,footer a{font-size:20px!important}}</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/routines-section.css?v=3">
 
 <style id="qc-css">
 /* Questions Center (Max QC Deck picks, Oct 14) */
@@ -176,7 +176,7 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 <div class="titleblk"><div class="lbl">Agent Dashboard · Research</div><h1>Research Command Center</h1><p id="role" class="clamp2" tabindex="0"></p></div>
 <section data-shelf="shelf.json" id="ready-to-swipe" aria-label="Ready To Swipe"></section><div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
 <script src="https://webermanapps.github.io/style-swipe/submit.js" defer></script>
-<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=4" defer></script>
+<script src="https://webermanapps.github.io/style-swipe/kit/deck-shelf.js?v=5" defer></script>
 <div id="report-bar" aria-live="polite"><div class="report-inner">
   <div class="report-head"><span class="report-type" id="rtype"></span><span class="report-time" id="rtime"></span></div>
   <div class="report-body" id="rbody"></div>
@@ -364,4 +364,17 @@ b.onclick=async()=>{const url=location.href.split('#')[0];const title=document.t
 <script src="https://webermanapps.github.io/style-swipe/submit.js"></script>
 <script src="submit.js?v=gr2"></script>
 <script src="ptr.js" defer></script>
-</body></html>
+<style id="branding-spec">
+/* Branding style spec (ops/apps-home/gen.py): square, white, beige bands only, uppercase small labels */
+html,body{background:#fff!important}
+*:not(.dot):not(.dots i):not(input[type=radio]){border-radius:0!important}
+.lbl,.sec,.sec-lbl,.report-time,.qc h3.qg,.count,.ctag,.tb-upd{font-size:13px!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;color:#737373!important}
+button,.copy,.qb,#share,.back,.tb-home,.go{border:2px solid #171717!important;background:#fff!important;color:#171717!important;min-height:44px!important}
+.qb.on,.cat.on,.copy.ok{background:#171717!important;color:#fafafa!important}
+.card,.qcard,.alert,.row,.src,.chip,a.app-tile,.cat,.nav button,#q,.ds-card{border:1px solid #e5e5e5!important;box-shadow:none!important}
+.ex,a.dict-tile,#report-bar .report-inner{background:#FAF6EE!important;border:1px solid #e3ddd2!important}
+.alertbody ul.edge li,.sec-lbl.band{border-left-width:1px!important;border-left-color:#e5e5e5!important;background:#fff!important}
+.ctag{background:transparent!important;border:0!important;padding:0!important}
+.qlink{border:0!important;min-height:44px!important;background:none!important;color:#1d5f8a!important}
+a.app-tile{background:#fff!important}
+</style></body></html>
