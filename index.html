@@ -130,7 +130,7 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #17
 .ds-tag,.ds-start,.ds-meta,.rt-st,.rt-meta,.rt-name,.rt-group,.rs-done,.rs-stats,.rs-stats *{font-size:13px!important}
 .report-body ol.rows li::before{font-size:15px!important}
 @media(max-width:1599px){body{font-size:16px}}
-</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc2"><style id="polish-1015">
+</style><link rel="stylesheet" href="https://webermanapps.github.io/style-swipe/kit/dash-theme.css?v=cc3"><style id="polish-1015">
 /* Polish pass Oct 15: Apps Home look - white page, light beige accents, one aligned column */
 :root{--cw:1100px;--pad:16px;--beige:#FAF6EE;--bb:#e3ddd2}
 @media(min-width:1440px){:root{--cw:1280px}}@media(min-width:1600px){:root{--cw:1480px;--pad:32px}}@media(min-width:1900px){:root{--cw:1680px}}
@@ -182,12 +182,18 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 .mr:not([open])>.mrbody{display:none}
 .mrbody{padding:0 16px 16px}.mrbody .topstat{max-width:none;margin:0;padding:0}
 .mrbody #report-bar{background:transparent!important}.mrbody #report-bar .report-inner{margin:14px 0 0!important;max-width:none!important;background:#fff!important}
-.mw-item .qc{max-width:none!important;margin:0!important;padding:0!important}.mw-item .qc>h2{display:none}
-.mw-item .apps-top{margin:0}.mw-item .apps-top>.lbl{display:none}
-.mw-item .card{border:0!important;padding:0!important;margin:0}.mw-item .card.mw-hover:hover{transform:none;box-shadow:none}
-.mw-item .card>h2:not(#vt){display:none}#vt{font-size:13px!important;font-family:Hind,sans-serif!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#737373;margin-bottom:8px}
-.mw-item .alert{margin:0}.mw-item .dict-tile-wrap{margin:0!important;padding:0!important}
+.mw-block .qc{max-width:none!important;margin:0!important;padding:0!important}.mw-block .qc>h2{display:none}
+.mw-block .apps-top{margin:0}.mw-block .apps-top>.lbl{display:none}
+.mw-block .card{border:0!important;padding:0!important;margin:0}.mw-block .card.mw-hover:hover{transform:none;box-shadow:none}
+.mw-block .card>h2:not(#vt){display:none}#vt{font-size:13px!important;font-family:Hind,sans-serif!important;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#737373;margin-bottom:8px}
+.mw-block .alert{margin:0}.mw-block .dict-tile-wrap{margin:0!important;padding:0!important}
 #routines{margin-top:28px}
+.sech{font:700 1.6rem Khand,sans-serif!important;margin:0 0 12px!important}
+.rtopics{margin:0 0 32px}.blocks{display:flex;flex-direction:column;gap:24px}
+.mw-slide h3 a{color:#0a0a0a;text-decoration:none}.mw-slide h3 a::after{content:"";position:absolute;inset:0}.mw-slide{position:relative}
+.mw-slide:hover{border-color:#171717}
+.mw-num{font-size:13px!important}
+.blocks .mw-block .card{border:0!important;padding:0!important}
 </style></head><body>
 <header class="topbar" id="topbar"><div class="tb-in"><a class="mw-hover tb-home" id="appsHome" href="https://webermanapps.github.io/a-o956qercs5ubd57y/"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Apps Home</a><span class="tb-name">Research</span><span class="tb-upd" id="tbUpd"></span><span class="tb-share"><button id="mwShare" class="mw-hover" type="button" aria-label="Share this app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v13"/><path d="M7 8l5-5 5 5"/></svg>Share</button><div id="mwShareMsg">Copied</div></span></div></header>
 <div class="mw-cc-header"><div class="mw-cc-logo" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#2B2B2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 18 A7 7 0 0 1 20 12" stroke="#D4A017" stroke-width="3"/><path d="M35 35 L40 40" stroke="#D4A017" stroke-width="5"/><circle cx="20" cy="20" r="12"/><path d="M29 29 L40 40"/></svg></div><div class="mw-cc-text"><h1 class="mw-cc-title">Research Command Center</h1><p class="mw-cc-desc">Research on experts, competitors and new ideas behind Max&#x27;s projects</p></div></div><span id="role" hidden></span>
@@ -206,8 +212,10 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
 </div></div>
 </div></details>
 <main>
-<div class="topics"><div class="lbl tsec">Research Topics</div><ol class="mw-items">
-<li class="mw-item mw-item--accent"><span class="mw-num">01</span><div class="mw-body"><h3>Questions Center</h3>
+<section class="rtopics" aria-label="Research Topics"><h2 class="sech">Research Topics</h2><div class="mw-carousel"><div class="mw-track"><article class="mw-slide"><span class="mw-num">01</span><h3><a href="coders-dictionary/">Coder's Dictionary</a></h3><p>60 words developers use with AI coding tools, in 6 categories, each with a prompt to copy.</p></article><article class="mw-slide"><span class="mw-num">02</span><h3><a href="writeups/upkeep-pricing-forecast.html">UpKeep Pricing Forecast</a></h3><p>Plus is the likely pick; about $228/mo average spend per customer (base case); top add-on is grass cutting.</p></article><article class="mw-slide"><span class="mw-num">03</span><h3><a href="writeups/founder-security.html">Founder And App Security</a></h3><p>12 security steps ranked by impact, starting with a password manager and passkeys.</p></article><article class="mw-slide"><span class="mw-num">04</span><h3><a href="product-plan/">Agent Dashboard Product</a></h3><p>Plan to sell the agent dashboard setup: what's in it, pricing and next steps.</p></article><article class="mw-slide"><span class="mw-num">05</span><h3><a href="https://webermanapps.github.io/daily-ideas/">Smart Upkeep Deep Dive</a></h3><p>10 new service and app ideas, like a named tech every visit and partner vetting.</p></article></div><div class="mw-car-nav"><button class="mw-prev" aria-label="Previous">&#8592;</button><button class="mw-next" aria-label="Next">&#8594;</button></div></div></section>
+<script>document.querySelectorAll('.mw-carousel').forEach(c=>{const t=c.querySelector('.mw-track');c.querySelector('.mw-prev').onclick=()=>t.scrollBy({left:-t.clientWidth*0.85,behavior:'smooth'});c.querySelector('.mw-next').onclick=()=>t.scrollBy({left:t.clientWidth*0.85,behavior:'smooth'})})</script>
+<div class="blocks">
+<section class="mw-block mw-block--accent" aria-label="Questions Center"><h2 class="sech">Questions Center</h2>
 <section class="qc" id="qc" aria-label="Questions Center"><h2>Questions Center</h2><p class="cnt" id="qcnt"></p><div id="qlist"></div><div class="qbar"><button class="qb mw-hover" type="button" id="qsubmit">Submit All Answers</button><span class="qtick" id="qsent" hidden>Sent</span></div></section>
 <script>
 (function(){
@@ -267,24 +275,15 @@ a.dict-tile .go{margin-left:auto;flex:none;font:600 13px Hind,sans-serif;letter-
   };
  });
 })();
-</script>
-</div></li>
-<li class="mw-item"><span class="mw-num">02</span><div class="mw-body"><h3>Open Items</h3>
-<div id="alerts"></div>
-</div></li>
-<li class="mw-item"><span class="mw-num">03</span><div class="mw-body"><h3>Coder's Dictionary</h3>
-<div class="dict-tile-wrap"><a class="dict-tile mw-hover" href="coders-dictionary/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg><span><b>Coder's Dictionary for AI Tools</b><span class="d">60 words like polish, refactor and ship, with prompts to copy</span></span><span class="go">Open</span></a></div>
-</div></li>
-<li class="mw-item"><span class="mw-num">04</span><div class="mw-body"><h3>Research Apps</h3>
-<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav>
-</div></li>
-<li class="mw-item"><span class="mw-num">05</span><div class="mw-body"><h3>Max's Votes</h3>
-<section class="card mw-hover wide fill3"><h2 id="vt"></h2><div id="votes"></div></section>
-</div></li>
-<li class="mw-item"><span class="mw-num">06</span><div class="mw-body"><h3>Recent Research Days</h3>
-<section class="card mw-hover wide"><h2>Recent Research Days</h2><div id="days"></div></section>
-</div></li>
-</ol>
+</script></section>
+<section class="mw-block" aria-label="Open Items"><h2 class="sech">Open Items</h2>
+<div id="alerts"></div></section>
+<section class="mw-block" aria-label="Research Apps"><h2 class="sech">Research Apps</h2>
+<nav class="apps-top" id="appsTop" aria-label="Research Apps"><div class="lbl">Research Apps</div><div class="apps-tiles" id="apps"></div></nav></section>
+<section class="mw-block" aria-label="Max's Votes"><h2 class="sech">Max's Votes</h2>
+<section class="card mw-hover wide fill3"><h2 id="vt"></h2><div id="votes"></div></section></section>
+<section class="mw-block" aria-label="Recent Research Days"><h2 class="sech">Recent Research Days</h2>
+<section class="card mw-hover wide"><h2>Recent Research Days</h2><div id="days"></div></section></section>
 </div>
 <section data-routines="routines.json" id="routines" aria-label="Routines"></section>
 <script src="https://webermanapps.github.io/style-swipe/kit/routines-section.js?v=3" defer></script>

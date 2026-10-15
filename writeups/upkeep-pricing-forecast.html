@@ -1,0 +1,225 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow"><title>UpKeep Pricing Forecast</title>
+<link href="https://fonts.googleapis.com/css2?family=Khand:wght@600;700&family=Hind:wght@400;600&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}html,body{margin:0;background:#fff;color:#0a0a0a;font:16px/1.6 Hind,system-ui,sans-serif;overflow-x:hidden}
+main{max-width:860px;margin:0 auto;padding:20px 16px 8px}h1,h2,h3{font-family:Khand,sans-serif;line-height:1.1}h1{font-size:2.2rem}h2{font-size:1.5rem;margin-top:32px;border-bottom:1px solid #e5e5e5;padding-bottom:6px}
+a{color:#1d5f8a;overflow-wrap:anywhere}.back{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:2px solid #171717;color:#171717;text-decoration:none;font:600 13px Hind;letter-spacing:.08em;text-transform:uppercase}
+.tw{overflow-x:auto;border:1px solid #e5e5e5;margin:12px 0}table{border-collapse:collapse;font-size:14px;min-width:560px;width:100%}th,td{border-bottom:1px solid #e5e5e5;padding:8px;text-align:left;vertical-align:top}th{background:#FAF6EE}
+li{margin:6px 0}footer{text-align:center;padding:24px 16px 36px;font-size:13px}footer a{color:#737373;text-decoration:none;display:inline-block;min-height:44px;line-height:44px}
+@media(min-width:1600px){html,body{font-size:19px}main{max-width:1100px}table{font-size:16px}}
+</style></head><body><main><a class="back" href="../">Research Dashboard</a>
+<h1>Smart Upkeep: tier mix, add-ons and average monthly spend (forecast inputs)</h1>
+<p>Oct 14, 2026 (ICT). Tags: <strong>[S]</strong> = sourced (URL given), <strong>[A]</strong> = assumption, <strong>[M]</strong> = Max's own draft pricing on the box.</p>
+<h2>1. Current tiers (from the box) [M]</h2>
+<p>Source: <code>/workspace/smartkeep/funnel-app/pricing-config.js</code> (live app smartupkeep.ai, marked "DRAFT, pending Max's approval"); history in <code>/workspace/ops/team-feed.md</code> (Oct 13 lines 309, 399, 412, 488). Price research: <code>/workspace/smartkeep/pricing-48322/smart-upkeep-pricing-48322.md</code>. Lawn: <code>/workspace/smartkeep/lawn-quote/lawn-pricing.js</code>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Tier (internal key)</th>
+<th>"From" price</th>
+<th>Visits</th>
+<th>Key inclusions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Essentials (silver)</td>
+<td>$99/mo (floor; $1,188/yr)</td>
+<td>2/yr</td>
+<td>Furnace + AC tune-ups, filters, water heater flush, dryer vent cleaning, smoke/CO checks, moisture scan, reports</td>
+</tr>
+<tr>
+<td>Plus (gold), marked <em>recommended</em></td>
+<td>$164/mo</td>
+<td>4/yr</td>
+<td>Everything in Essentials + spring/fall gutter cleaning, irrigation start-up/blowout, softener salt, garage door lube, weatherproofing, fridge filter</td>
+</tr>
+<tr>
+<td>Complete (platinum)</td>
+<td>$312/mo</td>
+<td>12/yr</td>
+<td>Everything in Plus + roof/flashing inspection, generator service, ice dam/vent clearing, storm and pre-travel checks, small fixes</td>
+</tr>
+</tbody>
+</table></div>
+<p>"From" = smallest home (&lt;2k sq ft, 1 furnace, 1 tank WH, 1 story). Bigger homes quote higher, so using "From" prices is conservative.
+Note: gutters, HVAC tune-ups, dryer vent and irrigation are already <strong>inside</strong> tiers, so they are not add-ons for members. The menu has 14 add-ons + 8 last-minute extras.</p>
+<h2>2. Tier take-rate evidence</h2>
+<ul>
+<li>Simonson &amp; Tversky camera study: adding a top-priced third option moved the middle option to <strong>57%</strong>, cheapest <strong>22%</strong>, top <strong>21%</strong> [S] <a href="https://www.ux-strategy.ch/en/effects/false-dichotomy.html">https://www.ux-strategy.ch/en/effects/false-dichotomy.html</a> , <a href="https://wepushers.com/frameworks/good-better-best-tiering/">https://wepushers.com/frameworks/good-better-best-tiering/</a></li>
+<li>Simonson (1989): an option gained an average <strong>17.5 points</strong> of share when it became the compromise option, across 5 categories [S] <a href="https://a.drupalgsb-test.paas.cc.columbia.edu/sites/default/files-efs/pubfiles/758/Alternative_Models_for_Capturing_the_Compromise_Effect.pdf">https://a.drupalgsb-test.paas.cc.columbia.edu/sites/default/files-efs/pubfiles/758/Alternative_Models_for_Capturing_the_Compromise_Effect.pdf</a> , <a href="https://www.buynomics.com/glossary-blog/middleoption">https://www.buynomics.com/glossary-blog/middleoption</a></li>
+<li>A practitioner rule of thumb (the author says it is <em>not</em> published research): if 70%+ land on Good, Better is too weak [S] <a href="https://mmsvegas.com/library/good-better-best-pricing-explained/">https://mmsvegas.com/library/good-better-best-pricing-explained/</a></li>
+<li>I found no public data on tier mix for home-maintenance memberships specifically. Comparable menus: Monty's $19/$49/$109/$150 per month <a href="https://www.getmontys.com/membership">https://www.getmontys.com/membership</a> ; Upkeepers from $59/mo <a href="https://getupkeepers.com/">https://getupkeepers.com/</a> [S]</li>
+<li>HVAC agreements: retention <strong>70–85%</strong> (Service Roundtable/NCI/ACCA band) <a href="https://thefenneclab.com/hvac-operations/hvac-maintenance-agreement-ltv-calculator/">https://thefenneclab.com/hvac-operations/hvac-maintenance-agreement-ltv-calculator/</a> ; top companies renew 78–85%, the industry average is 55–65%, and renewal falls to 40–55% when the only reminder is an email <a href="https://www.builtontenth.com/hvac-research/how-hvac-service-agreements-add-200k-annual-revenue">https://www.builtontenth.com/hvac-research/how-hvac-service-agreements-add-200k-annual-revenue</a> ; 15–20% of a contractor's customer base on agreements is "functional", 25–35% is "strong" (same source); 86% renewal KPI (Contracting Business, via) <a href="https://www.webtonic.io/blog/hvac-lifecycle-and-retention-marketing-statistics">https://www.webtonic.io/blog/hvac-lifecycle-and-retention-marketing-statistics</a> ; MCAA 2025: PM retention 93%+ (commercial-leaning) <a href="https://dev.mcaa.org/wp-content/uploads/2025/11/2025-Benchmark-Survey-Final.pdf">https://dev.mcaa.org/wp-content/uploads/2025/11/2025-Benchmark-Survey-Final.pdf</a></li>
+</ul>
+<p><strong>Answer (1): Plus is the most likely pick.</strong> [A] It is in the middle, it carries the "recommended" flag, and gutters and irrigation are visible Michigan pain points. One caveat: Complete costs 1.9x Plus, which is a wide gap, so it will pull fewer buyers than the 21% in the camera study. Essentials at $99 will draw price-sensitive and small-home buyers.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Mix [A]</th>
+<th>Essentials $99</th>
+<th>Plus $164</th>
+<th>Complete $312</th>
+<th>Blended tier $/mo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conservative</td>
+<td>45%</td>
+<td>45%</td>
+<td>10%</td>
+<td>44.55+73.80+31.20 = <strong>$149.55</strong></td>
+</tr>
+<tr>
+<td>Base</td>
+<td>30%</td>
+<td>55%</td>
+<td>15%</td>
+<td>29.70+90.20+46.80 = <strong>$166.70</strong></td>
+</tr>
+<tr>
+<td>Optimistic</td>
+<td>20%</td>
+<td>55%</td>
+<td>25%</td>
+<td>19.80+90.20+78.00 = <strong>$188.00</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. A la carte add-ons: Metro Detroit prices and ranking</h2>
+<p>Monthly equivalent = annual ÷ 12. Michigan season: lawn about Apr–Oct (~26 cuts), snow Nov–Mar.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Add-on</th>
+<th>Typical price [S]</th>
+<th>Annual used</th>
+<th>$/mo equiv</th>
+<th>Attach cons/base/opt [A]</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Lawn mowing</td>
+<td>Detroit avg $52.90/cut (LawnStarter) <a href="https://www.lawnstarter.com/mi">https://www.lawnstarter.com/mi</a> ; $38–78, typical $52 weekly, ~$1,148/yr, Oakland suburbs $55–100 <a href="https://lawnbyseason.com/lawn-mowing-cost/michigan/detroit-mi">https://lawnbyseason.com/lawn-mowing-cost/michigan/detroit-mi</a> ; 1/4 acre $43–59 <a href="https://www.homeblue.com/lawn-mowing/detroit-mi-lawn-mowing-prices.htm">https://www.homeblue.com/lawn-mowing/detroit-mi-lawn-mowing-prices.htm</a></td>
+<td>26 × $40 (Max's draft, 3–5k sq ft) = $1,040</td>
+<td>$86.67</td>
+<td>20/30/40%</td>
+<td>Highest frequency, sticky, recurring</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Snow removal (season)</td>
+<td>$1,595 seasonal ($1,995 salted) <a href="https://oaklandcountysnowremovalpros.com/pricing.html">https://oaklandcountysnowremovalpros.com/pricing.html</a></td>
+<td>$1,595</td>
+<td>$132.92</td>
+<td>10/15/25%</td>
+<td>Covers lawn's off-season, largest ticket; subcontracted, so lower margin</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pest control (quarterly)</td>
+<td>$100–300/visit <a href="https://www.angi.com/articles/how-much-does-pest-control-service-cost.htm">https://www.angi.com/articles/how-much-does-pest-control-service-cost.htm</a></td>
+<td>$800 (Max's draft)</td>
+<td>$66.67</td>
+<td>5/10/15%</td>
+<td>Recurring, done by a partner</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Leaf / fall cleanup (<em>not on menu yet; suggest adding</em>)</td>
+<td>Detroit avg $259, $144–381 <a href="https://www.angi.com/articles/how-much-does-leaf-removal-cost/mi/detroit">https://www.angi.com/articles/how-much-does-leaf-removal-cost/mi/detroit</a> ; 10% of LawnStarter Detroit lawns buy leaf removal, 15% buy cleanups <a href="https://www.lawnstarter.com/detroit-mi-lawn-care">https://www.lawnstarter.com/detroit-mi-lawn-care</a></td>
+<td>$259</td>
+<td>$21.58</td>
+<td>10/15/20%</td>
+<td>Natural bundle with mowing, uses the same crew</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Exterior window washing</td>
+<td>$150–302, avg $221 <a href="https://www.angi.com/articles/how-much-does-window-cleaning-cost.htm">https://www.angi.com/articles/how-much-does-window-cleaning-cost.htm</a></td>
+<td>$225</td>
+<td>$18.75</td>
+<td>10/15/20%</td>
+<td>Easy, high margin, one or two visits a year</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Pressure washing</td>
+<td>$100–720, avg $312 <a href="https://www.angi.com/articles/how-much-does-it-cost-pressure-wash-house.htm">https://www.angi.com/articles/how-much-does-it-cost-pressure-wash-house.htm</a></td>
+<td>$310</td>
+<td>$25.83</td>
+<td>5/10/15%</td>
+<td>Easy, high margin, can be done on visit days</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Holiday lights $220–684, duct cleaning $271–509, chimney $129–381, radon $50–150 (sources in pricing-48322 md)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>not modeled</td>
+<td>Occasional or every few years</td>
+</tr>
+<tr>
+<td>Inside tiers</td>
+<td>Gutter cleaning $180–360 per cleaning for 2-story <a href="https://www.angi.com/articles/how-much-does-gutter-cleaning-cost.htm">https://www.angi.com/articles/how-much-does-gutter-cleaning-cost.htm</a> ; furnace tune-up $129–159 <a href="https://911mechanical.com/how-much-does-a-furnace-tune-up-cost-in-michigan/">https://911mechanical.com/how-much-does-a-furnace-tune-up-cost-in-michigan/</a> ; dryer vent $80–185 <a href="https://ventandflue.com/dryer-vent-cleaning/cost/">https://ventandflue.com/dryer-vent-cleaning/cost/</a> ; irrigation winterization $80–140 <a href="https://primeirrigationmichigan.com/how-much-does-sprinkler-winterization-cost-in-oakland-county/">https://primeirrigationmichigan.com/how-much-does-sprinkler-winterization-cost-in-oakland-county/</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td>n/a</td>
+<td>Sell à la carte to non-members only</td>
+</tr>
+</tbody>
+</table></div>
+<p>Add-on revenue per member per month (attach × $/mo):
+- Conservative: 17.33+13.29+3.33+2.16+1.88+1.29 = <strong>$39.28</strong>
+- Base: 26.00+19.94+6.67+3.24+2.81+2.58 = <strong>$61.24</strong>
+- Optimistic: 34.67+33.23+10.00+4.32+3.75+3.87 = <strong>$89.84</strong></p>
+<h2>4. Average customer spend per month (annualized)</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Tier</th>
+<th>Add-ons</th>
+<th><strong>Total $/mo</strong></th>
+<th>Per year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conservative</td>
+<td>$149.55</td>
+<td>$39.28</td>
+<td><strong>≈ $189</strong></td>
+<td>≈ $2,266</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>$166.70</td>
+<td>$61.24</td>
+<td><strong>≈ $228</strong></td>
+<td>≈ $2,735</td>
+</tr>
+<tr>
+<td>Optimistic</td>
+<td>$188.00</td>
+<td>$89.84</td>
+<td><strong>≈ $278</strong></td>
+<td>≈ $3,334</td>
+</tr>
+</tbody>
+</table></div>
+<p>Caveats [A]:
+- Tier figures use "From" prices. Real quotes for typical 2–3k sq ft Farmington Hills homes will be higher, so the base case is likely understated on tiers.
+- The 2-year welcome offer ("pay 24, get 30 months") cuts revenue per month of service by 20% for anyone who takes it. On cash collected during the paid term it does not reduce spend.
+- Lawn and snow are seasonal cash. Annualizing smooths them out, but actual cash is lumpy: about $40×4.3 ≈ $173/mo extra Apr–Oct for lawn customers, and snow is usually prepaid in the fall.
+- For retention, plan on 70–85% annual renewal if you call members before renewal, and 40–55% if you only send an email (sources above).
+- Every attach rate here is an assumption. No public attach data exists for home-maintenance memberships. Replace these with beta data (the add-on event logging is already in the app).</p>
+<div style="display:flex;justify-content:center;margin:32px 0 0;position:relative"><span id="sm" style="position:absolute;bottom:calc(100% + 6px);background:#fff;border:1px solid #e5e5e5;padding:4px 10px;font-size:13px;display:none">Link copied</span><button id="share" type="button" style="min-height:48px;min-width:180px;border:2px solid #171717;background:#fff;color:#171717;font:700 13px Hind,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer">Share</button></div>
+<script>share.onclick=async()=>{const url=location.href.split('#')[0];if(navigator.share){try{await navigator.share({title:document.title,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url)}catch(e){}sm.style.display='block';setTimeout(()=>sm.style.display='none',1800)}</script>
+</main><footer><a href="https://maxweberman.com">Built by Max Weberman</a></footer></body></html>
