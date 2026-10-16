@@ -13,17 +13,6 @@
    "blurb": "20 cards, ready now"
   },
   {
-   "id": "dashboard-product-agent-dashboard-product",
-   "name": "Agent Dashboard Product",
-   "url": "https://webermanapps.github.io/style-swipe/dashboard-product-agent-dashboard-product-ft6c5e/",
-   "total": 20,
-   "topic": "dashboard-product",
-   "source": "/workspace/style-swipe/banks/research-dashboard-product.json",
-   "added": "2026-10-15T08:53:59+07:00",
-   "tag": "Product",
-   "blurb": "20 cards, ready now"
-  },
-  {
    "id": "upkeep-pricing-smart-upkeep-pricing",
    "name": "Smart Upkeep Pricing",
    "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-6h6kdh/",
@@ -57,5 +46,20 @@
    "blurb": "20 cards, ready now"
   }
  ],
- "updated": "2026-10-15T08:54:01+07:00"
+ "updated": "2026-10-16T23:30:00+07:00",
+ "unlisted": [
+  {
+   "id": "dashboard-product-agent-dashboard-product",
+   "name": "Agent Dashboard Product",
+   "url": "https://webermanapps.github.io/style-swipe/dashboard-product-agent-dashboard-product-ft6c5e/",
+   "total": 20,
+   "topic": "dashboard-product",
+   "source": "/workspace/style-swipe/banks/research-dashboard-product.json",
+   "added": "2026-10-15T08:53:59+07:00",
+   "tag": "Product",
+   "blurb": "20 cards, ready now",
+   "unlisted_from": "decks",
+   "unlisted_note": "Dashboard deck unlisted (Max Oct 16 2026 23:19 ICT: no dashboard decks unless he asks). Deck files/pages/votes kept."
+  }
+ ]
 }
