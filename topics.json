@@ -1,8 +1,23 @@
 {
  "deck": "research-topics",
  "agent": "research",
- "updated": "2026-10-16T10:20:00+07:00",
+ "updated": "2026-10-16T14:40:00+07:00",
  "topics": [
+  {
+   "id": "anonymous-builder-brand",
+   "title": "Anonymous Builder Brand",
+   "summary": "Quiet, Banksy-style attention for free playable drops.",
+   "detail": "Pseudonymous makers like tinysoul and small vibe-coded game accounts grew on X with free playable drops and one visual signature. True anonymity is hard and clashes with the Max Weberman footer and customer businesses, so the pick is a semi-anon studio name with a quiet link back. Three paths: studio name (M), semi-anon persona (S, recommended), open build in public (S to L).",
+   "thumb": "topics/anon.svg",
+   "link": "writeups/anonymous-builder-brand.html",
+   "link_label": "See the paths",
+   "kind": "topic",
+   "status": "possible",
+   "notes": [],
+   "answer": "",
+   "created": "2026-10-16T14:40:00+07:00",
+   "updated": "2026-10-16T14:40:00+07:00"
+  },
   {
    "id": "upkeep-cool-tech",
    "title": "Cool Tech For UpKeep",

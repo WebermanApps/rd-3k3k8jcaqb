@@ -24,3 +24,5 @@ For each row with `deck: research-topics`:
 - `note`: append `{"text": <note>, "at": <time>}` to `notes`, research the question, and write the reply in `"answer"` (shows in the card's expanded detail as "Research: ...").
 Then commit and push `topics.json` (and the lock steps above if you touched any HTML), and log it in `/workspace/ops/team-sync/air-reports/research.md`.
 The device's local state yields to `topics.json` once the file records a decision.
+
+- 2026-10-16 Anonymous Builder Brand: writeups/anonymous-builder-brand.html (possible)
