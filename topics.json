@@ -1,7 +1,7 @@
 {
   "deck": "research-topics",
   "agent": "research",
-  "updated": "2026-10-17T15:48:35+07:00",
+  "updated": "2026-10-17T20:14:43+07:00",
   "topics": [
     {
       "id": "upkeep-tech-certs",
@@ -12,11 +12,16 @@
       "link": "writeups/upkeep-tech-certs.html",
       "link_label": "See the picks",
       "kind": "topic",
-      "status": "possible",
-      "notes": [],
-      "answer": "",
+      "status": "approved",
+      "notes": [
+        {
+          "text": "please put together a full list, .pdf version showing all of the certs you recommend, and their costs. try to show me what you think is most improtant for skill, and what looks the best for the customer. like maybe there is some general safety and first aid course they should take, something stupid like that. that doesn't help them with work but customers would be so happy about. so ya keep researching this topic and prepare a .pdf, pin it to your recent projects section on the dashboard. if you need more info about this *new* section, talk to grok bot",
+          "at": "2026-10-17T08:43:06.462Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-17T11:00:00+07:00",
-      "updated": "2026-10-17T11:00:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "anonymous-builder-brand",
@@ -27,11 +32,16 @@
       "link": "writeups/anonymous-builder-brand.html",
       "link_label": "See the paths",
       "kind": "topic",
-      "status": "possible",
-      "notes": [],
-      "answer": "",
+      "status": "approved",
+      "notes": [
+        {
+          "text": "i changed my name. its machan. and i believe i have an x account machan1001. which is fucking perfect. can you please prepare a .pdf or pwoerpoint or some time of presentation for me, it could even be an app presentation if you want, about how i could go about doing this. maybe its like just one day i drop a free link to my dashboard app, or something like that. i literally have no idea. itd be cool to make a little money along the way. maybe i start selling stuff for like $10 a piece",
+          "at": "2026-10-17T08:44:37.444Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T14:40:00+07:00",
-      "updated": "2026-10-16T14:40:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "upkeep-cool-tech",
@@ -43,10 +53,15 @@
       "link_label": "See the tech",
       "kind": "topic",
       "status": "approved",
-      "notes": [],
-      "answer": "",
+      "notes": [
+        {
+          "text": "lets put together a full list with cost and difficulty of deployment. i also think there should be a wow factor gauge. like maybe the glasses is tricky to get going, but its fucking awesome. so its worth it",
+          "at": "2026-10-17T08:45:46.803Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T10:20:00+07:00",
-      "updated": "2026-10-17T09:19:12+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "condensed-pitch-deck",
@@ -75,10 +90,15 @@
       "link_label": "Open the plan",
       "kind": "topic",
       "status": "approved",
-      "notes": [],
-      "answer": "",
+      "notes": [
+        {
+          "text": "this is an all in #1 employee who is gonna grow with th company. i need to spend some time talking to him about the company vision, and about how it was build and how we use the tech. i don't need to show him every step,  but i could see there being a time when he starts helping me with coding or having some influence. he will be the person who is helping me work out the kinks on the beta launch. so i need to include this. please prepare a project and pin it to your dash board that is a power point presentation for each day. also he has a month to study and get ready so if you think there are any topics we could get him going on include those as well.",
+          "at": "2026-10-17T08:49:52.652Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-17T09:19:12+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "coder-s-dictionary",
@@ -93,7 +113,7 @@
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-17T15:39:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "upkeep-pricing-forecast",
@@ -119,11 +139,11 @@
       "link": "writeups/founder-security.html",
       "link_label": "Read the brief",
       "kind": "topic",
-      "status": "possible",
+      "status": "approved",
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "agent-dashboard-product",
@@ -149,11 +169,11 @@
       "link": "https://webermanapps.github.io/daily-ideas/",
       "link_label": "Open Daily Ideas",
       "kind": "topic",
-      "status": "possible",
+      "status": "approved",
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "smart-upkeep-membership-add-ons",
@@ -179,11 +199,11 @@
       "link": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-av88uq/",
       "link_label": "Open the Home Guide deck",
       "kind": "project",
-      "status": "possible",
+      "status": "approved",
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "daily-ideas-app",
@@ -194,11 +214,16 @@
       "link": "https://webermanapps.github.io/daily-ideas/",
       "link_label": "Open Daily Ideas",
       "kind": "project",
-      "status": "possible",
-      "notes": [],
-      "answer": "",
+      "status": "approved",
+      "notes": [
+        {
+          "text": "i gave this to branding and told them to always give you a swipe deck that has new ideas",
+          "at": "2026-10-17T08:54:05.883Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "checkout-and-selling",
@@ -209,11 +234,16 @@
       "link": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-lkeebd/",
       "link_label": "Open the Checkout deck",
       "kind": "project",
-      "status": "possible",
-      "notes": [],
-      "answer": "",
+      "status": "approved",
+      "notes": [
+        {
+          "text": "put together a .pdf presentation and pin this to your dashboard in the ongoing projects section about what my options are and how we can achieve this. i want to prioritize security, ease for customer, and reliable track-ability on my end",
+          "at": "2026-10-17T08:51:44.200Z"
+        }
+      ],
+      "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T20:14:43+07:00"
     },
     {
       "id": "offline-shutoffs-and-emergency-info",
