@@ -25,7 +25,7 @@ For each row with `deck: research-topics`:
 Then commit and push `topics.json` (and the lock steps above if you touched any HTML), and log it in `/workspace/ops/team-sync/air-reports/research.md`.
 The device's local state yields to `topics.json` once the file records a decision.
 
-- 2026-10-16 Anonymous Builder Brand: writeups/anonymous-builder-brand.html (possible)
+- 2026-10-16 Machan (was Anonymous Builder Brand): writeups/anonymous-builder-brand.html (approved)
 - 2026-10-17 UpKeep Tech Certifications: writeups/upkeep-tech-certs.html (possible)
 
 ## Ongoing projects
@@ -34,3 +34,4 @@ An approved topic can become an ongoing project that Max works on right from the
 - Max's stars and notes arrive via the submit inbox (`/workspace/ops/submit/pull.sh research`), one deck name per project, e.g. `deck: coders-dictionary` with `results.type` `favorite` (`term`, `starred`) or `note` (`text`).
 - Research applies them: update `favorites` in the data file, research note requests, add new items with `"new": "<date>"`, keep all old items, bump the card's `summary`/`updated`, then publish with the page-lock rule.
 - 2026-10-17 Condensed Investor Pitch Deck: archived (hidden; writeup kept at writeups/condensed-pitch-deck.html). Max moved the project to UpKeep.
+- 2026-10-17 Smart Upkeep Membership Add-Ons: archived into Branding's Extras Ideas Deck (R118: no snow or pest); writeup writeups/upkeep-pricing-forecast.html kept (snow/pest lines removed).

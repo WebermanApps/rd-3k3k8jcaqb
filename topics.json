@@ -40,9 +40,9 @@
     },
     {
       "id": "anonymous-builder-brand",
-      "title": "Anonymous Builder Brand",
+      "title": "Machan",
       "summary": "Quiet, Banksy-style attention for free playable drops.",
-      "detail": "Pseudonymous makers like tinysoul and small vibe-coded game accounts grew on X with free playable drops and one visual signature. True anonymity is hard and clashes with the Max Weberman footer and customer businesses, so the pick is a semi-anon studio name with a quiet link back. Three paths: studio name (M), semi-anon persona (S, recommended), open build in public (S to L).",
+      "detail": "Pseudonymous makers like tinysoul and small vibe-coded game accounts grew on X with free playable drops and one visual signature. True anonymity is hard and clashes with the Built by Machan footer and customer businesses, so the pick is a semi-anon studio name with a quiet link back. Three paths: studio name (M), semi-anon persona (S, recommended), open build in public (S to L).",
       "thumb": "topics/anon.svg",
       "link": "writeups/anonymous-builder-brand.html",
       "link_label": "See the paths",
@@ -56,7 +56,7 @@
       ],
       "answer": "Working on it: deliverable will be pinned to the Document Center.",
       "created": "2026-10-16T14:40:00+07:00",
-      "updated": "2026-10-17T20:14:43+07:00"
+      "updated": "2026-10-17T23:21:39+07:00"
     },
     {
       "id": "upkeep-cool-tech",
@@ -133,8 +133,8 @@
     {
       "id": "upkeep-pricing-forecast",
       "title": "UpKeep Pricing Forecast",
-      "summary": "Plus is the likely pick; about $228/mo average.",
-      "detail": "Base case: 30% Essentials, 55% Plus, 15% Complete, about $167/mo on tiers plus $61 in add-ons, so about $228/mo per customer (range $189 to $278). Top add-on is lawn mowing, then snow, pest, leaf cleanup, windows and pressure washing.",
+      "summary": "Plus is the likely pick; about $201/mo average.",
+      "detail": "Base case: 30% Essentials, 55% Plus, 15% Complete, about $167/mo on tiers plus $35 in add-ons, so about $201/mo per customer (range roughly $168 to $235). Top add-on is lawn mowing, then leaf cleanup, windows and pressure washing.",
       "thumb": "topics/forecast.svg",
       "link": "writeups/upkeep-pricing-forecast.html",
       "link_label": "Read the forecast",
@@ -143,7 +143,7 @@
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-17T09:19:12+07:00"
+      "updated": "2026-10-17T23:21:39+07:00"
     },
     {
       "id": "founder-and-app-security",
@@ -193,17 +193,18 @@
     {
       "id": "smart-upkeep-membership-add-ons",
       "title": "Smart Upkeep Membership Add-Ons",
-      "summary": "About $61 per member per month.",
-      "detail": "Lawn, snow, pest, leaf cleanup, windows and pressure washing. Base case attach rates add about $61 per member per month on top of tiers.",
+      "summary": "About $35 per member per month.",
+      "detail": "Lawn, leaf cleanup, windows and pressure washing. Base case attach rates add about $35 per member per month on top of tiers.",
       "thumb": "projects/addons.svg",
       "link": "writeups/upkeep-pricing-forecast.html",
       "link_label": "Read the forecast",
       "kind": "project",
-      "status": "possible",
+      "status": "rejected",
       "notes": [],
-      "answer": "",
+      "answer": "Archived into Branding's Extras Ideas Deck (R118: no snow or pest).",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T23:21:39+07:00",
+      "archived": true
     },
     {
       "id": "home-guide-qr-stickers",
