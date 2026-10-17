@@ -80,9 +80,9 @@
    "blurb": "10 cards, ready now"
   },
   {
-   "id": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process",
+   "id": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
    "name": "Home Guide Ideas: Ideas & Handoff",
-   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-qj0poc/",
+   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck-mnrtm7/",
    "total": 10,
    "topic": "home-guide-ideas",
    "source": "/workspace/style-swipe/banks/research-home-guide.json",
@@ -90,12 +90,13 @@
    "tag": "Home Guide",
    "answered": 0,
    "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process"
   },
   {
-   "id": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff",
+   "id": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck",
    "name": "Home Guide Ideas: Future Guides & Process",
-   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-vk2xs4/",
+   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck-p6up2d/",
    "total": 10,
    "topic": "home-guide-ideas",
    "source": "/workspace/style-swipe/banks/research-home-guide.json",
@@ -103,10 +104,11 @@
    "tag": "Home Guide",
    "answered": 0,
    "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
-   "blurb": "10 cards, ready now"
+   "blurb": "10 cards, ready now",
+   "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
   }
  ],
- "updated": "2026-10-17T08:05:35+07:00",
+ "updated": "2026-10-17T09:55:08+07:00",
  "unlisted": [
   {
    "id": "dashboard-product-agent-dashboard-product",
@@ -184,8 +186,8 @@
    "blurb": "20 cards, ready now",
    "unlisted_at": "2026-10-17T08:05:35+07:00",
    "split_into": [
-    "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process",
-    "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
+    "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
+    "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck"
    ],
    "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
   }
@@ -193,5 +195,6 @@
  "cap": 10,
  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
  "held": [],
- "queued": []
+ "queued": [],
+ "done": []
 }
