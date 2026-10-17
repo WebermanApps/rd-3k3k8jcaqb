@@ -118,9 +118,24 @@
       "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
       "blurb": "10 cards, ready now",
       "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
+    },
+    {
+      "id": "research-machan-launch-and-checkout-options-deck",
+      "name": "Machan Launch And Checkout Options",
+      "url": "https://webermanapps.github.io/style-swipe/machan-launch-checkout-vmr899/",
+      "total": 10,
+      "topic": "research-machan-launch-and-checkout-options-deck",
+      "added": "2026-10-18T03:42:34+07:00",
+      "tag": "Research",
+      "answered": 0,
+      "requested": true,
+      "requested_at": "2026-10-18T03:11:00+07:00",
+      "blurb": "10 cards from your Oct 17 research notes",
+      "new": true,
+      "note": "Branding morning decks Oct 18 from the Oct 17 daily work report"
     }
   ],
-  "updated": "2026-10-17T16:00:12+07:00",
+  "updated": "2026-10-18T03:42:34+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
@@ -207,6 +222,24 @@
   "cap": 10,
   "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
   "held": [],
-  "queued": [],
+  "queued": [
+    {
+      "id": "research-tech-certs-training-and-cool-tech-deck",
+      "name": "Tech Certs, Training And Cool Tech",
+      "url": "https://webermanapps.github.io/style-swipe/tech-certs-training-cool-tech-dqhtgs/",
+      "total": 10,
+      "topic": "research-tech-certs-training-and-cool-tech-deck",
+      "added": "2026-10-18T03:42:34+07:00",
+      "tag": "Research",
+      "answered": 0,
+      "requested": true,
+      "requested_at": "2026-10-18T03:11:00+07:00",
+      "blurb": "10 cards from your Oct 17 research notes",
+      "new": true,
+      "note": "Branding morning decks Oct 18 from the Oct 17 daily work report",
+      "queued_at": "2026-10-18T03:42:34+07:00",
+      "queue_note": "R97: shelf at 10 after Machan Launch And Checkout Options; fills the next free slot"
+    }
+  ],
   "done": []
 }
