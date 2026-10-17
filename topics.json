@@ -1,8 +1,23 @@
 {
   "deck": "research-topics",
   "agent": "research",
-  "updated": "2026-10-17T20:14:43+07:00",
+  "updated": "2026-10-17T21:30:00+07:00",
   "topics": [
+    {
+      "id": "property-management-tool",
+      "title": "Property Management Tool",
+      "summary": "A simple 1-20 door tool where repairs feed UpKeep's home record.",
+      "detail": "The low end is crowded and cheap: Innago, Avail, TurboTenant and Baselane are free for landlords; RentRedi is $12/mo yearly; TurboTenant Pro $199/yr up to 10 units. Buildium starts at $62/mo, DoorLoop at $199/mo, AppFolio needs 50 units. Small landlords still glue Sheets, texts and memory together and handle repairs by text. v1 (effort M): rent tracker (record only), repair requests linked to the UpKeep home record, lease vault with renewal reminders, tenant messages. No payments or screening in v1. Owner: Prop, with UpKeep for the home record. Risks: fair housing wording, Michigan source-of-income rule, tenant data breach law, payments (use a licensed processor). Next: Prop and UpKeep agree the unit-to-home link, build a mock with fake data, Max tests on one unit for 30 days.",
+      "thumb": "topics/property.svg",
+      "link": "writeups/property-management-tool.html",
+      "link_label": "See the plan",
+      "kind": "topic",
+      "status": "possible",
+      "notes": [],
+      "answer": "",
+      "created": "2026-10-17T21:30:00+07:00",
+      "updated": "2026-10-17T21:30:00+07:00"
+    },
     {
       "id": "upkeep-tech-certs",
       "title": "UpKeep Tech Certifications",
