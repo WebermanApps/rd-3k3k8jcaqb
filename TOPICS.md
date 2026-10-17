@@ -26,3 +26,4 @@ Then commit and push `topics.json` (and the lock steps above if you touched any 
 The device's local state yields to `topics.json` once the file records a decision.
 
 - 2026-10-16 Anonymous Builder Brand: writeups/anonymous-builder-brand.html (possible)
+- 2026-10-17 UpKeep Tech Certifications: writeups/upkeep-tech-certs.html (possible)

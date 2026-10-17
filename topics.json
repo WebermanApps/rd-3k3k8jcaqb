@@ -4,6 +4,21 @@
   "updated": "2026-10-17T09:19:12+07:00",
   "topics": [
     {
+      "id": "upkeep-tech-certs",
+      "title": "UpKeep Tech Certifications",
+      "summary": "OSHA 10 yes, but EPA lead-safe (RRP) is the real must-have in Detroit.",
+      "detail": "OSHA 10 Construction is a voluntary $59, 10-hour online card: worth it, not legally required. Legally needed: EPA RRP renovator (8-hour class, $200 to $305, 5 yrs) plus a $300 EPA Lead-Safe firm cert, since 91% of Detroit homes are pre-1978; and employer ladder training (free ALI course). Michigan limits unlicensed techs to minor plumbing (clogs, faucets, valves), electrical wiring of $100 or less, and no HVAC repair. Strongly recommended: Red Cross First Aid/CPR (~$100), NATE Ready-to-Work ($60). Look-good extras: EPA 608 Type I ($24.95), HVAC Excellence exams ($15), Nest Pro (free), a $10K bond (~$125/yr), background checks.",
+      "thumb": "topics/certs.svg",
+      "link": "writeups/upkeep-tech-certs.html",
+      "link_label": "See the picks",
+      "kind": "topic",
+      "status": "possible",
+      "notes": [],
+      "answer": "",
+      "created": "2026-10-17T11:00:00+07:00",
+      "updated": "2026-10-17T11:00:00+07:00"
+    },
+    {
       "id": "anonymous-builder-brand",
       "title": "Anonymous Builder Brand",
       "summary": "Quiet, Banksy-style attention for free playable drops.",
