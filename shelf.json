@@ -1,200 +1,212 @@
 {
- "agent": "research",
- "decks": [
-  {
-   "id": "checkout-selling-checkout-and-selling-offer-go-to-market",
-   "name": "Checkout: Offer & Go To Market",
-   "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-offer-go-to-market-iolea4/",
-   "total": 10,
-   "topic": "checkout-selling",
-   "source": "/workspace/style-swipe/banks/research-checkout.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Checkout",
-   "answered": 0,
-   "split_from": "checkout-selling-checkout-and-selling",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "checkout-selling-checkout-and-selling-billing-risk",
-   "name": "Checkout: Billing & Risk",
-   "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-billing-risk-6r14li/",
-   "total": 10,
-   "topic": "checkout-selling",
-   "source": "/workspace/style-swipe/banks/research-checkout.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Checkout",
-   "answered": 0,
-   "split_from": "checkout-selling-checkout-and-selling",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
-   "name": "Pricing: Add-Ons & Retention",
-   "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-add-ons-retention-m7ht0h/",
-   "total": 10,
-   "topic": "upkeep-pricing",
-   "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Pricing",
-   "answered": 0,
-   "split_from": "upkeep-pricing-smart-upkeep-pricing",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing",
-   "name": "Pricing: Forecast & Billing",
-   "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-forecast-billing-fdb2vn/",
-   "total": 10,
-   "topic": "upkeep-pricing",
-   "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Pricing",
-   "answered": 0,
-   "split_from": "upkeep-pricing-smart-upkeep-pricing",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "founder-security-founder-and-app-security-identity-domains",
-   "name": "Founder Security: Identity & Domains",
-   "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-identity-domains-fwwf5v/",
-   "total": 10,
-   "topic": "founder-security",
-   "source": "/workspace/style-swipe/banks/research-founder-security.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Security",
-   "answered": 0,
-   "split_from": "founder-security-founder-and-app-security",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "founder-security-founder-and-app-security-ai-agents-recovery",
-   "name": "Founder Security: AI Agents & Recovery",
-   "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-ai-agents-recovery-aiqzi0/",
-   "total": 10,
-   "topic": "founder-security",
-   "source": "/workspace/style-swipe/banks/research-founder-security.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Security",
-   "answered": 0,
-   "split_from": "founder-security-founder-and-app-security",
-   "blurb": "10 cards, ready now"
-  },
-  {
-   "id": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
-   "name": "Home Guide Ideas: Ideas & Handoff",
-   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck-mnrtm7/",
-   "total": 10,
-   "topic": "home-guide-ideas",
-   "source": "/workspace/style-swipe/banks/research-home-guide.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Home Guide",
-   "answered": 0,
-   "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
-   "blurb": "10 cards, ready now",
-   "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process"
-  },
-  {
-   "id": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck",
-   "name": "Home Guide Ideas: Future Guides & Process",
-   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck-p6up2d/",
-   "total": 10,
-   "topic": "home-guide-ideas",
-   "source": "/workspace/style-swipe/banks/research-home-guide.json",
-   "added": "2026-10-17T08:05:35+07:00",
-   "tag": "Home Guide",
-   "answered": 0,
-   "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
-   "blurb": "10 cards, ready now",
-   "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
-  }
- ],
- "updated": "2026-10-17T09:55:08+07:00",
- "unlisted": [
-  {
-   "id": "dashboard-product-agent-dashboard-product",
-   "name": "Agent Dashboard Product",
-   "url": "https://webermanapps.github.io/style-swipe/dashboard-product-agent-dashboard-product-ft6c5e/",
-   "total": 20,
-   "topic": "dashboard-product",
-   "source": "/workspace/style-swipe/banks/research-dashboard-product.json",
-   "added": "2026-10-15T08:53:59+07:00",
-   "tag": "Product",
-   "blurb": "20 cards, ready now",
-   "unlisted_from": "decks",
-   "unlisted_note": "Dashboard deck unlisted (Max Oct 16 2026 23:19 ICT: no dashboard decks unless he asks). Deck files/pages/votes kept."
-  },
-  {
-   "id": "checkout-selling-checkout-and-selling",
-   "name": "Checkout And Selling",
-   "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-lkeebd/",
-   "total": 20,
-   "topic": "checkout-selling",
-   "source": "/workspace/style-swipe/banks/research-checkout.json",
-   "added": "2026-10-15T08:53:59+07:00",
-   "tag": "Checkout",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "checkout-selling-checkout-and-selling-offer-go-to-market",
-    "checkout-selling-checkout-and-selling-billing-risk"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "upkeep-pricing-smart-upkeep-pricing",
-   "name": "Smart Upkeep Pricing",
-   "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-6h6kdh/",
-   "total": 20,
-   "topic": "upkeep-pricing",
-   "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
-   "added": "2026-10-15T08:54:00+07:00",
-   "tag": "Pricing",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
-    "upkeep-pricing-smart-upkeep-pricing-forecast-billing"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "founder-security-founder-and-app-security",
-   "name": "Founder And App Security",
-   "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-wn73px/",
-   "total": 20,
-   "topic": "founder-security",
-   "source": "/workspace/style-swipe/banks/research-founder-security.json",
-   "added": "2026-10-15T08:54:00+07:00",
-   "tag": "Security",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "founder-security-founder-and-app-security-identity-domains",
-    "founder-security-founder-and-app-security-ai-agents-recovery"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  },
-  {
-   "id": "home-guide-ideas-home-guide-and-construction-ideas",
-   "name": "Home Guide And Construction Ideas",
-   "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-av88uq/",
-   "total": 20,
-   "topic": "home-guide-ideas",
-   "source": "/workspace/style-swipe/banks/research-home-guide.json",
-   "added": "2026-10-15T08:54:01+07:00",
-   "tag": "Home Guide",
-   "blurb": "20 cards, ready now",
-   "unlisted_at": "2026-10-17T08:05:35+07:00",
-   "split_into": [
-    "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
-    "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck"
-   ],
-   "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
-  }
- ],
- "cap": 10,
- "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
- "held": [],
- "queued": [],
- "done": []
+  "agent": "research",
+  "decks": [
+    {
+      "id": "new-ideas-wellnest-upkeep-ai-coding-vcllwx",
+      "name": "New Ideas: WellNest, Upkeep & AI Coding",
+      "url": "https://webermanapps.github.io/style-swipe/new-ideas-wellnest-upkeep-ai-coding-vcllwx/",
+      "total": 10,
+      "topic": "new-ideas",
+      "added": "2026-10-17T15:56:26+07:00",
+      "tag": "New Ideas",
+      "answered": 0,
+      "blurb": "Things you could build: spinoffs of your projects plus new ideas",
+      "new": true
+    },
+    {
+      "id": "checkout-selling-checkout-and-selling-offer-go-to-market",
+      "name": "Checkout: Offer & Go To Market",
+      "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-offer-go-to-market-iolea4/",
+      "total": 10,
+      "topic": "checkout-selling",
+      "source": "/workspace/style-swipe/banks/research-checkout.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Checkout",
+      "answered": 0,
+      "split_from": "checkout-selling-checkout-and-selling",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "checkout-selling-checkout-and-selling-billing-risk",
+      "name": "Checkout: Billing & Risk",
+      "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-billing-risk-6r14li/",
+      "total": 10,
+      "topic": "checkout-selling",
+      "source": "/workspace/style-swipe/banks/research-checkout.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Checkout",
+      "answered": 0,
+      "split_from": "checkout-selling-checkout-and-selling",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
+      "name": "Pricing: Add-Ons & Retention",
+      "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-add-ons-retention-m7ht0h/",
+      "total": 10,
+      "topic": "upkeep-pricing",
+      "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Pricing",
+      "answered": 0,
+      "split_from": "upkeep-pricing-smart-upkeep-pricing",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing",
+      "name": "Pricing: Forecast & Billing",
+      "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-forecast-billing-fdb2vn/",
+      "total": 10,
+      "topic": "upkeep-pricing",
+      "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Pricing",
+      "answered": 0,
+      "split_from": "upkeep-pricing-smart-upkeep-pricing",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "founder-security-founder-and-app-security-identity-domains",
+      "name": "Founder Security: Identity & Domains",
+      "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-identity-domains-fwwf5v/",
+      "total": 10,
+      "topic": "founder-security",
+      "source": "/workspace/style-swipe/banks/research-founder-security.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Security",
+      "answered": 0,
+      "split_from": "founder-security-founder-and-app-security",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "founder-security-founder-and-app-security-ai-agents-recovery",
+      "name": "Founder Security: AI Agents & Recovery",
+      "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-ai-agents-recovery-aiqzi0/",
+      "total": 10,
+      "topic": "founder-security",
+      "source": "/workspace/style-swipe/banks/research-founder-security.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Security",
+      "answered": 0,
+      "split_from": "founder-security-founder-and-app-security",
+      "blurb": "10 cards, ready now"
+    },
+    {
+      "id": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
+      "name": "Home Guide Ideas: Ideas & Handoff",
+      "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck-mnrtm7/",
+      "total": 10,
+      "topic": "home-guide-ideas",
+      "source": "/workspace/style-swipe/banks/research-home-guide.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Home Guide",
+      "answered": 0,
+      "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
+      "blurb": "10 cards, ready now",
+      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process"
+    },
+    {
+      "id": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck",
+      "name": "Home Guide Ideas: Future Guides & Process",
+      "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck-p6up2d/",
+      "total": 10,
+      "topic": "home-guide-ideas",
+      "source": "/workspace/style-swipe/banks/research-home-guide.json",
+      "added": "2026-10-17T08:05:35+07:00",
+      "tag": "Home Guide",
+      "answered": 0,
+      "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
+      "blurb": "10 cards, ready now",
+      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
+    }
+  ],
+  "updated": "2026-10-17T16:00:12+07:00",
+  "unlisted": [
+    {
+      "id": "dashboard-product-agent-dashboard-product",
+      "name": "Agent Dashboard Product",
+      "url": "https://webermanapps.github.io/style-swipe/dashboard-product-agent-dashboard-product-ft6c5e/",
+      "total": 20,
+      "topic": "dashboard-product",
+      "source": "/workspace/style-swipe/banks/research-dashboard-product.json",
+      "added": "2026-10-15T08:53:59+07:00",
+      "tag": "Product",
+      "blurb": "20 cards, ready now",
+      "unlisted_from": "decks",
+      "unlisted_note": "Dashboard deck unlisted (Max Oct 16 2026 23:19 ICT: no dashboard decks unless he asks). Deck files/pages/votes kept."
+    },
+    {
+      "id": "checkout-selling-checkout-and-selling",
+      "name": "Checkout And Selling",
+      "url": "https://webermanapps.github.io/style-swipe/checkout-selling-checkout-and-selling-lkeebd/",
+      "total": 20,
+      "topic": "checkout-selling",
+      "source": "/workspace/style-swipe/banks/research-checkout.json",
+      "added": "2026-10-15T08:53:59+07:00",
+      "tag": "Checkout",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "checkout-selling-checkout-and-selling-offer-go-to-market",
+        "checkout-selling-checkout-and-selling-billing-risk"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "upkeep-pricing-smart-upkeep-pricing",
+      "name": "Smart Upkeep Pricing",
+      "url": "https://webermanapps.github.io/style-swipe/upkeep-pricing-smart-upkeep-pricing-6h6kdh/",
+      "total": 20,
+      "topic": "upkeep-pricing",
+      "source": "/workspace/style-swipe/banks/research-upkeep-pricing.json",
+      "added": "2026-10-15T08:54:00+07:00",
+      "tag": "Pricing",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
+        "upkeep-pricing-smart-upkeep-pricing-forecast-billing"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "founder-security-founder-and-app-security",
+      "name": "Founder And App Security",
+      "url": "https://webermanapps.github.io/style-swipe/founder-security-founder-and-app-security-wn73px/",
+      "total": 20,
+      "topic": "founder-security",
+      "source": "/workspace/style-swipe/banks/research-founder-security.json",
+      "added": "2026-10-15T08:54:00+07:00",
+      "tag": "Security",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "founder-security-founder-and-app-security-identity-domains",
+        "founder-security-founder-and-app-security-ai-agents-recovery"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    },
+    {
+      "id": "home-guide-ideas-home-guide-and-construction-ideas",
+      "name": "Home Guide And Construction Ideas",
+      "url": "https://webermanapps.github.io/style-swipe/home-guide-ideas-home-guide-and-construction-ideas-av88uq/",
+      "total": 20,
+      "topic": "home-guide-ideas",
+      "source": "/workspace/style-swipe/banks/research-home-guide.json",
+      "added": "2026-10-15T08:54:01+07:00",
+      "tag": "Home Guide",
+      "blurb": "20 cards, ready now",
+      "unlisted_at": "2026-10-17T08:05:35+07:00",
+      "split_into": [
+        "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
+        "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck"
+      ],
+      "note": "R86 (Max Oct 17 2026 07:50 ICT): unanswered 20-pick deck split into two 10-pick decks; original unlisted (page, file and any votes kept)"
+    }
+  ],
+  "cap": 10,
+  "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
+  "held": [],
+  "queued": [],
+  "done": []
 }
