@@ -1,7 +1,7 @@
 {
   "deck": "research-topics",
   "agent": "research",
-  "updated": "2026-10-17T21:05:00+07:00",
+  "updated": "2026-10-18T04:00:51+07:00",
   "topics": [
     {
       "id": "property-management-tool",
@@ -134,7 +134,7 @@
       "id": "upkeep-pricing-forecast",
       "title": "UpKeep Pricing Forecast",
       "summary": "Plus is the likely pick; about $201/mo average.",
-      "detail": "Base case: 30% Essentials, 55% Plus, 15% Complete, about $167/mo on tiers plus $35 in add-ons, so about $201/mo per customer (range roughly $168 to $235). Top add-on is lawn mowing, then leaf cleanup, windows and pressure washing.",
+      "detail": "Base case: 30% Essentials, 55% Plus, 15% Complete, about $167/mo on tiers plus $35 in add-ons, so about $201/mo per customer (range roughly $168 to $235). Top add-on is lawn mowing, then leaf cleanup, windows and pressure washing. Menu is 9 membership add-ons + 8 last-minute extras after Max's cuts.",
       "thumb": "topics/forecast.svg",
       "link": "writeups/upkeep-pricing-forecast.html",
       "link_label": "Read the forecast",
@@ -143,7 +143,7 @@
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-17T23:21:39+07:00"
+      "updated": "2026-10-18T04:00:51+07:00"
     },
     {
       "id": "founder-and-app-security",
@@ -201,7 +201,7 @@
       "kind": "project",
       "status": "rejected",
       "notes": [],
-      "answer": "Archived into Branding's Extras Ideas Deck (R118: no snow or pest).",
+      "answer": "Archived into Branding's Extras Ideas Deck (R118).",
       "created": "2026-10-16T09:50:00+07:00",
       "updated": "2026-10-17T23:21:39+07:00",
       "archived": true

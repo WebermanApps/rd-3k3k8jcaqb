@@ -2,15 +2,15 @@
   "agent": "research",
   "decks": [
     {
-      "id": "new-ideas-wellnest-upkeep-ai-coding-vcllwx",
-      "name": "New Ideas: WellNest, Upkeep & AI Coding",
-      "url": "https://webermanapps.github.io/style-swipe/new-ideas-wellnest-upkeep-ai-coding-vcllwx/",
+      "id": "new-ideas-upkeep-style-swipe-agent-dashboards-errwbq",
+      "name": "New Ideas: Upkeep, Style Swipe & Agent Dashboards",
+      "url": "https://webermanapps.github.io/style-swipe/new-ideas-upkeep-style-swipe-agent-dashboards-errwbq/",
       "total": 10,
       "topic": "new-ideas",
-      "added": "2026-10-17T15:56:26+07:00",
+      "added": "2026-10-18T03:54:14+07:00",
       "tag": "New Ideas",
       "answered": 0,
-      "blurb": "Things you could build: spinoffs of your projects plus new ideas",
+      "blurb": "10 idea picks: Upkeep, Style Swipe, Agent Dashboards",
       "new": true
     },
     {
@@ -135,7 +135,7 @@
       "note": "Branding morning decks Oct 18 from the Oct 17 daily work report"
     }
   ],
-  "updated": "2026-10-18T03:42:34+07:00",
+  "updated": "2026-10-18T04:00:30+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
@@ -223,6 +223,20 @@
   "cap_note": "R86 (Max Oct 17 2026 07:50 ICT): every shelf shows up to 10 decks (pinned included), 10 picks per deck; in-progress first, done last (kit deck-shelf.js sort)",
   "held": [],
   "queued": [
+    {
+      "id": "new-ideas-wellnest-upkeep-ai-coding-vcllwx",
+      "name": "New Ideas: WellNest, Upkeep & AI Coding",
+      "url": "https://webermanapps.github.io/style-swipe/new-ideas-wellnest-upkeep-ai-coding-vcllwx/",
+      "total": 10,
+      "topic": "new-ideas",
+      "added": "2026-10-17T15:56:26+07:00",
+      "tag": "New Ideas",
+      "answered": 0,
+      "blurb": "Things you could build: spinoffs of your projects plus new ideas",
+      "new": false,
+      "queued_at": "2026-10-18T04:00:30+07:00",
+      "queue_note": "R101: rotated off shelf for New Ideas Upkeep/Style Swipe/Agent Dashboards; fills next free slot"
+    },
     {
       "id": "research-tech-certs-training-and-cool-tech-deck",
       "name": "Tech Certs, Training And Cool Tech",
