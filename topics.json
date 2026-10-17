@@ -81,17 +81,17 @@
     {
       "id": "coder-s-dictionary",
       "title": "Coder's Dictionary",
-      "summary": "60 AI coding words with prompts to copy.",
-      "detail": "60 words developers and vibe-coders use with AI coding tools, in 6 categories (Visual Polish, Fixing, Building, Quality, Shipping, Prompting the AI). Each has a plain meaning, when to say it, and a prompt line to copy.",
+      "summary": "75 AI coding words. Your favorites saved, 15 new words for you.",
+      "detail": "Ongoing project. 75 words for steering AI coding tools in 6 categories. Your Favorites (Polish, Scaffold, Lint, Code review) up top, then New For You (15 quality and workflow words picked to match), then the full dictionary. Star any word or send a note asking for more words; Research grows the list.",
       "thumb": "topics/dictionary.svg",
       "link": "coders-dictionary/",
       "link_label": "Open the dictionary",
       "kind": "topic",
-      "status": "possible",
+      "status": "approved",
       "notes": [],
       "answer": "",
       "created": "2026-10-16T09:50:00+07:00",
-      "updated": "2026-10-16T09:50:00+07:00"
+      "updated": "2026-10-17T15:39:00+07:00"
     },
     {
       "id": "upkeep-pricing-forecast",

@@ -1,422 +1,552 @@
-[
 {
-"c": "Visual Polish",
-"t": "Polish",
-"m": "Small finishing touches that make something feel finished: spacing, alignment, colors, smooth details. No new features.",
-"w": "The app works but looks a bit rough.",
-"p": "Polish the home screen: even spacing, aligned edges, consistent button styles. Don't add features."
-},
-{
-"c": "Visual Polish",
-"t": "Make it pop",
-"m": "Make something stand out more with stronger contrast, size, or color.",
-"w": "A key button or headline is getting lost.",
-"p": "Make the Sign Up button pop: bigger, higher contrast, more space around it."
-},
-{
-"c": "Visual Polish",
-"t": "Tighten",
-"m": "Remove extra space, words, or clutter so things feel compact and deliberate.",
-"w": "The layout feels loose or the text is wordy.",
-"p": "Tighten the card layout: less padding, shorter labels, keep it readable."
-},
-{
-"c": "Visual Polish",
-"t": "Responsive",
-"m": "The layout adapts to any screen size, from phone to big monitor.",
-"w": "It looks fine on your laptop but breaks on your phone.",
-"p": "Make this page fully responsive. Check 393px phone, 1470px laptop and 2560px monitor."
-},
-{
-"c": "Visual Polish",
-"t": "Mobile-first",
-"m": "Design for the phone first, then expand for bigger screens.",
-"w": "Most of your users are on phones.",
-"p": "Build this mobile-first: design for a 393px phone, then scale up."
-},
-{
-"c": "Visual Polish",
-"t": "Whitespace",
-"m": "Empty space around elements. More of it usually looks calmer and more premium.",
-"w": "The screen feels crowded.",
-"p": "Add more whitespace between sections so it feels less crowded."
-},
-{
-"c": "Visual Polish",
-"t": "Visual hierarchy",
-"m": "Making the most important thing the most noticeable, then the next, and so on.",
-"w": "Users don't know where to look first.",
-"p": "Fix the visual hierarchy: title biggest, price next, details smallest."
-},
-{
-"c": "Visual Polish",
-"t": "Design system / tokens",
-"m": "A shared set of colors, fonts, sizes and spacing reused everywhere so the app looks consistent.",
-"w": "Different screens look like different apps.",
-"p": "Create design tokens for colors, fonts and spacing and use them on every screen."
-},
-{
-"c": "Visual Polish",
-"t": "Microinteractions",
-"m": "Tiny animations or feedback, like a button press bounce or a checkmark when saved.",
-"w": "The app feels flat or lifeless.",
-"p": "Add subtle microinteractions: button press feedback and a checkmark when saved."
-},
-{
-"c": "Visual Polish",
-"t": "Empty state",
-"m": "What a screen shows when there is no data yet.",
-"w": "A new user sees a blank page.",
-"p": "Design a friendly empty state for the list with a short tip and an Add button."
-},
-{
-"c": "Visual Polish",
-"t": "Pixel-perfect",
-"m": "Matching a design exactly, down to individual pixels.",
-"w": "You have a mockup and want it copied precisely.",
-"p": "Match this screenshot pixel-perfect: same spacing, fonts and colors."
-},
-{
-"c": "Fixing",
-"t": "Bug",
-"m": "Something that doesn't work the way it should.",
-"w": "Anything is broken.",
-"p": "There's a bug: tapping Save does nothing on iPhone. Find the cause and fix it."
-},
-{
-"c": "Fixing",
-"t": "Repro steps",
-"m": "The exact steps to make a bug happen again.",
-"w": "Reporting a bug so the AI can find it.",
-"p": "Repro steps: open Settings, toggle Dark, go back. Expected: stays on. Actual: resets."
-},
-{
-"c": "Fixing",
-"t": "Root cause",
-"m": "The real underlying reason for a problem, not just the symptom.",
-"w": "The same bug keeps coming back.",
-"p": "Don't patch the symptom. Find the root cause and explain it before fixing."
-},
-{
-"c": "Fixing",
-"t": "Regression",
-"m": "Something that used to work broke after a change.",
-"w": "An update broke an old feature.",
-"p": "This is a regression: login worked yesterday. Check what changed and fix it."
-},
-{
-"c": "Fixing",
-"t": "Hotfix",
-"m": "A quick, urgent fix pushed straight to the live app.",
-"w": "Something is broken for real users right now.",
-"p": "Hotfix: checkout is down on the live site. Smallest safe fix, ship it now."
-},
-{
-"c": "Fixing",
-"t": "Refactor",
-"m": "Reorganize the code so it's cleaner, without changing what the app does.",
-"w": "Code is getting messy and the AI keeps breaking things.",
-"p": "Refactor the settings page into smaller pieces. No behavior changes."
-},
-{
-"c": "Fixing",
-"t": "Debug",
-"m": "Investigate why something is going wrong, step by step.",
-"w": "You don't know what's broken, just that it is.",
-"p": "Debug why the images don't load. Add logging and tell me what you find."
-},
-{
-"c": "Fixing",
-"t": "Console errors",
-"m": "Error messages the browser logs behind the scenes.",
-"w": "A page acts weird and you want a checkup.",
-"p": "Open the page, check for console errors, and fix every one."
-},
-{
-"c": "Fixing",
-"t": "Rollback / revert",
-"m": "Undo a change and go back to the last working version.",
-"w": "A new change made things worse.",
-"p": "Roll back the last commit. The previous version was working."
-},
-{
-"c": "Fixing",
-"t": "Flaky",
-"m": "Something that fails only sometimes, unpredictably.",
-"w": "A test or feature works on and off.",
-"p": "The upload is flaky, about 1 in 5 fails. Make it reliable and add a retry."
-},
-{
-"c": "Building",
-"t": "Scaffold",
-"m": "Set up the basic skeleton of a project or feature, ready to fill in.",
-"w": "Starting something new.",
-"p": "Scaffold a new React app with a home page, settings page and routing."
-},
-{
-"c": "Building",
-"t": "Stub",
-"m": "A placeholder piece that pretends to work so you can build around it.",
-"w": "A part depends on something not ready yet.",
-"p": "Stub the payment step for now: fake a successful payment so I can test the flow."
-},
-{
-"c": "Building",
-"t": "Mock data",
-"m": "Fake but realistic data used for building and testing.",
-"w": "You want to see the design before real data exists.",
-"p": "Fill the dashboard with realistic mock data: 20 customers, mixed statuses."
-},
-{
-"c": "Building",
-"t": "MVP",
-"m": "Minimum Viable Product: the smallest version that is still useful.",
-"w": "You want to launch fast and learn.",
-"p": "Build an MVP: sign up, add a task, mark it done. Nothing else yet."
-},
-{
-"c": "Building",
-"t": "Prototype",
-"m": "A rough version to try an idea, not meant to last.",
-"w": "You want to see if an idea feels right.",
-"p": "Make a quick clickable prototype of the onboarding. It doesn't need to save data."
-},
-{
-"c": "Building",
-"t": "Component",
-"m": "A reusable building block, like a button or card.",
-"w": "The same thing appears in many places.",
-"p": "Turn the product card into a reusable component and use it everywhere."
-},
-{
-"c": "Building",
-"t": "API",
-"m": "The way two programs talk to each other and exchange data.",
-"w": "Your app needs data from another service.",
-"p": "Connect to the weather API and show today's forecast. Keep the key out of the code."
-},
-{
-"c": "Building",
-"t": "Hydrate",
-"m": "When a page loads as plain content first and then becomes interactive.",
-"w": "Buttons don't respond for a moment after load, or content flickers.",
-"p": "The page flickers on load. Check for a hydration mismatch and fix it."
-},
-{
-"c": "Building",
-"t": "State",
-"m": "The information the app remembers right now, like what's in the cart.",
-"w": "Things reset or don't update when they should.",
-"p": "The cart count doesn't update. Fix how cart state is stored and shared."
-},
-{
-"c": "Building",
-"t": "Wire up",
-"m": "Connect pieces together so they actually work.",
-"w": "The design exists but buttons do nothing.",
-"p": "Wire up the form so Submit saves to the database and shows a confirmation."
-},
-{
-"c": "Quality",
-"t": "Edge cases",
-"m": "Unusual situations: empty input, very long names, no internet, zero items.",
-"w": "Before launch, to avoid surprises.",
-"p": "List the edge cases for this form and handle each one: empty, too long, offline."
-},
-{
-"c": "Quality",
-"t": "Lint",
-"m": "Automatic checks that catch sloppy code and likely mistakes without running it.",
-"w": "Keeping code tidy.",
-"p": "Run the linter and fix all warnings."
-},
-{
-"c": "Quality",
-"t": "Tests",
-"m": "Small automatic checks that confirm features still work.",
-"w": "You want changes not to break things.",
-"p": "Add tests for the signup flow and make sure they pass before you finish."
-},
-{
-"c": "Quality",
-"t": "Harden",
-"m": "Make something sturdier and safer against bad input, errors and attacks.",
-"w": "Getting ready for real users.",
-"p": "Harden the login: rate limit attempts, validate input, handle errors cleanly."
-},
-{
-"c": "Quality",
-"t": "Idempotent",
-"m": "Doing something twice has the same result as doing it once.",
-"w": "Double taps or retries create duplicates.",
-"p": "Make the Pay button idempotent so double taps never charge twice."
-},
-{
-"c": "Quality",
-"t": "DRY",
-"m": "Don't Repeat Yourself: keep one copy of logic instead of pasting it around.",
-"w": "The same fix has to be made in many places.",
-"p": "This code repeats in 4 places. Make it DRY with one shared function."
-},
-{
-"c": "Quality",
-"t": "Tech debt",
-"m": "Shortcuts that work now but make future changes harder.",
-"w": "Things are slowing down or breaking more often.",
-"p": "List the worst tech debt in this project and fix the top 3."
-},
-{
-"c": "Quality",
-"t": "Accessibility (a11y)",
-"m": "Making the app usable for everyone, including screen readers and keyboard users.",
-"w": "You want it inclusive and compliant.",
-"p": "Do an accessibility pass: labels, contrast, focus rings, 44px tap targets."
-},
-{
-"c": "Quality",
-"t": "Performance",
-"m": "How fast and smooth the app runs.",
-"w": "Pages feel slow.",
-"p": "The page takes 5 seconds to load. Improve performance and tell me what you changed."
-},
-{
-"c": "Quality",
-"t": "Code review",
-"m": "Checking code for problems before it goes live.",
-"w": "Before shipping something big.",
-"p": "Review your changes like a senior engineer and list any risks before I ship."
-},
-{
-"c": "Shipping",
-"t": "Ship",
-"m": "Release it to real users.",
-"w": "It's ready.",
-"p": "Ship it: commit, push, and confirm the live page shows the change."
-},
-{
-"c": "Shipping",
-"t": "Deploy",
-"m": "Put the latest version onto the live server.",
-"w": "Moving changes from your machine to the internet.",
-"p": "Deploy the latest version and send me the live URL."
-},
-{
-"c": "Shipping",
-"t": "Staging vs prod",
-"m": "Staging is a private test copy; prod (production) is the real live app.",
-"w": "You want to test safely before users see it.",
-"p": "Deploy to staging first. Only push to prod after I approve."
-},
-{
-"c": "Shipping",
-"t": "Commit / push",
-"m": "Commit saves a snapshot of changes; push uploads it to GitHub.",
-"w": "Saving progress.",
-"p": "Commit with a clear message and push to main."
-},
-{
-"c": "Shipping",
-"t": "Cache-bust",
-"m": "Force browsers to load the newest files instead of old saved copies.",
-"w": "You shipped but still see the old version.",
-"p": "I still see the old version. Cache-bust the CSS and JS."
-},
-{
-"c": "Shipping",
-"t": "Dogfood",
-"m": "Use your own product yourself, like a real user.",
-"w": "Before asking others to try it.",
-"p": "Let's dogfood: walk through the app as a new user and list every rough spot."
-},
-{
-"c": "Shipping",
-"t": "Feature flag",
-"m": "A switch to turn a feature on or off without redeploying.",
-"w": "You want to test a feature with only some people.",
-"p": "Put the new checkout behind a feature flag, off by default."
-},
-{
-"c": "Shipping",
-"t": "Changelog",
-"m": "A running list of what changed in each version.",
-"w": "Keeping track of updates.",
-"p": "Add a changelog entry describing today's changes in plain English."
-},
-{
-"c": "Prompting the AI",
-"t": "Spec",
-"m": "A clear written description of what to build: goal, scope, and how you'll know it's done.",
-"w": "Starting anything bigger than a small tweak.",
-"p": "Here's the spec. Goal: X. Touch only: Y. Done when: Z. Ask questions first if unclear."
-},
-{
-"c": "Prompting the AI",
-"t": "Acceptance criteria",
-"m": "A checklist that must be true for the job to count as done.",
-"w": "You want a clear finish line.",
-"p": "Acceptance criteria: works at 393px, no console errors, Save shows a confirmation."
-},
-{
-"c": "Prompting the AI",
-"t": "Scope",
-"m": "What the AI is allowed to change, and what it must leave alone.",
-"w": "Stopping the AI from wandering.",
-"p": "Scope: only edit the pricing page. Don't touch any other files."
-},
-{
-"c": "Prompting the AI",
-"t": "Guardrails",
-"m": "Rules and limits that keep the AI from doing something risky.",
-"w": "Protecting live data or other projects.",
-"p": "Guardrails: never delete files, never touch production data, ask before installing packages."
-},
-{
-"c": "Prompting the AI",
-"t": "One-shot",
-"m": "Get it right in a single attempt, without back-and-forth.",
-"w": "A small, clear task.",
-"p": "One-shot this: add a dark border to all cards. No questions needed."
-},
-{
-"c": "Prompting the AI",
-"t": "Plan first",
-"m": "Ask the AI to explain its approach before writing code.",
-"w": "Big or risky changes.",
-"p": "Plan first: outline the steps and files you'll change, then wait for my OK."
-},
-{
-"c": "Prompting the AI",
-"t": "Context",
-"m": "The background info the AI needs: files, goals, examples, past decisions.",
-"w": "The AI keeps guessing wrong.",
-"p": "Context: this is a booking app for salons. Read README and AGENTS.md first."
-},
-{
-"c": "Prompting the AI",
-"t": "AGENTS.md",
-"m": "A file in the project with standing rules every AI agent reads.",
-"w": "You repeat the same instructions every time.",
-"p": "Add these rules to AGENTS.md so every agent follows them."
-},
-{
-"c": "Prompting the AI",
-"t": "Hallucination",
-"m": "When the AI confidently makes something up.",
-"w": "It cites a function or fact that doesn't exist.",
-"p": "Don't guess. If you're unsure a library or function exists, check the docs first."
-},
-{
-"c": "Prompting the AI",
-"t": "Verify",
-"m": "Ask the AI to prove the work is done: run it, test it, screenshot it.",
-"w": "You've been told 'done' before when it wasn't.",
-"p": "Verify it: run the tests, load the live page, and send screenshots."
-},
-{
-"c": "Prompting the AI",
-"t": "Iterate",
-"m": "Improve in small rounds instead of all at once.",
-"w": "The first try is close but not right.",
-"p": "Good start. Iterate: keep the layout, make the header smaller and the text darker."
+ "updated": "2026-10-17T15:39:00+07:00",
+ "favorites": [
+  "Polish",
+  "Scaffold",
+  "Lint",
+  "Code review"
+ ],
+ "pattern": "Your picks are quality and workflow verbs for directing an AI on code you don't read line by line: clean it up (polish, lint), set it up (scaffold), check it (code review). New words follow that pattern.",
+ "terms": [
+  {
+   "c": "Visual Polish",
+   "t": "Polish",
+   "m": "Small finishing touches that make something feel finished: spacing, alignment, colors, smooth details. No new features.",
+   "w": "The app works but looks a bit rough.",
+   "p": "Polish the home screen: even spacing, aligned edges, consistent button styles. Don't add features."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Make it pop",
+   "m": "Make something stand out more with stronger contrast, size, or color.",
+   "w": "A key button or headline is getting lost.",
+   "p": "Make the Sign Up button pop: bigger, higher contrast, more space around it."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Tighten",
+   "m": "Remove extra space, words, or clutter so things feel compact and deliberate.",
+   "w": "The layout feels loose or the text is wordy.",
+   "p": "Tighten the card layout: less padding, shorter labels, keep it readable."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Responsive",
+   "m": "The layout adapts to any screen size, from phone to big monitor.",
+   "w": "It looks fine on your laptop but breaks on your phone.",
+   "p": "Make this page fully responsive. Check 393px phone, 1470px laptop and 2560px monitor."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Mobile-first",
+   "m": "Design for the phone first, then expand for bigger screens.",
+   "w": "Most of your users are on phones.",
+   "p": "Build this mobile-first: design for a 393px phone, then scale up."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Whitespace",
+   "m": "Empty space around elements. More of it usually looks calmer and more premium.",
+   "w": "The screen feels crowded.",
+   "p": "Add more whitespace between sections so it feels less crowded."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Visual hierarchy",
+   "m": "Making the most important thing the most noticeable, then the next, and so on.",
+   "w": "Users don't know where to look first.",
+   "p": "Fix the visual hierarchy: title biggest, price next, details smallest."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Design system / tokens",
+   "m": "A shared set of colors, fonts, sizes and spacing reused everywhere so the app looks consistent.",
+   "w": "Different screens look like different apps.",
+   "p": "Create design tokens for colors, fonts and spacing and use them on every screen."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Microinteractions",
+   "m": "Tiny animations or feedback, like a button press bounce or a checkmark when saved.",
+   "w": "The app feels flat or lifeless.",
+   "p": "Add subtle microinteractions: button press feedback and a checkmark when saved."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Empty state",
+   "m": "What a screen shows when there is no data yet.",
+   "w": "A new user sees a blank page.",
+   "p": "Design a friendly empty state for the list with a short tip and an Add button."
+  },
+  {
+   "c": "Visual Polish",
+   "t": "Pixel-perfect",
+   "m": "Matching a design exactly, down to individual pixels.",
+   "w": "You have a mockup and want it copied precisely.",
+   "p": "Match this screenshot pixel-perfect: same spacing, fonts and colors."
+  },
+  {
+   "c": "Fixing",
+   "t": "Bug",
+   "m": "Something that doesn't work the way it should.",
+   "w": "Anything is broken.",
+   "p": "There's a bug: tapping Save does nothing on iPhone. Find the cause and fix it."
+  },
+  {
+   "c": "Fixing",
+   "t": "Repro steps",
+   "m": "The exact steps to make a bug happen again.",
+   "w": "Reporting a bug so the AI can find it.",
+   "p": "Repro steps: open Settings, toggle Dark, go back. Expected: stays on. Actual: resets."
+  },
+  {
+   "c": "Fixing",
+   "t": "Root cause",
+   "m": "The real underlying reason for a problem, not just the symptom.",
+   "w": "The same bug keeps coming back.",
+   "p": "Don't patch the symptom. Find the root cause and explain it before fixing."
+  },
+  {
+   "c": "Fixing",
+   "t": "Regression",
+   "m": "Something that used to work broke after a change.",
+   "w": "An update broke an old feature.",
+   "p": "This is a regression: login worked yesterday. Check what changed and fix it."
+  },
+  {
+   "c": "Fixing",
+   "t": "Hotfix",
+   "m": "A quick, urgent fix pushed straight to the live app.",
+   "w": "Something is broken for real users right now.",
+   "p": "Hotfix: checkout is down on the live site. Smallest safe fix, ship it now."
+  },
+  {
+   "c": "Fixing",
+   "t": "Refactor",
+   "m": "Reorganize the code so it's cleaner, without changing what the app does.",
+   "w": "Code is getting messy and the AI keeps breaking things.",
+   "p": "Refactor the settings page into smaller pieces. No behavior changes."
+  },
+  {
+   "c": "Fixing",
+   "t": "Debug",
+   "m": "Investigate why something is going wrong, step by step.",
+   "w": "You don't know what's broken, just that it is.",
+   "p": "Debug why the images don't load. Add logging and tell me what you find."
+  },
+  {
+   "c": "Fixing",
+   "t": "Console errors",
+   "m": "Error messages the browser logs behind the scenes.",
+   "w": "A page acts weird and you want a checkup.",
+   "p": "Open the page, check for console errors, and fix every one."
+  },
+  {
+   "c": "Fixing",
+   "t": "Rollback / revert",
+   "m": "Undo a change and go back to the last working version.",
+   "w": "A new change made things worse.",
+   "p": "Roll back the last commit. The previous version was working."
+  },
+  {
+   "c": "Fixing",
+   "t": "Flaky",
+   "m": "Something that fails only sometimes, unpredictably.",
+   "w": "A test or feature works on and off.",
+   "p": "The upload is flaky, about 1 in 5 fails. Make it reliable and add a retry."
+  },
+  {
+   "c": "Building",
+   "t": "Scaffold",
+   "m": "Set up the basic skeleton of a project or feature, ready to fill in.",
+   "w": "Starting something new.",
+   "p": "Scaffold a new React app with a home page, settings page and routing."
+  },
+  {
+   "c": "Building",
+   "t": "Stub",
+   "m": "A placeholder piece that pretends to work so you can build around it.",
+   "w": "A part depends on something not ready yet.",
+   "p": "Stub the payment step for now: fake a successful payment so I can test the flow."
+  },
+  {
+   "c": "Building",
+   "t": "Mock data",
+   "m": "Fake but realistic data used for building and testing.",
+   "w": "You want to see the design before real data exists.",
+   "p": "Fill the dashboard with realistic mock data: 20 customers, mixed statuses."
+  },
+  {
+   "c": "Building",
+   "t": "MVP",
+   "m": "Minimum Viable Product: the smallest version that is still useful.",
+   "w": "You want to launch fast and learn.",
+   "p": "Build an MVP: sign up, add a task, mark it done. Nothing else yet."
+  },
+  {
+   "c": "Building",
+   "t": "Prototype",
+   "m": "A rough version to try an idea, not meant to last.",
+   "w": "You want to see if an idea feels right.",
+   "p": "Make a quick clickable prototype of the onboarding. It doesn't need to save data."
+  },
+  {
+   "c": "Building",
+   "t": "Component",
+   "m": "A reusable building block, like a button or card.",
+   "w": "The same thing appears in many places.",
+   "p": "Turn the product card into a reusable component and use it everywhere."
+  },
+  {
+   "c": "Building",
+   "t": "API",
+   "m": "The way two programs talk to each other and exchange data.",
+   "w": "Your app needs data from another service.",
+   "p": "Connect to the weather API and show today's forecast. Keep the key out of the code."
+  },
+  {
+   "c": "Building",
+   "t": "Hydrate",
+   "m": "When a page loads as plain content first and then becomes interactive.",
+   "w": "Buttons don't respond for a moment after load, or content flickers.",
+   "p": "The page flickers on load. Check for a hydration mismatch and fix it."
+  },
+  {
+   "c": "Building",
+   "t": "State",
+   "m": "The information the app remembers right now, like what's in the cart.",
+   "w": "Things reset or don't update when they should.",
+   "p": "The cart count doesn't update. Fix how cart state is stored and shared."
+  },
+  {
+   "c": "Building",
+   "t": "Wire up",
+   "m": "Connect pieces together so they actually work.",
+   "w": "The design exists but buttons do nothing.",
+   "p": "Wire up the form so Submit saves to the database and shows a confirmation."
+  },
+  {
+   "c": "Quality",
+   "t": "Edge cases",
+   "m": "Unusual situations: empty input, very long names, no internet, zero items.",
+   "w": "Before launch, to avoid surprises.",
+   "p": "List the edge cases for this form and handle each one: empty, too long, offline."
+  },
+  {
+   "c": "Quality",
+   "t": "Lint",
+   "m": "Automatic checks that catch sloppy code and likely mistakes without running it.",
+   "w": "Keeping code tidy.",
+   "p": "Run the linter and fix all warnings."
+  },
+  {
+   "c": "Quality",
+   "t": "Tests",
+   "m": "Small automatic checks that confirm features still work.",
+   "w": "You want changes not to break things.",
+   "p": "Add tests for the signup flow and make sure they pass before you finish."
+  },
+  {
+   "c": "Quality",
+   "t": "Harden",
+   "m": "Make something sturdier and safer against bad input, errors and attacks.",
+   "w": "Getting ready for real users.",
+   "p": "Harden the login: rate limit attempts, validate input, handle errors cleanly."
+  },
+  {
+   "c": "Quality",
+   "t": "Idempotent",
+   "m": "Doing something twice has the same result as doing it once.",
+   "w": "Double taps or retries create duplicates.",
+   "p": "Make the Pay button idempotent so double taps never charge twice."
+  },
+  {
+   "c": "Quality",
+   "t": "DRY",
+   "m": "Don't Repeat Yourself: keep one copy of logic instead of pasting it around.",
+   "w": "The same fix has to be made in many places.",
+   "p": "This code repeats in 4 places. Make it DRY with one shared function."
+  },
+  {
+   "c": "Quality",
+   "t": "Tech debt",
+   "m": "Shortcuts that work now but make future changes harder.",
+   "w": "Things are slowing down or breaking more often.",
+   "p": "List the worst tech debt in this project and fix the top 3."
+  },
+  {
+   "c": "Quality",
+   "t": "Accessibility (a11y)",
+   "m": "Making the app usable for everyone, including screen readers and keyboard users.",
+   "w": "You want it inclusive and compliant.",
+   "p": "Do an accessibility pass: labels, contrast, focus rings, 44px tap targets."
+  },
+  {
+   "c": "Quality",
+   "t": "Performance",
+   "m": "How fast and smooth the app runs.",
+   "w": "Pages feel slow.",
+   "p": "The page takes 5 seconds to load. Improve performance and tell me what you changed."
+  },
+  {
+   "c": "Quality",
+   "t": "Code review",
+   "m": "Checking code for problems before it goes live.",
+   "w": "Before shipping something big.",
+   "p": "Review your changes like a senior engineer and list any risks before I ship."
+  },
+  {
+   "c": "Shipping",
+   "t": "Ship",
+   "m": "Release it to real users.",
+   "w": "It's ready.",
+   "p": "Ship it: commit, push, and confirm the live page shows the change."
+  },
+  {
+   "c": "Shipping",
+   "t": "Deploy",
+   "m": "Put the latest version onto the live server.",
+   "w": "Moving changes from your machine to the internet.",
+   "p": "Deploy the latest version and send me the live URL."
+  },
+  {
+   "c": "Shipping",
+   "t": "Staging vs prod",
+   "m": "Staging is a private test copy; prod (production) is the real live app.",
+   "w": "You want to test safely before users see it.",
+   "p": "Deploy to staging first. Only push to prod after I approve."
+  },
+  {
+   "c": "Shipping",
+   "t": "Commit / push",
+   "m": "Commit saves a snapshot of changes; push uploads it to GitHub.",
+   "w": "Saving progress.",
+   "p": "Commit with a clear message and push to main."
+  },
+  {
+   "c": "Shipping",
+   "t": "Cache-bust",
+   "m": "Force browsers to load the newest files instead of old saved copies.",
+   "w": "You shipped but still see the old version.",
+   "p": "I still see the old version. Cache-bust the CSS and JS."
+  },
+  {
+   "c": "Shipping",
+   "t": "Dogfood",
+   "m": "Use your own product yourself, like a real user.",
+   "w": "Before asking others to try it.",
+   "p": "Let's dogfood: walk through the app as a new user and list every rough spot."
+  },
+  {
+   "c": "Shipping",
+   "t": "Feature flag",
+   "m": "A switch to turn a feature on or off without redeploying.",
+   "w": "You want to test a feature with only some people.",
+   "p": "Put the new checkout behind a feature flag, off by default."
+  },
+  {
+   "c": "Shipping",
+   "t": "Changelog",
+   "m": "A running list of what changed in each version.",
+   "w": "Keeping track of updates.",
+   "p": "Add a changelog entry describing today's changes in plain English."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Spec",
+   "m": "A clear written description of what to build: goal, scope, and how you'll know it's done.",
+   "w": "Starting anything bigger than a small tweak.",
+   "p": "Here's the spec. Goal: X. Touch only: Y. Done when: Z. Ask questions first if unclear."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Acceptance criteria",
+   "m": "A checklist that must be true for the job to count as done.",
+   "w": "You want a clear finish line.",
+   "p": "Acceptance criteria: works at 393px, no console errors, Save shows a confirmation."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Scope",
+   "m": "What the AI is allowed to change, and what it must leave alone.",
+   "w": "Stopping the AI from wandering.",
+   "p": "Scope: only edit the pricing page. Don't touch any other files."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Guardrails",
+   "m": "Rules and limits that keep the AI from doing something risky.",
+   "w": "Protecting live data or other projects.",
+   "p": "Guardrails: never delete files, never touch production data, ask before installing packages."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "One-shot",
+   "m": "Get it right in a single attempt, without back-and-forth.",
+   "w": "A small, clear task.",
+   "p": "One-shot this: add a dark border to all cards. No questions needed."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Plan first",
+   "m": "Ask the AI to explain its approach before writing code.",
+   "w": "Big or risky changes.",
+   "p": "Plan first: outline the steps and files you'll change, then wait for my OK."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Context",
+   "m": "The background info the AI needs: files, goals, examples, past decisions.",
+   "w": "The AI keeps guessing wrong.",
+   "p": "Context: this is a booking app for salons. Read README and AGENTS.md first."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "AGENTS.md",
+   "m": "A file in the project with standing rules every AI agent reads.",
+   "w": "You repeat the same instructions every time.",
+   "p": "Add these rules to AGENTS.md so every agent follows them."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Hallucination",
+   "m": "When the AI confidently makes something up.",
+   "w": "It cites a function or fact that doesn't exist.",
+   "p": "Don't guess. If you're unsure a library or function exists, check the docs first."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Verify",
+   "m": "Ask the AI to prove the work is done: run it, test it, screenshot it.",
+   "w": "You've been told 'done' before when it wasn't.",
+   "p": "Verify it: run the tests, load the live page, and send screenshots."
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Iterate",
+   "m": "Improve in small rounds instead of all at once.",
+   "w": "The first try is close but not right.",
+   "p": "Good start. Iterate: keep the layout, make the header smaller and the text darker."
+  },
+  {
+   "c": "Quality",
+   "t": "Smoke test",
+   "m": "A quick check that the main things still work at all, before deeper testing.",
+   "w": "Right after a change, before you call it done.",
+   "p": "Smoke test the app: open every page, tap the main buttons, and tell me anything that breaks.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Sanity check",
+   "m": "A fast common-sense look to confirm the result makes sense.",
+   "w": "Something looks too good, too fast, or a number seems off.",
+   "p": "Sanity check this: do the totals add up and does the page match what I asked for?",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Cleanup pass",
+   "m": "One round of tidying: remove leftovers, fix naming, delete debug code. No new features.",
+   "w": "After a feature works but the code got messy getting there.",
+   "p": "Do a cleanup pass on the files you touched: remove debug logs, unused code and confusing names.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Dead code",
+   "m": "Code that is never used anymore but still sits in the project.",
+   "w": "The project feels bloated or confusing.",
+   "p": "Find dead code in this project and remove it. Show me the list before deleting.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Consolidate",
+   "m": "Merge duplicate pieces into one shared version.",
+   "w": "The same style, function or file exists in several slightly different copies.",
+   "p": "Consolidate the three button styles into one shared style and use it everywhere.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Audit",
+   "m": "A thorough review against a checklist: security, speed, accessibility, or style.",
+   "w": "Before a launch, or when you want a full health report.",
+   "p": "Audit this site for security and accessibility problems. List them by severity, fix nothing yet.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Quality",
+   "t": "Format / prettify",
+   "m": "Auto-arrange code so spacing and indentation are consistent. Changes look, not behavior.",
+   "w": "The code looks messy or every file is styled differently.",
+   "p": "Run the formatter on the whole project. Formatting changes only, no logic changes.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Fixing",
+   "t": "Hardcoded",
+   "m": "A value typed directly into the code instead of coming from settings or data.",
+   "w": "Changing a price, name or link means hunting through the code.",
+   "p": "Find hardcoded prices and URLs and move them into one config file.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Fixing",
+   "t": "Placeholder",
+   "m": "Temporary text, images or values standing in until the real thing exists.",
+   "w": "You want to spot what still needs real content before launch.",
+   "p": "List every placeholder still on the site, like lorem ipsum or sample images, and replace them with real content.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Building",
+   "t": "Boilerplate",
+   "m": "Standard starter code every project of a kind needs, written the usual way.",
+   "w": "Starting something new and you don't want to reinvent the basics.",
+   "p": "Set up the usual boilerplate for a contact form: validation, error messages and a success state.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Shipping",
+   "t": "Diff",
+   "m": "The exact before-and-after of what changed, line by line.",
+   "w": "You want to see what the AI actually touched.",
+   "p": "Show me the diff of your changes and explain each one in plain English.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Shipping",
+   "t": "Dry run",
+   "m": "A practice run that shows what would happen without actually doing it.",
+   "w": "Before anything risky: deleting, migrating, sending, deploying.",
+   "p": "Do a dry run first: list every file you would rename or delete, but don't change anything yet.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Shipping",
+   "t": "Bump / upgrade",
+   "m": "Move a library or tool to a newer version.",
+   "w": "A package is outdated, has a security warning, or a fix needs the new version.",
+   "p": "Bump all packages with security warnings to safe versions, run the tests, and tell me what changed.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Sandbox",
+   "m": "A safe, separate place to try things where mistakes can't hurt the real project.",
+   "w": "Testing something risky or experimental.",
+   "p": "Try this in a sandbox copy first. Don't touch the live project until I approve.",
+   "new": "2026-10-17"
+  },
+  {
+   "c": "Prompting the AI",
+   "t": "Rubber-duck",
+   "m": "Explain the problem step by step out loud; saying it often reveals the answer.",
+   "w": "You or the AI are stuck going in circles.",
+   "p": "Rubber-duck this with me: explain step by step what the code does when I tap Save, before changing anything.",
+   "new": "2026-10-17"
+  }
+ ]
 }
-]

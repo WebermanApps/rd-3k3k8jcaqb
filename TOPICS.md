@@ -27,3 +27,9 @@ The device's local state yields to `topics.json` once the file records a decisio
 
 - 2026-10-16 Anonymous Builder Brand: writeups/anonymous-builder-brand.html (possible)
 - 2026-10-17 UpKeep Tech Certifications: writeups/upkeep-tech-certs.html (possible)
+
+## Ongoing projects
+An approved topic can become an ongoing project that Max works on right from the dashboard. Model: Coder's Dictionary (`coders-dictionary/`, data in `coders-dictionary/terms.json`).
+- The project page lives behind its topic card (same thumbnail, `link` in `topics.json`, status `approved`). Everything for the project stays on that page.
+- Max's stars and notes arrive via the submit inbox (`/workspace/ops/submit/pull.sh research`), one deck name per project, e.g. `deck: coders-dictionary` with `results.type` `favorite` (`term`, `starred`) or `note` (`text`).
+- Research applies them: update `favorites` in the data file, research note requests, add new items with `"new": "<date>"`, keep all old items, bump the card's `summary`/`updated`, then publish with the page-lock rule.
