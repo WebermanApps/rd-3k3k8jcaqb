@@ -65,7 +65,7 @@
     var b=document.createElement('button');b.type='button';b.className='mws-btn mw-hover';
     var m=document.createElement('div');m.className='mws-msg';m.setAttribute('role','status');m.setAttribute('aria-live','polite');
     var dn=document.createElement('div');dn.className='mws-done';dn.setAttribute('role','status');
-    dn.innerHTML='<p class="mws-dt"></p><a class="mws-back mw-hover" href="'+back+'">Back to Deck Building</a>';
+    dn.innerHTML='<p class="mws-dt"></p><a class="mws-back mw-hover" href="'+back+'" onclick="return window.mwBack?mwBack(event,this.href):true">Back to Deck Building</a>';
     wrap.appendChild(b);wrap.appendChild(m);wrap.appendChild(dn);el.appendChild(wrap);
     function state(s){b.classList.remove('sent','fail');b.disabled=false;
       if(s==='idle'){b.textContent='Submit';m.textContent='';}
@@ -86,3 +86,23 @@
   w.MWSubmit={button:button,send:send,flush:flush,gate:gate,isAuthed:authed,url:URL,blocked:false};
   w.addEventListener('online',flush);
 })(window);
+/* R104 Back helper (same as back.js; defined only if back.js is not loaded) */
+(function(){if(window.mwBack)return;
+  function same(u){try{var x=new URL(u,location.href);return (x.protocol==='https:'||x.protocol==='http:')&&x.origin===location.origin?x.href:null}catch(_){return null}}
+  function target(fallback){
+    if(history.length>1)return {back:true};
+    var r=document.referrer&&same(document.referrer);
+    if(r&&r!==location.href)return {url:r};
+    var f=null;try{f=new URLSearchParams(location.search).get('from')}catch(_){}
+    f=f&&same(f);if(f&&f!==location.href)return {url:f};
+    return {url:fallback};
+  }
+  window.mwBackTarget=target;
+  window.mwBack=function(ev,fallback){
+    if(ev&&(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey||(ev.button&&ev.button!==0)))return true;
+    var t=target(fallback);
+    if(ev&&ev.preventDefault)ev.preventDefault();
+    if(t.back)history.back();else location.href=t.url;
+    return false;
+  };
+})();
