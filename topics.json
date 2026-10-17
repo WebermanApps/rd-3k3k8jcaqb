@@ -1,7 +1,7 @@
 {
   "deck": "research-topics",
   "agent": "research",
-  "updated": "2026-10-17T09:19:12+07:00",
+  "updated": "2026-10-17T15:48:35+07:00",
   "topics": [
     {
       "id": "upkeep-tech-certs",
@@ -57,11 +57,13 @@
       "link": "writeups/condensed-pitch-deck.html",
       "link_label": "Open the plan",
       "kind": "topic",
-      "status": "approved",
+      "status": "rejected",
       "notes": [],
       "answer": "",
       "created": "2026-10-16T10:05:00+07:00",
-      "updated": "2026-10-17T09:19:12+07:00"
+      "updated": "2026-10-17T15:48:35+07:00",
+      "archived_note": "Removed by Max Oct 17; project moved to UpKeep",
+      "archived": true
     },
     {
       "id": "upkeep-tech-training-week",
