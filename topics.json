@@ -1,7 +1,7 @@
 {
   "deck": "research-topics",
   "agent": "research",
-  "updated": "2026-10-18T04:00:51+07:00",
+  "updated": "2026-10-18T09:49:00+07:00",
   "topics": [
     {
       "id": "property-management-tool",
@@ -12,11 +12,11 @@
       "link": "writeups/property-management-tool.html",
       "link_label": "See the plan",
       "kind": "topic",
-      "status": "possible",
+      "status": "approved",
       "notes": [],
-      "answer": "",
+      "answer": "Approved Oct 18. Handed to Prop (lead) and UpKeep (home record link). Brief pinned to the Document Center.",
       "created": "2026-10-17T21:05:00+07:00",
-      "updated": "2026-10-17T21:05:00+07:00"
+      "updated": "2026-10-18T09:49:00+07:00"
     },
     {
       "id": "upkeep-tech-certs",

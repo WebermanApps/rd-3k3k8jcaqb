@@ -36,3 +36,4 @@ An approved topic can become an ongoing project that Max works on right from the
 - 2026-10-17 Condensed Investor Pitch Deck: archived (hidden; writeup kept at writeups/condensed-pitch-deck.html). Max moved the project to UpKeep.
 - 2026-10-17 Smart Upkeep Membership Add-Ons: archived into Branding's Extras Ideas Deck (R118); writeup writeups/upkeep-pricing-forecast.html kept.
 - 2026-10-18 UpKeep Pricing Forecast: five cut add-ons removed from menu count (14→9); attach model and ~$201/mo base spend unchanged (lawn, leaf, windows, pressure only).
+- 2026-10-18 Property Management Tool: approved (writeups/property-management-tool.html); handed to Prop (lead) and UpKeep (home record link); brief PDF pinned to the Document Center.
