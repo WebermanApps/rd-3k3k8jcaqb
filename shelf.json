@@ -2,6 +2,19 @@
   "agent": "research",
   "decks": [
     {
+      "id": "research-tech-certs-followup-deck",
+      "name": "Tech Certs And Training Follow-Up",
+      "url": "https://webermanapps.github.io/style-swipe/tech-certs-training-follow-up-4dgpo9/",
+      "total": 10,
+      "topic": "research-tech-certs-followup",
+      "source": "/workspace/ops/research/2026-10-19-tech-certs-followup-deck.json",
+      "added": "2026-10-19T16:31:27+07:00",
+      "tag": "Tech Certs",
+      "answered": 0,
+      "blurb": "10 picks: cert badges, who pays, cool tech, training week",
+      "new": true
+    },
+    {
       "id": "new-ideas-upkeep-style-swipe-agent-dashboards-errwbq",
       "name": "New Ideas: Upkeep, Style Swipe & Agent Dashboards",
       "url": "https://webermanapps.github.io/style-swipe/new-ideas-upkeep-style-swipe-agent-dashboards-errwbq/",
@@ -156,7 +169,7 @@
       "results": "/workspace/ops/research/2026-10-19-tech-certs-deck-results.md"
     }
   ],
-  "updated": "2026-10-19T16:24:55+07:00",
+  "updated": "2026-10-19T16:31:27+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
