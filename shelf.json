@@ -12,7 +12,9 @@
       "tag": "Tech Certs",
       "answered": 0,
       "blurb": "10 picks: cert badges, who pays, cool tech, training week",
-      "new": true
+      "new": true,
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "new-ideas-upkeep-style-swipe-agent-dashboards-errwbq",
@@ -24,7 +26,9 @@
       "tag": "New Ideas",
       "answered": 0,
       "blurb": "10 idea picks: Upkeep, Style Swipe, Agent Dashboards",
-      "new": true
+      "new": true,
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "checkout-selling-checkout-and-selling-offer-go-to-market",
@@ -37,7 +41,9 @@
       "tag": "Checkout",
       "answered": 0,
       "split_from": "checkout-selling-checkout-and-selling",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "checkout-selling-checkout-and-selling-billing-risk",
@@ -50,7 +56,9 @@
       "tag": "Checkout",
       "answered": 0,
       "split_from": "checkout-selling-checkout-and-selling",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "upkeep-pricing-smart-upkeep-pricing-add-ons-retention",
@@ -63,7 +71,9 @@
       "tag": "Pricing",
       "answered": 0,
       "split_from": "upkeep-pricing-smart-upkeep-pricing",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "upkeep-pricing-smart-upkeep-pricing-forecast-billing",
@@ -76,7 +86,9 @@
       "tag": "Pricing",
       "answered": 0,
       "split_from": "upkeep-pricing-smart-upkeep-pricing",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "founder-security-founder-and-app-security-identity-domains",
@@ -89,7 +101,9 @@
       "tag": "Security",
       "answered": 0,
       "split_from": "founder-security-founder-and-app-security",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "founder-security-founder-and-app-security-ai-agents-recovery",
@@ -102,7 +116,9 @@
       "tag": "Security",
       "answered": 0,
       "split_from": "founder-security-founder-and-app-security",
-      "blurb": "10 cards, ready now"
+      "blurb": "10 cards, ready now",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff-deck",
@@ -116,7 +132,9 @@
       "answered": 0,
       "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
       "blurb": "10 cards, ready now",
-      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process"
+      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "home-guide-ideas-home-guide-and-construction-ideas-future-guides-process-deck",
@@ -130,7 +148,9 @@
       "answered": 0,
       "split_from": "home-guide-ideas-home-guide-and-construction-ideas",
       "blurb": "10 cards, ready now",
-      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff"
+      "renamed_from": "home-guide-ideas-home-guide-and-construction-ideas-ideas-handoff",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "research-machan-launch-and-checkout-options-deck",
@@ -145,7 +165,9 @@
       "requested_at": "2026-10-18T03:11:00+07:00",
       "blurb": "10 cards from your Oct 17 research notes",
       "new": true,
-      "note": "Branding morning decks Oct 18 from the Oct 17 daily work report"
+      "note": "Branding morning decks Oct 18 from the Oct 17 daily work report",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     },
     {
       "id": "research-tech-certs-training-and-cool-tech-deck",
@@ -269,7 +291,9 @@
       "blurb": "Things you could build: spinoffs of your projects plus new ideas",
       "new": false,
       "queued_at": "2026-10-18T04:00:30+07:00",
-      "queue_note": "R101: rotated off shelf for New Ideas Upkeep/Style Swipe/Agent Dashboards; fills next free slot"
+      "queue_note": "R101: rotated off shelf for New Ideas Upkeep/Style Swipe/Agent Dashboards; fills next free slot",
+      "restyled": "2026-10-20T20:15:00+07:00",
+      "style": "tap-pop (build.py, Oct 20 2026)"
     }
   ],
   "done": [
