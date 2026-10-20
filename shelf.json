@@ -2,6 +2,32 @@
   "agent": "research",
   "decks": [
     {
+      "id": "gift-deck-build-setup",
+      "name": "Gift Deck Build Setup",
+      "url": "https://webermanapps.github.io/style-swipe/gift-deck-build-setup-5de060/",
+      "total": 10,
+      "topic": "gift-deck",
+      "added": "2026-10-20T20:40:00+07:00",
+      "tag": "Gift Deck",
+      "answered": 0,
+      "blurb": "Supabase setup, room flow and launch catalog picks",
+      "new": true,
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
+      "id": "app-improvement-picks",
+      "name": "App Improvement Picks",
+      "url": "https://webermanapps.github.io/style-swipe/app-improvement-picks-e8c007/",
+      "total": 10,
+      "topic": "app-improvements",
+      "added": "2026-10-20T20:40:00+07:00",
+      "tag": "Product",
+      "answered": 0,
+      "blurb": "Upgrades for Smart Upkeep, WellNest and Style Swipe",
+      "new": true,
+      "style": "tap-pop (build.py, Oct 20 2026)"
+    },
+    {
       "id": "new-ideas-upkeep-style-swipe-agent-dashboards-errwbq",
       "name": "New Ideas: Upkeep, Style Swipe & Agent Dashboards",
       "url": "https://webermanapps.github.io/style-swipe/new-ideas-upkeep-style-swipe-agent-dashboards-errwbq/",
@@ -155,7 +181,7 @@
       "style": "tap-pop (build.py, Oct 20 2026)"
     }
   ],
-  "updated": "2026-10-20T20:12:38+07:00",
+  "updated": "2026-10-20T20:40:00+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
