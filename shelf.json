@@ -2,21 +2,6 @@
   "agent": "research",
   "decks": [
     {
-      "id": "research-tech-certs-followup-deck",
-      "name": "Tech Certs And Training Follow-Up",
-      "url": "https://webermanapps.github.io/style-swipe/tech-certs-training-follow-up-4dgpo9/",
-      "total": 10,
-      "topic": "research-tech-certs-followup",
-      "source": "/workspace/ops/research/2026-10-19-tech-certs-followup-deck.json",
-      "added": "2026-10-19T16:31:27+07:00",
-      "tag": "Tech Certs",
-      "answered": 0,
-      "blurb": "10 picks: cert badges, who pays, cool tech, training week",
-      "new": true,
-      "restyled": "2026-10-20T20:15:00+07:00",
-      "style": "tap-pop (build.py, Oct 20 2026)"
-    },
-    {
       "id": "new-ideas-upkeep-style-swipe-agent-dashboards-errwbq",
       "name": "New Ideas: Upkeep, Style Swipe & Agent Dashboards",
       "url": "https://webermanapps.github.io/style-swipe/new-ideas-upkeep-style-swipe-agent-dashboards-errwbq/",
@@ -168,30 +153,9 @@
       "note": "Branding morning decks Oct 18 from the Oct 17 daily work report",
       "restyled": "2026-10-20T20:15:00+07:00",
       "style": "tap-pop (build.py, Oct 20 2026)"
-    },
-    {
-      "id": "research-tech-certs-training-and-cool-tech-deck",
-      "name": "Tech Certs, Training And Cool Tech",
-      "url": "https://webermanapps.github.io/style-swipe/tech-certs-training-cool-tech-dqhtgs/",
-      "total": 10,
-      "topic": "research-tech-certs-training-and-cool-tech-deck",
-      "added": "2026-10-18T03:42:34+07:00",
-      "tag": "Research",
-      "answered": 10,
-      "requested": true,
-      "requested_at": "2026-10-18T03:11:00+07:00",
-      "blurb": "10 cards from your Oct 17 research notes",
-      "new": false,
-      "note": "Branding morning decks Oct 18 from the Oct 17 daily work report; submitted by Max Oct 19 16:07 ICT (10/10, picks 01-09 A, 10 B, no notes); picks applied by Research Oct 19",
-      "queued_at": "2026-10-18T03:42:34+07:00",
-      "queue_note": "R97: shelf at 10 after Machan Launch And Checkout Options; fills the next free slot",
-      "status": "done",
-      "done_at": "2026-10-19T16:07:03+07:00",
-      "submitted_at": "2026-10-19T16:07:03+07:00",
-      "results": "/workspace/ops/research/2026-10-19-tech-certs-deck-results.md"
     }
   ],
-  "updated": "2026-10-19T16:31:27+07:00",
+  "updated": "2026-10-20T20:12:38+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
@@ -301,6 +265,13 @@
       "id": "research-tech-certs-training-and-cool-tech-deck",
       "at": "2026-10-19T16:07:03+07:00",
       "name": "Tech Certs, Training And Cool Tech",
+      "answered": 10,
+      "total": 10
+    },
+    {
+      "id": "research-tech-certs-followup-deck",
+      "at": "2026-10-20T19:41:00+07:00",
+      "name": "Tech Certs And Training Follow-Up",
       "answered": 10,
       "total": 10
     }
