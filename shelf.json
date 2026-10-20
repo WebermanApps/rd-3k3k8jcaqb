@@ -14,20 +14,6 @@
       "new": true,
       "style": "tap-pop (build.py, Oct 20 2026)",
       "made": "2026-10-20"
-    },
-    {
-      "id": "app-improvement-picks",
-      "name": "App Improvement Picks",
-      "url": "https://webermanapps.github.io/style-swipe/app-improvement-picks-e8c007/",
-      "total": 10,
-      "topic": "app-improvements",
-      "added": "2026-10-20T20:40:00+07:00",
-      "tag": "Product",
-      "answered": 0,
-      "blurb": "Upgrades for Smart Upkeep, WellNest and Style Swipe",
-      "new": true,
-      "style": "tap-pop (build.py, Oct 20 2026)",
-      "made": "2026-10-20"
     }
   ],
   "updated": "2026-10-20T20:45:00+07:00",
@@ -282,6 +268,14 @@
       "from": "queued",
       "note": "Old ask, cleared by Max Oct 20 2026",
       "made": "2026-10-17"
+    },
+    {
+      "id": "app-improvement-picks",
+      "at": "2026-10-20T20:29:40+07:00",
+      "name": "App Improvement Picks",
+      "answered": 10,
+      "total": 10,
+      "made": "2026-10-20"
     }
   ]
 }
