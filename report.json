@@ -1,9 +1,11 @@
 {
  "type": "Morning",
  "title": "Morning Report",
- "time": "2026-10-15 07:25 ICT",
+ "time": "2026-10-20 12:45 ICT",
  "agent": "research",
  "dashboard": "https://webermanapps.github.io/rd-3k3k8jcaqb/",
- "items": 3,
- "late": true
+ "items": 0,
+ "late": false,
+ "cleared": true,
+ "note": "Retired: morning reports now come only from Grok Bot and Swatch (Machan, Oct 20)."
 }
