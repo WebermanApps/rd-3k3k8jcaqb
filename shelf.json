@@ -2,6 +2,20 @@
   "agent": "research",
   "decks": [
     {
+      "id": "motion-effects",
+      "name": "Motion Effects Deck",
+      "url": "https://webermanapps.github.io/rd-3k3k8jcaqb/decks/motion-effects/",
+      "total": 10,
+      "topic": "motion-effects",
+      "added": "2026-10-21T12:45:00+07:00",
+      "tag": "Motion",
+      "answered": 0,
+      "blurb": "10 this-or-that picks with live effect previews",
+      "new": true,
+      "style": "live previews (ops/research/motion-effects/make.py, Oct 21 2026)",
+      "made": "2026-10-21"
+    },
+    {
       "id": "gift-deck-build-setup",
       "name": "Gift Deck Build Setup",
       "url": "https://webermanapps.github.io/style-swipe/gift-deck-build-setup-5de060/",
@@ -11,12 +25,11 @@
       "tag": "Gift Deck",
       "answered": 0,
       "blurb": "Supabase setup, room flow and launch catalog picks",
-      "new": true,
       "style": "tap-pop (build.py, Oct 20 2026)",
       "made": "2026-10-20"
     }
   ],
-  "updated": "2026-10-20T20:45:00+07:00",
+  "updated": "2026-10-21T12:45:00+07:00",
   "unlisted": [
     {
       "id": "dashboard-product-agent-dashboard-product",
